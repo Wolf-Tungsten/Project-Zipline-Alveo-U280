@@ -64,7 +64,8 @@ module nx_interface_monitor
 
    localparam N_RAM_BITS = count_ram_mask_ones(); 
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
    
    typedef struct packed {

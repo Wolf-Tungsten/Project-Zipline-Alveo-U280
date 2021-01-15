@@ -39,7 +39,8 @@ module cr_tlvp_axi_in_axi_out_top
   axi4s_ob_in, module_id
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

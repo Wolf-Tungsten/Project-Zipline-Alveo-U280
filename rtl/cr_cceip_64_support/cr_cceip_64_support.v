@@ -19,7 +19,7 @@
 
 
 `include "cr_cceip_64_support.vh"
-
+import cr_structs::*; // grh fix
 module cr_cceip_64_support
 
   (
@@ -44,14 +44,15 @@ module cr_cceip_64_support
   osf_int, isf_int
   );
 
-//`include "cr_structs.sv"
-  import cr_structs::*; // grh fix
+  import cr_native_types::*;
+  import cr_error_codes::*;
+  
 `include "ccx_std.vh"
 
   import cr_cceip_64_supportPKG::*;
 
   import cr_cceip_64_support_regsPKG::*;
-  
+
   
   
   input                        clk;

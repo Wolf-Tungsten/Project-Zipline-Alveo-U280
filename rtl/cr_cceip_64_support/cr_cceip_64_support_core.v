@@ -34,7 +34,8 @@ module cr_cceip_64_support_core
   cceip_int1
   );
    	    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_cceip_64_supportPKG::*;

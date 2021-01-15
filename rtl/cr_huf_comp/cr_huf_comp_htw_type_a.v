@@ -51,7 +51,8 @@ module cr_huf_comp_htw_type_a
    stsg_hw_not_ready, hdr_hw_type, sw_ism_on, short_ism_rdy
    );
    	    
-//`include "cr_structs.sv"
+  // import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

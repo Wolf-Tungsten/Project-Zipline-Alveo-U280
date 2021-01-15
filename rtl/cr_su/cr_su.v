@@ -31,7 +31,8 @@ module cr_su
    cfg_end_addr, su_ob_in
    );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 `include "ccx_std.vh"
 

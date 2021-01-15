@@ -36,7 +36,8 @@ module cr_cceip_64_sa_core
   regs_sa_ctrl
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   //import cr_structs::*; // grh fix：maybe dupilcate here？
         
   import crPKG::*;   

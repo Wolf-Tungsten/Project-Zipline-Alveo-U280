@@ -35,7 +35,8 @@ module cr_prefix_rec_act
   rec_us_ir4_src1, rec_us_neuron_en4, rec_alu_acc
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

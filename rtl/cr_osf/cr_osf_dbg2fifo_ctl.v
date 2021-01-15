@@ -41,7 +41,8 @@ module cr_osf_dbg2fifo_ctl
   osf_dbg_pdt_fifo_depth, ob_data_fifo_afull, ob_pdt_fifo_afull
   );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_osfPKG::*;

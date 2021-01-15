@@ -33,7 +33,8 @@ module cr_cg #
  cg_ob_in, cg_module_id, cceip_cfg
  );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 `include "ccx_std.vh"
 

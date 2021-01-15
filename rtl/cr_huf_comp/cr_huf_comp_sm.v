@@ -33,8 +33,9 @@ module cr_huf_comp_sm
    sw_sm_in_tlv_parse_action_0, sw_sm_in_tlv_parse_action_1
    );
    
-//`include "cr_structs.sv"
-  import cr_structs::*; // grh fix
+// import cr_native_types::*;
+   import cr_error_codes::*;
+   import cr_structs::*; // grh fix
    
    import cr_huf_compPKG::*;
    import cr_huf_comp_regsPKG::*;

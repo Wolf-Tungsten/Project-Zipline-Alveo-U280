@@ -1,0 +1,2 @@
+synopsys_sim.setup_0 ./synopsys_sim.setup
+synopsys_sim.setup_1 /nvme0n1/Applications/Synopsys/vcs-mx_vL-2016.06/bin/synopsys_sim.setup

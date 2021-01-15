@@ -32,7 +32,8 @@ module cr_prefix_fe_cmpa
   clk, rst_n, char_in, char_valid, match_val, cmp_type
   );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

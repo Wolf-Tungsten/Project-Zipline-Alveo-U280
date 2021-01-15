@@ -37,7 +37,8 @@ module cr_cddip_support
   isf_int
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 `include "ccx_std.vh"
 

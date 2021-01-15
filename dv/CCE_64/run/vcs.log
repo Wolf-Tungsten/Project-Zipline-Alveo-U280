@@ -1,0 +1,722 @@
+Command: vcs zipline_tb +vcs+lic+wait -timescale=1ns/1ps -full64 -xlrm uniq_prior_final \
++lint=TFIPC-L -l vcs.log -o simv -Mupdate -picarchive -error=SDFCOM_CNOF,SDFPE +plusarg_save \
+-assert svaext +notimingcheck -debug_all +error+10 -debug_access+all
+Doing common elaboration 
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Fri Jan 15 21:29:06 2021
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       zipline_tb
+TimeScale is 1 ns / 1 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_lz77c" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_lz77c
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_lz77d" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_lz77d
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_htf_bl" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_htf_bl
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port "im_consumed_xpc"
+  of module "cr_cceip_64_support", instance "u_cr_cceip_64_support".
+  Expression: im_consumed_xpc
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port "im_consumed_xpd"
+  of module "cr_cceip_64_support", instance "u_cr_cceip_64_support".
+  Expression: im_consumed_xpd
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_he_sh" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_he_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_he_lng" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_he_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_he_st_sh" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_he_st_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_consumed_he_st_lng" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_consumed_he_st_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_lz77c" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_lz77c
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_lz77d" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_lz77d
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_htf_bl" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_htf_bl
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_xpc" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_xpc
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_xpd" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_xpd
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_he_lng" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_he_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_he_sh" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_he_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_he_st_lng" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_he_st_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v, 360
+"cr_cceip_64_support u_cr_cceip_64_support( .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .crcg0_ib_out (df_mux_crcg0_ib_out),  .crcc1_ib_out (df_mux_crcc1_ib_out),  .rbus_ring_o (rbus_ring_o[0]),  .df_mux_ob_out (df_mux_osf_ob_out),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .cceip_int (cceip_int),  .cceip_idle (cceip_idle),  .sup_osf_ha ... "
+  The following 2-bit expression is connected to 18-bit port 
+  "im_available_he_st_sh" of module "cr_cceip_64_support", instance 
+  "u_cr_cceip_64_support".
+  Expression: im_available_he_st_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_lz77c" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_lz77c
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_lz77d" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_lz77d
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_htf_bl" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_htf_bl
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port "im_consumed_xpc"
+  of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_xpc
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port "im_consumed_xpd"
+  of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_xpd
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_he_sh" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_he_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_he_lng" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_he_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_he_st_sh" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_he_st_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_consumed_he_st_lng" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_consumed_he_st_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_lz77c" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_lz77c
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_lz77d" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_lz77d
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_htf_bl" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_htf_bl
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_xpc" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_xpc
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_xpd" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_xpd
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_he_lng" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_he_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_he_sh" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_he_sh
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_he_st_lng" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_he_st_lng
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64_support/cr_cceip_64_support.v, 207
+"cr_cceip_64_support_regfile u_cr_cceip_64_support_regfile( .rbus_ring_o (rbus_ring_o),  .im_consumed_lz77c (im_consumed_lz77c),  .im_consumed_lz77d (im_consumed_lz77d),  .im_consumed_htf_bl (im_consumed_htf_bl),  .im_consumed_xpc (im_consumed_xpc),  .im_consumed_xpd (im_consumed_xpd),  .im_consumed_he_sh (im_consumed_he_sh),  .im_consumed_he_lng (im_consumed_he_lng),  .im_consumed_he_st_sh (im_consumed_he_st_sh),  .im_consumed_he_st_lng (im_consumed_he_st_lng),  .top_bimc_mstr_rst_n (top_bimc_mstr_rst_n),  .top_bimc_mstr_osync (top_bimc_mstr_osync),  .top_bimc_mstr_odat (top_bimc_mstr_odat),  .cceip_int0 (cceip_int0),  .cceip_int1 (cceip_int1),  .ctl_config (ctl_config),  .df_mux_sel (df_mux_sel[0]),  .rst_n (rst_n),  .clk (clk),  .rbus_ring_i (rbus_rin ... "
+  The following 18-bit expression is connected to 2-bit port 
+  "im_available_he_st_sh" of module "cr_cceip_64_support_regfile", instance 
+  "u_cr_cceip_64_support_regfile".
+  Expression: im_available_he_st_sh
+  	use +lint=PCWM for more details
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1082
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_native_types::rqe_trace_e' to a 
+  variable of type 'LIB_TOP.cr_isf_regsPKG::rqe_trace_e'
+  Source info: rqe_trace_reg <= (isf_rqe_ld[0] ? rqe_tlv_tdata_w0.trace : 
+  rqe_trace_reg);
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1082
+"rqe_trace_reg <= (isf_rqe_ld[0] ? rqe_tlv_tdata_w0.trace : rqe_trace_reg);"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic is incompatible with the enum 'rqe_trace_e'
+  Expression: (isf_rqe_ld[0] ? rqe_tlv_tdata_w0.trace : rqe_trace_reg)
+  Use the static cast operator to convert the expression to enum type.
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1090
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_native_types::cmd_comp_mode_e' to 
+  a variable of type 'LIB_TOP.cr_isf_regsPKG::cmd_comp_mode_e'
+  Source info: cmd_comp_mode_reg <= (isf_cmd_ld[2] ? 
+  cmd_tlv_tdata_w2_out.comp_mode : cmd_comp_mode_reg);
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1090
+"cmd_comp_mode_reg <= (isf_cmd_ld[2] ? cmd_tlv_tdata_w2_out.comp_mode : cmd_comp_mode_reg);"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic [3:0] is incompatible with the enum 'cmd_comp_mode_e'
+  Expression: (isf_cmd_ld[2] ? cmd_tlv_tdata_w2_out.comp_mode : 
+  cmd_comp_mode_reg)
+  Use the static cast operator to convert the expression to enum type.
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1433
+  Different enum types in assignment statement 
+  Cannot assign a value of type 
+  'LIB_TOP.cr_isf_regsPKG::cmd_xp10_prefix_mode_e' to a variable of type 
+  'LIB_TOP.cr_native_types::cmd_xp10_prefix_mode_e'
+  Source info: cmd_tlv_tdata_w2_out.xp10_prefix_mode = (((!cceip_cfg) || 
+  prefix_mode_ok) ? cmd_tlv_tdata_w2.xp10_prefix_mode : NO_PREFIX);
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1433
+"cmd_tlv_tdata_w2_out.xp10_prefix_mode = (((!cceip_cfg) || prefix_mode_ok) ? cmd_tlv_tdata_w2.xp10_prefix_mode : NO_PREFIX);"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic [1:0] is incompatible with the enum 'cmd_xp10_prefix_mode_e'
+  Expression: (((!cceip_cfg) || prefix_mode_ok) ? 
+  cmd_tlv_tdata_w2.xp10_prefix_mode : NO_PREFIX)
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1442
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == XP9)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'XP9' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1442
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_isf_regsPKG::cmd_comp_mode_e' to a
+  variable of type 'LIB_TOP.cr_native_types::cmd_comp_mode_e'
+  Source info: cmd_tlv_tdata_w2_out.comp_mode = (chu_mismatch0 ? XP10 : 
+  (chu_mismatch1 ? cmd_comp_mode_e'(rqe_frame_size_reg) : (((cceip_cfg && 
+  xp9_disable) && (cmd_tlv_tdat ...
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1442
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_isf_regsPKG::cmd_comp_mode_e' to a
+  variable of type 'LIB_TOP.cr_native_types::cmd_comp_mode_e'
+  Source info: cmd_tlv_tdata_w2_out.comp_mode = (chu_mismatch0 ? XP10 : 
+  (chu_mismatch1 ? cmd_comp_mode_e'(rqe_frame_size_reg) : (((cceip_cfg && 
+  xp9_disable) && (cmd_tlv_tdat ...
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1442
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_isf_regsPKG::cmd_comp_mode_e' to a
+  variable of type 'LIB_TOP.cr_native_types::cmd_comp_mode_e'
+  Source info: cmd_tlv_tdata_w2_out.comp_mode = (chu_mismatch0 ? XP10 : 
+  (chu_mismatch1 ? cmd_comp_mode_e'(rqe_frame_size_reg) : (((cceip_cfg && 
+  xp9_disable) && (cmd_tlv_tdat ...
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1442
+"cmd_tlv_tdata_w2_out.comp_mode = (chu_mismatch0 ? XP10 : (chu_mismatch1 ? cmd_comp_mode_e'(rqe_frame_size_reg) : (((cceip_cfg && xp9_disable) && (cmd_tlv_tdata_w2.comp_mode == XP9)) ? NONE : cmd_tlv_tdata_w2.comp_mode)));"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic [3:0] is incompatible with the enum 'cmd_comp_mode_e'
+  Expression: (chu_mismatch0 ? XP10 : (chu_mismatch1 ? 
+  cmd_comp_mode_e'(rqe_frame_size_reg) : (((cceip_cfg && xp9_disable) && 
+  (cmd_tlv_tdata_w2.comp_mode == XP9)) ...
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1015
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == XP10)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'XP10' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1015
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == CHU4K)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'CHU4K' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1015
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == CHU8K)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'CHU8K' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1020
+  Different enum types in assignment statement 
+  Cannot assign a value of type 
+  'LIB_TOP.cr_native_types::cmd_xp10_prefix_mode_e' to a variable of type 
+  'LIB_TOP.cr_isf_regsPKG::cmd_xp10_prefix_mode_e'
+  Source info: assign xp10_prefix_mode_mod = (((!cceip_cfg) || prefix_mode_ok)
+  ? cmd_tlv_tdata_w2.xp10_prefix_mode : NO_PREFIX);
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1020
+"assign xp10_prefix_mode_mod = (((!cceip_cfg) || prefix_mode_ok) ? cmd_tlv_tdata_w2.xp10_prefix_mode : NO_PREFIX);"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic [1:0] is incompatible with the enum 'cmd_xp10_prefix_mode_e'
+  Expression: (((!cceip_cfg) || prefix_mode_ok) ? 
+  cmd_tlv_tdata_w2.xp10_prefix_mode : NO_PREFIX)
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1361
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == CHU4K)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'CHU4K' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1361
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == CHU8K)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'CHU8K' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1367
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == CHU4K)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'CHU4K' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1367
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == CHU8K)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'CHU8K' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_isf/cr_isf_tlv_mods.v, 1367
+cr_isf_tlv_mods, "(cmd_tlv_tdata_w2.comp_mode == NONE)"
+  Enum constants/variables 'cmd_tlv_tdata_w2.comp_mode' of enum type 
+  'cmd_comp_mode_e' and 'NONE' of different enum type 'cmd_comp_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_osf/cr_osf_ctl.v, 361
+cr_osf_ctl, "(df_rqe_tlv_word_0.frame_size == RQE_SIMPLE)"
+  Enum constants/variables 'df_rqe_tlv_word_0.frame_size' of enum type 
+  'rqe_frame_size_e' and 'RQE_SIMPLE' of different enum type 
+  'rqe_frame_size_e' are used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_osf/cr_osf_ctl.v, 364
+cr_osf_ctl, "(df_rqe_tlv_word_0.frame_size == RQE_COMPOUND_4K)"
+  Enum constants/variables 'df_rqe_tlv_word_0.frame_size' of enum type 
+  'rqe_frame_size_e' and 'RQE_COMPOUND_4K' of different enum type 
+  'rqe_frame_size_e' are used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_osf/cr_osf_ctl.v, 364
+cr_osf_ctl, "(df_rqe_tlv_word_0.frame_size == RQE_COMPOUND_8K)"
+  Enum constants/variables 'df_rqe_tlv_word_0.frame_size' of enum type 
+  'rqe_frame_size_e' and 'RQE_COMPOUND_8K' of different enum type 
+  'rqe_frame_size_e' are used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 483
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_native_types::cmd_md_type_e' to a 
+  variable of type 'LIB_TOP.cr_crcgc_regsPKG::cmd_md_type_e'
+  Source info: cts_cmd_md_type <= cts_cmd_tlv0_word_1.md_type;
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Error-[ICTA] Incompatible complex type
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 483
+  Incompatible complex type assignment
+  Type of source expression is incompatible with type of target expression. 
+  Mismatching types cannot be used in assignments, initializations and 
+  instantiations. The type of the target is 'enum 
+  LIB_TOP.cr_crcgc_regsPKG::cmd_md_type_e', while the type of the source is 
+  'enum LIB_TOP.cr_native_types::cmd_md_type_e'.
+  Source Expression: cts_cmd_tlv0_word_1.md_type
+  Instance stack trace:
+      cr_crcgc_cts#(STUB_MODE)   
+  /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_core.v,
+  248
+      cr_crcgc_core#(STUB_MODE, , , )   
+  /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc.v,
+  122
+      cr_crcgc  
+  /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_cceip_64/cr_cceip_64.v,
+  478
+      cr_cceip_64#()   ./zipline_tb.v, 88
+      zipline_tb  ./zipline_tb.v, 12
+  
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 488
+cr_crcgc_cts, "(cts_cmd_word1.debug.tlvp_corrupt == TLVP)"
+  Enum constants/variables 'cts_cmd_word1.debug.tlvp_corrupt' of enum type 
+  'tlvp_corrupt_e' and 'TLVP' of different enum type 'tlvp_corrupt_e' are used
+  together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 488
+cr_crcgc_cts, "(cts_cmd_word1.debug.cmd_type == DATAPATH_CORRUPT)"
+  Enum constants/variables 'cts_cmd_word1.debug.cmd_type' of enum type 
+  'cmd_type_e' and 'DATAPATH_CORRUPT' of different enum type 'cmd_type_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 495
+cr_crcgc_cts, "(cts_cmd_word1.debug.cmd_mode == SINGLE_ERR)"
+  Enum constants/variables 'cts_cmd_word1.debug.cmd_mode' of enum type 
+  'cmd_mode_e' and 'SINGLE_ERR' of different enum type 'cmd_mode_e' are used 
+  together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 495
+cr_crcgc_cts, "(cts_cmd_word1.debug.cmd_mode == CONTINUOUS_ERROR)"
+  Enum constants/variables 'cts_cmd_word1.debug.cmd_mode' of enum type 
+  'cmd_mode_e' and 'CONTINUOUS_ERROR' of different enum type 'cmd_mode_e' are 
+  used together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Warning-[DTIE] Different enum types in equality
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 501
+cr_crcgc_cts, "(cts_cmd_word1.debug.cmd_mode == STOP)"
+  Enum constants/variables 'cts_cmd_word1.debug.cmd_mode' of enum type 
+  'cmd_mode_e' and 'STOP' of different enum type 'cmd_mode_e' are used 
+  together with equality operator '=='.
+  Please check, if that is desired.
+
+
+Error-[ENUMASSIGNTYPE] Different enum types in assignment
+/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_crcgc/cr_crcgc_cts.v, 507
+  Different enum types in assignment statement 
+  Cannot assign a value of type 'LIB_TOP.cr_native_types::cmd_comp_mode_e' to 
+  a variable of type 'LIB_TOP.cr_crcgc_regsPKG::cmd_comp_mode_e'
+  Source info: cts_cmd_comp_mode <= cts_cmd_tlv0_word_2.comp_mode;
+  Use the static cast operator to convert the expression to the required enum 
+  type.
+  
+
+
+Note-[MAX_ERROR_COUNT] Maximum error count reached
+  Current number of errors has reached the default maximum error count (10).
+  Please use +error+<count> to increase the limit.
+
+58 warnings
+10 errors
+CPU time: 11.325 seconds to compile
+
+ common elaboration failed

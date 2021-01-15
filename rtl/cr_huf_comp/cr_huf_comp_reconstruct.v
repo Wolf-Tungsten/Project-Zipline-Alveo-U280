@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -27,7 +27,7 @@ module cr_huf_comp_reconstruct (
    be_lz_dp_ready, sw_LZ_BYPASS_CONFIG
    );
 
-   import crPKG::lz_symbol_bus_t;
+   import cr_structs::lz_symbol_bus_t;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    

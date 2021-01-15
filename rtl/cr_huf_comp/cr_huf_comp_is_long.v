@@ -22,7 +22,8 @@ module cr_huf_comp_is_long
    clk, rst_n, sc_is_long_vld, sc_is_long_intf, ht_is_long_not_ready
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

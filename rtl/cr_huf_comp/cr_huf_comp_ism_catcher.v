@@ -34,7 +34,8 @@ module cr_huf_comp_ism_catcher
    seq_id_in, eob_in, sw_ism_on, ism_rdy
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

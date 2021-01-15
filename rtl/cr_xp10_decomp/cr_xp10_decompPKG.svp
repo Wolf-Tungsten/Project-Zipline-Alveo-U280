@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -10,11 +10,11 @@
   `define __CR_XP10_DECOMPPKG_SVP
 
 package cr_xp10_decompPKG;
+
    import crPKG::*;
-   
-
- 
-
+   import cr_native_types::*;
+   import cr_error_codes::*;
+   import cr_structs::*; // grh fix
 
    localparam HUFD_STAT_EVENTS_BASE = HUFD_FE_XP9_FRM_TOTAL;
    localparam HUFD_STAT_EVENTS_LIMIT = HUFD_SDD_BUF_FULL_STALL_TOTAL;
@@ -23,16 +23,6 @@ package cr_xp10_decompPKG;
    localparam LZ77D_STAT_EVENTS_LIMIT = LZ77D_STALL_TOTAL;
 
 
-
- 
-
-
-
-
-   
-   
-   
-   
    localparam N_SDD_BIT_BUF_WORDS = 30;
 
    localparam logic [2:0] HLIT_EXTRA_BITS[0:31] = '{0, 0, 0, 0, 0, 0, 0, 0,

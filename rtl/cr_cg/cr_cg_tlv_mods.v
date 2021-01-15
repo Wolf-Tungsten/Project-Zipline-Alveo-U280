@@ -58,7 +58,8 @@ module cr_cg_tlv_mods #
   debug_ctl_config, cg_ib_in, cg_ob_in, cg_module_id, cceip_cfg
   );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_cgPKG::*;

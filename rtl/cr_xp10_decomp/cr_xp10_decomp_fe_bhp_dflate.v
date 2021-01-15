@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -13,9 +13,11 @@ module cr_xp10_decomp_fe_bhp_dflate (
    clk, rst_n, deflate_data_in, deflate_data_sof, deflate_data_valid,
    deflate_frm_fmt, deflate_align_bits, deflate_data_eof
    );
+
    import crPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
+   import cr_error_codes::*;
    
    input                     clk;
    input                     rst_n;

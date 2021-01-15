@@ -34,7 +34,8 @@ module cr_prefix_fe_counter
   fe_config_1, fe_config_2, fe_config_3, fe_config_4
   );
              
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

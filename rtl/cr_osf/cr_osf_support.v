@@ -34,7 +34,8 @@ module cr_osf_support
   ob_out, ob_fifo_empty, axi_mstr_rd, debug_ctl_config
   );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_osfPKG::*;

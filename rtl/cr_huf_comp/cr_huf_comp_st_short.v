@@ -37,7 +37,8 @@ module cr_huf_comp_st_short
    st_short_bimc_isync, lvm, mlvm, mrdten
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

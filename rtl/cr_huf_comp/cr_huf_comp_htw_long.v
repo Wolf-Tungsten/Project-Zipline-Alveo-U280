@@ -34,7 +34,8 @@ module cr_huf_comp_htw_long
    hdr_long_hw1_type, hdr_long_hw2_type, long_ism_rdy, sw_ism_on
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

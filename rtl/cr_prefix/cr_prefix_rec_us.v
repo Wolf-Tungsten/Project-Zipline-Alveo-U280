@@ -43,7 +43,8 @@ module cr_prefix_rec_us
   pf_afull, rec_do_prefix
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

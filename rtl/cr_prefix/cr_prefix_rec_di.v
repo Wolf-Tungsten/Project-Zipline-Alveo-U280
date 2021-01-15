@@ -37,7 +37,8 @@ module cr_prefix_rec_di
   rec_us_ld_lr0, rec_us_ld_lr1, rec_act_result
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

@@ -38,7 +38,8 @@ module cr_huf_comp_htw_stsg
    hw_stsg_sym_hi_b, hw_stsg_deflate_mode, hw_stsg_max_sym_table
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

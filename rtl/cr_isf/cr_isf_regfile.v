@@ -49,12 +49,13 @@ module cr_isf_regfile
    ib_bytes_cnt_amt
    );
 
-//`include "cr_structs.sv"
+  //import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
 
 
- import cr_isfPKG::*;
- import cr_isf_regfilePKG::*;
+  import cr_isfPKG::*;
+  import cr_isf_regfilePKG::*;
    
   
   output 			       rbus_ring_t                      rbus_ring_o;

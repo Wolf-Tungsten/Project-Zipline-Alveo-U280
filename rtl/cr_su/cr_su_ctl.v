@@ -42,7 +42,8 @@ module cr_su_ctl
    in_fifo_free_slots, out_fifo_empty, out_fifo_rdata, axi_mstr_rd
    );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 `include "ccx_std.vh"
   

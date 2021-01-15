@@ -9,7 +9,8 @@
 `ifndef __CR_HUF_COMPPKG_SVP
 `define __CR_HUF_COMPPKG_SVP
 `include "cr_global_params.vh"
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
 
 `include "cr_huf_comp.vh"
 package cr_huf_compPKG;

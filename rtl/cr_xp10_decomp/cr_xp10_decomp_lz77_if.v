@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -26,7 +26,7 @@ module cr_xp10_decomp_lz77_if (
    clk, rst_n, mtf_lz_dp_bus, mtf_lz_dp_valid, ep_if_entry_done,
    sw_LZ_BYPASS_CONFIG, ep_if_load_trace_bit, ep_if_trace_bit
    );
-   import crPKG::lz_symbol_bus_t;
+   import cr_structs::lz_symbol_bus_t;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    

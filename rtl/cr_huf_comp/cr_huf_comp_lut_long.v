@@ -30,7 +30,8 @@ module cr_huf_comp_lut_long
    st2_lut2_long_intf, sa_lut_long_intf
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

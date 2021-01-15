@@ -31,7 +31,8 @@ module cr_osf_latency
   clk, rst_n, axi4s_in, axi4s_mstr_rd
   );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_osfPKG::*;

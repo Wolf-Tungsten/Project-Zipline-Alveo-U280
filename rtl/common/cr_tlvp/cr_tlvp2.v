@@ -55,7 +55,8 @@ module cr_tlvp2
   tlvp_ob_rd, bimc_idat, bimc_isync, bimc_rst_n
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

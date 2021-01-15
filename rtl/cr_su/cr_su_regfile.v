@@ -24,7 +24,8 @@ module cr_su_regfile
    su_hb, su_agg_cnt_stb
    );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix  
   import cr_suPKG::*;
   import cr_su_regfilePKG::*;

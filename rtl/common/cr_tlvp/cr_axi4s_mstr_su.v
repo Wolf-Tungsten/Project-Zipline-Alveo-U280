@@ -28,7 +28,8 @@ module cr_axi4s_mstr_su
   clk, rst_n, axi4s_in, axi4s_in_empty, axi4s_in_aempty, axi4s_ob_in
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

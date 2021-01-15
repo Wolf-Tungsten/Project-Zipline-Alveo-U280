@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -211,11 +211,7 @@ typedef enum logic [3:0]
 
 
 
-typedef enum logic [1:0]
-       {DIGEST_64B   = 2'h0, 
-	DIGEST_128B  = 2'h1, 
-	DIGEST_256B  = 2'h2, 
-	DIGEST_0B    = 2'h3} frmd_mac_size_e;
+
 
 
 

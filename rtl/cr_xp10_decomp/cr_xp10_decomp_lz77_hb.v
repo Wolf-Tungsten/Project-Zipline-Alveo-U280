@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -23,7 +23,7 @@ module cr_xp10_decomp_lz77_hb (
    pl_hb_pfx2_in_use, pl_hb_usr_wr, pl_hb_usr_wdata, pl_hb_usr_waddr
    );
    
-   import crPKG::lz_symbol_bus_t;
+   import cr_structs::lz_symbol_bus_t;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    

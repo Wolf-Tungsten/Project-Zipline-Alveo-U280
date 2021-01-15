@@ -26,7 +26,8 @@ module nx_interface_monitor_pipe
    clk, rst_n, ob_out_pre, ob_in, im_rdy
    );
    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 
    input                 clk;
@@ -112,7 +113,8 @@ module nx_interface_monitor_pipe
    clk, rst_n, ob_out_pre, ob_in, im_rdy
    );
    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
    input                 clk;

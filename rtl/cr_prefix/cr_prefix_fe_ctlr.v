@@ -36,7 +36,8 @@ module cr_prefix_fe_ctlr
   clk, rst_n, usr_ib_empty, usr_ib_aempty, usr_ib_tlv
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

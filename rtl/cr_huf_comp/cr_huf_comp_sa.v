@@ -48,8 +48,9 @@ module cr_huf_comp_sa
    lz_be_dp_bus, lz_be_dp_valid, ecc_error
    );
    
-//`include "cr_structs.sv"
-  import cr_structs::*; // grh fix
+   // import cr_native_types::*;
+   import cr_error_codes::*;
+   import cr_structs::*; // grh fix
    
    import cr_huf_compPKG::*;
    import cr_huf_comp_regsPKG::*;

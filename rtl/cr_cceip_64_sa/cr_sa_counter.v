@@ -27,7 +27,8 @@ module cr_sa_counter
   clk, rst_n, sa_event_sel, sa_events, sa_clear, sa_snap
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 
   

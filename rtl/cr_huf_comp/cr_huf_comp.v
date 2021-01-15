@@ -42,7 +42,8 @@ module cr_huf_comp
    im_consumed_he_st_sh, im_consumed_he_st_lng
    );
 
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
    
   import cr_huf_compPKG::*;

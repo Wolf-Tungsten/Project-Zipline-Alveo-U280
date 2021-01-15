@@ -47,7 +47,8 @@ module cr_su_core
    su_in, su_ob_in, dbg_config
    );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_suPKG::*;

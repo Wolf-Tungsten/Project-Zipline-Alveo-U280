@@ -29,7 +29,8 @@ module cr_cddip_support_regfile
   su_int, osf_int, isf_int
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 `include "bimc_master.vh"  
   import cr_cddip_supportPKG::*;

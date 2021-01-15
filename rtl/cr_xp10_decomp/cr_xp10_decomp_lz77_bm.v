@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -31,7 +31,7 @@ module cr_xp10_decomp_lz77_bm (
    ep_bm_copy_length, ep_bm_eof, ep_bm_eof_err_code, ep_bm_eob,
    do_bm_pause
    );
-   import crPKG::lz_symbol_bus_t;
+   import cr_structs::lz_symbol_bus_t;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    

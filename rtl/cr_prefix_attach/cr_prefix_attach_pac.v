@@ -40,7 +40,8 @@ module cr_prefix_attach_pac
   pmc_phd_crc, pmc_pfd_crc, usr_ob_full, usr_ob_afull
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefix_attachPKG::*;

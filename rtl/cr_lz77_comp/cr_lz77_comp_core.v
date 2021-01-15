@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -35,8 +35,8 @@ module cr_lz77_comp_core
    
 `include "cr_lz77_comp_includes.vh"
 
-   import crPKG::LZ77C_eof_FRAME;
-   import crPKG::LZ77C_throttled_FRAME;
+   import cr_native_types::LZ77C_eof_FRAME;
+   import cr_native_types::LZ77C_throttled_FRAME;
 
    
    

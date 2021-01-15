@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -50,8 +50,8 @@ module cr_huf_comp_core
    sw_debug_control, sw_prefix_adj, sw_gzip_os, ism_ecc_error
    );
    
-`include "cr_structs.sv"
-   
+// `include "cr_structs.sv"
+   import cr_structs::*;
    import cr_huf_compPKG::*;
    import cr_huf_comp_regsPKG::*;
    import cr_xp10_decompPKG::*;

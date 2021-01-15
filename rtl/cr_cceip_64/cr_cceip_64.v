@@ -10,9 +10,9 @@
 
 
 
-
-
-
+`include "cr_native_types.svp"
+`include "cr_error_codes.svp"
+`include "cr_structs.svp"
 
 `include "cr_global_params.vh"  
 
@@ -42,7 +42,8 @@ module cr_cceip_64
   );
 
 `include "cr_cceip_64_regs.vh"
-//`include "cr_structs.sv"
+  import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

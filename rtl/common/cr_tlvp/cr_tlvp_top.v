@@ -46,7 +46,8 @@ module cr_tlvp_top
   usr_ob_wr, usr_ob_tlv, axi4s_ob_in
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

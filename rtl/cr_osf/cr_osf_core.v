@@ -72,7 +72,8 @@ module cr_osf_core
   osf_tlv_parse_action_1, reg_addr, wr_stb, osf_module_id
   );
    	    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_osfPKG::*;

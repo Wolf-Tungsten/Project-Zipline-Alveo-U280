@@ -35,7 +35,8 @@ module cr_prefix_rec_alu
   rec_us_neuron_en3, rec_di_coeff, rec_di_neuron, rec_di_neuron_sign
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

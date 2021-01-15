@@ -46,7 +46,8 @@ module cr_axi4s2_slv
    axi4s_slv_bimc_isync, bimc_rst_n
    );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

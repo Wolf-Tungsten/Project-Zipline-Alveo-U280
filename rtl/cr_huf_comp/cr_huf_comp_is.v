@@ -41,7 +41,8 @@ module cr_huf_comp_is
    sc_is_meta, sc_is_seq_id, sc_is_eob, ht_is_not_ready
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

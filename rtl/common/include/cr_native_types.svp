@@ -666,7 +666,7 @@ typedef enum logic [9:0] {
 	CCEIP_STATS_RESERVED=1023
 } cceip_stats_e;
 
-endpackage
+endpackage:cr_native_types
 
 `endif
 

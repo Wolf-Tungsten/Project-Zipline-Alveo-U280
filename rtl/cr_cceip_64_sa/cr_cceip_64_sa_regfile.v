@@ -24,7 +24,8 @@ module cr_cceip_64_sa_regfile
   );
 
 `include "ccx_std.vh" 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
    import cr_structs::*; // grh fix  
    import cr_cceip_64_saPKG::*;
    import cr_cceip_64_sa_regfilePKG::*;

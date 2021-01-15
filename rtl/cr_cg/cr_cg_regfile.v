@@ -24,7 +24,8 @@ module cr_cg_regfile
   rst_n, clk, rbus_ring_i, cfg_start_addr, cfg_end_addr
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix 
   import cr_cgPKG::*;
   import cr_cg_regfilePKG::*;

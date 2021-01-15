@@ -36,8 +36,9 @@ module cr_huf_comp_seq_id_array
    short_st2_hdr_seq_id, long_st1_hdr_seq_id, long_st2_hdr_seq_id
    );
    
-//`include "cr_structs.sv"
-  import cr_structs::*; // grh fix
+   // import cr_native_types::*;
+   import cr_error_codes::*;
+   import cr_structs::*; // grh fix
    
    import cr_huf_compPKG::*;
    import cr_huf_comp_regsPKG::*;

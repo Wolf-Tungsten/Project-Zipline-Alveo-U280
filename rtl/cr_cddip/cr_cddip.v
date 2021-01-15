@@ -39,7 +39,8 @@ module cr_cddip
   );
 
 `include "cr_cddip_regs.vh"
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 
   

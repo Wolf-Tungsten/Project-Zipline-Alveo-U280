@@ -43,7 +43,8 @@ module cr_axi4s_slv
   clk, rst_n, axi4s_ib_in, axi4s_slv_rd
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

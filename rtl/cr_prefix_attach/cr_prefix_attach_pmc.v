@@ -42,7 +42,8 @@ module cr_prefix_attach_pmc
   pac_pfd_check_valid_ack
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefix_attachPKG::*;

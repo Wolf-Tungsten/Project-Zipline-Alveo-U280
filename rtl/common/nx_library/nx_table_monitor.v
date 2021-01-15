@@ -55,7 +55,8 @@ module nx_table_monitor
    im_consumed, tmon_credit_used, table_data, im_config
    );
    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
    
    typedef struct packed {

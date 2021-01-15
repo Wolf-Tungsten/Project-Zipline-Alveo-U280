@@ -44,7 +44,8 @@ module cr_tlvp_spl
   clk, rst_n, tlv_parse_action, tlvp_id_out_valid, tlvp_id_out
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

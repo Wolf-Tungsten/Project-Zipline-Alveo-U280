@@ -34,7 +34,8 @@ module cr_prefix_fe_ctr
   fe_char_in, fe_char_vbytes
   );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;

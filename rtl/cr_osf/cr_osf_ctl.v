@@ -44,7 +44,8 @@ module cr_osf_ctl
   debug_ctl_config
   );
   
-//`include "cr_structs.sv"
+  // import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_osfPKG::*;

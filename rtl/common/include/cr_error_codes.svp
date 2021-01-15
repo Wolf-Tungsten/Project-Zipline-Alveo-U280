@@ -6,7 +6,7 @@
 //
 // *************************************************************************
 
-// 因为只有两个地方使用，就直接展开到对应位置了
+
 `ifndef CR_ERROR_CODES_SVP
 `define CR_ERROR_CODES_SVP
 package cr_error_codes;

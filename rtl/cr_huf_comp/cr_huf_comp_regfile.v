@@ -49,7 +49,8 @@ module cr_huf_comp_regfile
    ecc_error_reg
    );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 `include "bimc_master.vh"   
    import cr_huf_compPKG::*;

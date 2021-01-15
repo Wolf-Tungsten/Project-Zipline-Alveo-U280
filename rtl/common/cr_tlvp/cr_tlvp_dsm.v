@@ -50,7 +50,8 @@ module cr_tlvp_dsm
   tlv_parse_action, module_id, usr_ib_rd, pt_ib_rd
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

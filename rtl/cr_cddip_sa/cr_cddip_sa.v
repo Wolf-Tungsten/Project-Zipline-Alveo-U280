@@ -34,7 +34,8 @@ module cr_cddip_sa
   cg_stat_events, cddip_sa_module_id
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
 
   import cr_cddip_saPKG::*;

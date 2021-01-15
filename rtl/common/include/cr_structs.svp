@@ -13,8 +13,8 @@
 
 // `include "cr_error_codes.svh"
 
-#ifndef CR_STRUCTS_SVP
-#define CR_STRUCTS_SVP
+`ifndef CR_STRUCTS_SVP
+`define CR_STRUCTS_SVP
 
 package cr_structs;
 

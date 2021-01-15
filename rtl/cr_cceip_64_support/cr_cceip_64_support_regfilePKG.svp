@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -223,19 +223,11 @@ typedef enum logic [3:0]
 
 
 
-typedef enum logic [1:0]
-       {RAW        = 2'h1, 
-	PARSEABLE  = 2'h0, 
-	XP10CFH4K  = 2'h2, 
-	XP10CFH8K  = 2'h3} frmd_coding_e;
 
 
 
-typedef enum logic [1:0]
-       {DIGEST_64B   = 2'h0, 
-	DIGEST_128B  = 2'h1, 
-	DIGEST_256B  = 2'h2, 
-	DIGEST_0B    = 2'h3} frmd_mac_size_e;
+
+
 
 
 
@@ -361,6 +353,7 @@ typedef union packed {
     logic                          xp10_decomp_bank_lo;      
   } f;
 } im_available_t;
+
 localparam im_available_t im_available_t_reset 
      = {1'h0, 
 	1'h0, 

@@ -49,7 +49,8 @@ module cr_huf_comp_htb
    sw_ht_force_rebuild, bimc_isync, bimc_idat, lvm, mlvm, mrdten
    );
    	    
-//`include "cr_structs.sv"
+  // import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

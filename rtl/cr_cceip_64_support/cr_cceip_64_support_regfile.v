@@ -34,7 +34,8 @@ module cr_cceip_64_support_regfile
   osf_int, isf_int
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix  
 `include "bimc_master.vh"   
   import cr_cceip_64_supportPKG::*;

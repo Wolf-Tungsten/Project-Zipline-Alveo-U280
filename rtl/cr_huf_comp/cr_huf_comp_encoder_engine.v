@@ -66,7 +66,8 @@ module cr_huf_comp_encoder_engine
    sw_debug_control, sw_force_block_stall
    );
    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
    
    import cr_huf_compPKG::*;

@@ -60,7 +60,8 @@ module cr_fifo_wrap2
   
   
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

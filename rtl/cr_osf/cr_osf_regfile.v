@@ -34,7 +34,8 @@ module cr_osf_regfile
   ob_bytes_cnt_amt, ob_frame_cnt_stb
   );
 
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   import cr_osfPKG::*;
   import cr_osf_regfilePKG::*;

@@ -38,7 +38,8 @@ module cr_huf_comp_sa_tlvp_top
    tlv_parse_action, module_id, term_rd, usr_wr, usr_tlv, axi4s_ob_in
    );
             
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   

@@ -1,8 +1,8 @@
 
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -137,8 +137,8 @@ module cr_lz77_comp_prc
    
    
    logic [5:0]                  bypass_q_credit;
-   cr_lz77_compPKG::tlv_parse_action_e           tlv_action;
-   cr_lz77_compPKG::tlv_parse_action_e           tlv_action_r1;
+   cr_native_types::tlv_parse_action_e           tlv_action;
+   cr_native_types::tlv_parse_action_e           tlv_action_r1;
    logic                        compress_enable;
    logic 			stats_enable;
    tlv_cmd_word_1_t             tlv_cmd_word_1;
@@ -310,7 +310,7 @@ module cr_lz77_comp_prc
          min_mtf_len               <= 1'b0;
          num_mtf                   <= 1'b0;
 	 isXp9                     <= 1'b0;
-         tlv_action_r1             <= cr_lz77_compPKG::MODIFY;
+         tlv_action_r1             <= cr_native_types::MODIFY;
          prc_st                    <= WORD_ZERO_ST;
 	 verify_crc                <= 1'b0;
 	 crc                       <= 32'hffff_ffff;
@@ -353,22 +353,22 @@ module cr_lz77_comp_prc
          if (capture_cmd_word_2_c) begin
             cmd_word_1_done <= 1'b0;
             cmd_w2 <= tlv_cmd_word_2;
-            compress_enable <= (tlv_cmd_word_2.comp_mode != cr_lz77_compPKG::NONE) & ~(tlv_cmd_word_2.comp_mode > cr_lz77_compPKG::CHU8K);
-	    bad_comp_alg    <= (tlv_cmd_word_2.comp_mode >  cr_lz77_compPKG::CHU8K);
+            compress_enable <= (tlv_cmd_word_2.comp_mode != cr_native_types::NONE) & ~(tlv_cmd_word_2.comp_mode > cr_native_types::CHU8K);
+	    bad_comp_alg    <= (tlv_cmd_word_2.comp_mode >  cr_native_types::CHU8K);
 	 end
 	    
          
          if ((!sw_COMPRESSION_CFG.f.mtf_en) ||
-             (cmd_w2.comp_mode == cr_lz77_compPKG::ZLIB) ||
-             (cmd_w2.comp_mode == cr_lz77_compPKG::GZIP)
+             (cmd_w2.comp_mode == cr_native_types::ZLIB) ||
+             (cmd_w2.comp_mode == cr_native_types::GZIP)
              )
            num_mtf <= 1'b0;  
          else
            num_mtf <= 1'b1;  
          
-	 isXp9 <= (cmd_w2.comp_mode == cr_lz77_compPKG::XP9);
+	 isXp9 <= (cmd_w2.comp_mode == cr_native_types::XP9);
 
-         if (cmd_w2.comp_mode == cr_lz77_compPKG::XP9) begin
+         if (cmd_w2.comp_mode == cr_native_types::XP9) begin
             
             min_mtf_len <= 1'b0;
 	 end
@@ -427,11 +427,11 @@ module cr_lz77_comp_prc
 	       bad_max_len  <= check_max_len(cmd_w2.comp_mode,
 					     cmd_w2.lz77_max_symb_len);
 	       
-	       bad_dmw_size <= ( cmd_w2.lz77_dly_match_win == cr_lz77_compPKG::RSV_DLY ) ||
+	       bad_dmw_size <= ( cmd_w2.lz77_dly_match_win == cr_native_types::RSV_DLY ) ||
 			       ( 
-				 ( (cmd_w2.comp_mode == cr_lz77_compPKG::ZLIB) || 
-				   (cmd_w2.comp_mode == cr_lz77_compPKG::GZIP) ) &&
-				 (cmd_w2.lz77_dly_match_win != cr_lz77_compPKG::CHAR_1)
+				 ( (cmd_w2.comp_mode == cr_native_types::ZLIB) || 
+				   (cmd_w2.comp_mode == cr_native_types::GZIP) ) &&
+				 (cmd_w2.lz77_dly_match_win != cr_native_types::CHAR_1)
 				 );
 	    end 
 	    if (lec_prc_lz_error && !lec_prc_lz_error_r) begin
@@ -747,8 +747,8 @@ module cr_lz77_comp_prc
            if (!prs_prc_empty) begin
 
               if (
-                  (tlv_action != cr_lz77_compPKG::MODIFY) ||
-                  ((tlv_action == cr_lz77_compPKG::MODIFY) && i_have_credit)
+                  (tlv_action != cr_native_types::MODIFY) ||
+                  ((tlv_action == cr_native_types::MODIFY) && i_have_credit)
                   ) begin
                  prc_prs_rd_c = 1'b1;
 		 capture_frame_num_c = 1'b1;
@@ -766,7 +766,7 @@ module cr_lz77_comp_prc
 
               end 
               
-              if ((tlv_action == cr_lz77_compPKG::MODIFY) && i_have_credit) begin
+              if ((tlv_action == cr_native_types::MODIFY) && i_have_credit) begin
                  prc_lob_valid_c = 1'b1; 
 
                  
@@ -791,8 +791,8 @@ module cr_lz77_comp_prc
            if (!prs_prc_empty) begin
               
               if (
-                  (tlv_action_r1 != cr_lz77_compPKG::MODIFY) ||
-                  ((tlv_action_r1 == cr_lz77_compPKG::MODIFY) && i_have_credit)
+                  (tlv_action_r1 != cr_native_types::MODIFY) ||
+                  ((tlv_action_r1 == cr_native_types::MODIFY) && i_have_credit)
                   ) begin
                  prc_prs_rd_c = 1'b1;
 
@@ -809,7 +809,7 @@ module cr_lz77_comp_prc
 		  
               end 
 
-              if ((tlv_action_r1 == cr_lz77_compPKG::MODIFY) && i_have_credit) begin
+              if ((tlv_action_r1 == cr_native_types::MODIFY) && i_have_credit) begin
                  
                  prc_lob_valid_c = 1'b1; 
               end
@@ -820,8 +820,8 @@ module cr_lz77_comp_prc
            if (!prs_prc_empty && !prc_lec_fifo_full) begin
               
               if (
-                  (tlv_action_r1 != cr_lz77_compPKG::MODIFY) ||
-                  ((tlv_action_r1 == cr_lz77_compPKG::MODIFY) && i_have_credit)
+                  (tlv_action_r1 != cr_native_types::MODIFY) ||
+                  ((tlv_action_r1 == cr_native_types::MODIFY) && i_have_credit)
                   ) begin
                  prc_prs_rd_c = 1'b1;
                  
@@ -838,7 +838,7 @@ module cr_lz77_comp_prc
 		 
               end 
               
-              if ((tlv_action_r1 == cr_lz77_compPKG::MODIFY) && i_have_credit) begin
+              if ((tlv_action_r1 == cr_native_types::MODIFY) && i_have_credit) begin
                  
                  prc_lob_valid_c = 1'b1; 
               end
@@ -847,7 +847,7 @@ module cr_lz77_comp_prc
 
         COMP_DATA_1_ST : begin
            if (!prs_prc_empty) begin
-              if (tlv_action_r1 != cr_lz77_compPKG::MODIFY) begin
+              if (tlv_action_r1 != cr_native_types::MODIFY) begin
                  
                  prc_prs_rd_c = 1'b1;
                  if (prs_prc_tlv_if.eot)
@@ -900,7 +900,7 @@ module cr_lz77_comp_prc
            
            
            if (!prs_prc_empty) begin
-              if (tlv_action_r1 != cr_lz77_compPKG::MODIFY) begin
+              if (tlv_action_r1 != cr_native_types::MODIFY) begin
                  
                  prc_prs_rd_c = 1'b1;
                  if (prs_prc_tlv_if.eot)
@@ -925,7 +925,7 @@ module cr_lz77_comp_prc
         
         default: begin 
            if (!prs_prc_empty) begin
-              if (tlv_action_r1 != cr_lz77_compPKG::MODIFY) begin
+              if (tlv_action_r1 != cr_native_types::MODIFY) begin
                  
                  prc_prs_rd_c = 1'b1;
                  if (prs_prc_tlv_if.eot)
@@ -950,8 +950,8 @@ module cr_lz77_comp_prc
    
    
    
-   function cr_lz77_compPKG::tlv_parse_action_e get_tlv_action(tlv_types_e typen);
-      cr_lz77_compPKG::tlv_parse_action_e  _action;
+   function cr_native_types::tlv_parse_action_e get_tlv_action(tlv_types_e typen);
+      cr_native_types::tlv_parse_action_e  _action;
       
       
       
@@ -962,84 +962,84 @@ module cr_lz77_comp_prc
       
       
       case(typen)
-	8'd0:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(0  * 2) +: 2]);
-	8'd1:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(1  * 2) +: 2]);
-	8'd2:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(2  * 2) +: 2]);
-	8'd3:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(3  * 2) +: 2]);
-	8'd4:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(4  * 2) +: 2]);
-	8'd5:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(5  * 2) +: 2]);
-	8'd6:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(6  * 2) +: 2]);
-	8'd7:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(7  * 2) +: 2]);
-	8'd8:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(8  * 2) +: 2]);
-	8'd9:    _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(9  * 2) +: 2]);
-	8'd10:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(10 * 2) +: 2]);
-	8'd11:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(11 * 2) +: 2]);
-	8'd12:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(12 * 2) +: 2]);
-	8'd13:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(13 * 2) +: 2]);
-	8'd14:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(14 * 2) +: 2]);
-	8'd15:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(15 * 2) +: 2]);
-	8'd16:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(16 * 2) +: 2]);
-	8'd17:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(17 * 2) +: 2]);
-	8'd18:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(18 * 2) +: 2]);
-	8'd19:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(19 * 2) +: 2]);
-	8'd20:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(20 * 2) +: 2]);
-	8'd21:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(21 * 2) +: 2]);
-	8'd22:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(22 * 2) +: 2]);
-	8'd23:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(23 * 2) +: 2]);
-	8'd24:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(24 * 2) +: 2]);
-	8'd25:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(25 * 2) +: 2]);
-	8'd26:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(26 * 2) +: 2]);
-	8'd27:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(27 * 2) +: 2]);
-	8'd28:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(28 * 2) +: 2]);
-	8'd29:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(29 * 2) +: 2]);
-	8'd30:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(30 * 2) +: 2]);
-	8'd31:   _action = cr_lz77_compPKG::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(31 * 2) +: 2]);
-        default: _action = cr_lz77_compPKG::DELETE;
+	8'd0:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(0  * 2) +: 2]);
+	8'd1:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(1  * 2) +: 2]);
+	8'd2:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(2  * 2) +: 2]);
+	8'd3:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(3  * 2) +: 2]);
+	8'd4:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(4  * 2) +: 2]);
+	8'd5:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(5  * 2) +: 2]);
+	8'd6:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(6  * 2) +: 2]);
+	8'd7:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(7  * 2) +: 2]);
+	8'd8:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(8  * 2) +: 2]);
+	8'd9:    _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(9  * 2) +: 2]);
+	8'd10:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(10 * 2) +: 2]);
+	8'd11:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(11 * 2) +: 2]);
+	8'd12:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(12 * 2) +: 2]);
+	8'd13:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(13 * 2) +: 2]);
+	8'd14:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(14 * 2) +: 2]);
+	8'd15:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(15 * 2) +: 2]);
+	8'd16:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(16 * 2) +: 2]);
+	8'd17:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(17 * 2) +: 2]);
+	8'd18:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(18 * 2) +: 2]);
+	8'd19:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(19 * 2) +: 2]);
+	8'd20:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(20 * 2) +: 2]);
+	8'd21:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(21 * 2) +: 2]);
+	8'd22:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(22 * 2) +: 2]);
+	8'd23:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(23 * 2) +: 2]);
+	8'd24:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(24 * 2) +: 2]);
+	8'd25:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(25 * 2) +: 2]);
+	8'd26:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(26 * 2) +: 2]);
+	8'd27:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(27 * 2) +: 2]);
+	8'd28:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(28 * 2) +: 2]);
+	8'd29:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(29 * 2) +: 2]);
+	8'd30:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(30 * 2) +: 2]);
+	8'd31:   _action = cr_native_types::tlv_parse_action_e'(sw_TLV_PARSE_ACTION[(31 * 2) +: 2]);
+        default: _action = cr_native_types::DELETE;
       endcase 
       return _action;
    endfunction 
    
-   function logic check_win_size(cr_lz77_compPKG::cmd_comp_mode_e comp_mode,
-				 cr_lz77_compPKG::cmd_lz77_win_size_e win_size);
+   function logic check_win_size(cr_native_types::cmd_comp_mode_e comp_mode,
+				 cr_native_types::cmd_lz77_win_size_e win_size);
       logic _error_;
       
-      if (win_size == cr_lz77_compPKG::WIN_32B) 
+      if (win_size == cr_native_types::WIN_32B) 
 	_error_ = 1'b0;
-      else if (win_size > cr_lz77_compPKG::WIN_64K)
+      else if (win_size > cr_native_types::WIN_64K)
 	_error_ = 1'b1;
       else
 	case (comp_mode)
-	  cr_lz77_compPKG::NONE:       _error_ = 1'b0;
-	  cr_lz77_compPKG::ZLIB,
-	    cr_lz77_compPKG::GZIP:     _error_ = (win_size != 
-						  cr_lz77_compPKG::WIN_32K);
-	  cr_lz77_compPKG::XP9:        _error_ = (win_size != 
-						  cr_lz77_compPKG::WIN_64K);
-	  cr_lz77_compPKG::CHU4K:      _error_ = (win_size != 
-						  cr_lz77_compPKG::WIN_4K);
-	  cr_lz77_compPKG::CHU8K:      _error_ = (win_size != 
-						  cr_lz77_compPKG::WIN_8K);
- 	  cr_lz77_compPKG::XP10:       _error_ = (win_size == 
- 						  cr_lz77_compPKG::WIN_32K);
+	  cr_native_types::NONE:       _error_ = 1'b0;
+	  cr_native_types::ZLIB,
+	    cr_native_types::GZIP:     _error_ = (win_size != 
+						  cr_native_types::WIN_32K);
+	  cr_native_types::XP9:        _error_ = (win_size != 
+						  cr_native_types::WIN_64K);
+	  cr_native_types::CHU4K:      _error_ = (win_size != 
+						  cr_native_types::WIN_4K);
+	  cr_native_types::CHU8K:      _error_ = (win_size != 
+						  cr_native_types::WIN_8K);
+ 	  cr_native_types::XP10:       _error_ = (win_size == 
+ 						  cr_native_types::WIN_32K);
 	  
 	  default:                     _error_ = 1'b0; 
 	endcase 
       return _error_;
    endfunction 
    
-   function logic check_max_len(cr_lz77_compPKG::cmd_comp_mode_e comp_mode,
-				cr_lz77_compPKG::cmd_lz77_max_symb_len_e max_len);
+   function logic check_max_len(cr_native_types::cmd_comp_mode_e comp_mode,
+				cr_native_types::cmd_lz77_max_symb_len_e max_len);
       logic _error_;
 
-      if ( (max_len == cr_lz77_compPKG::MIN_MTCH_14) || 
-	   (max_len == cr_lz77_compPKG::LEN_64B) )
+      if ( (max_len == cr_native_types::MIN_MTCH_14) || 
+	   (max_len == cr_native_types::LEN_64B) )
 	_error_ = 1'b0;
       else
 	case (comp_mode)
-	  cr_lz77_compPKG::ZLIB,
-	  cr_lz77_compPKG::GZIP:  _error_ = (max_len == 
-					     cr_lz77_compPKG::LEN_LZ77_WIN);
-	  default :   _error_ = (max_len == cr_lz77_compPKG::LEN_256B);
+	  cr_native_types::ZLIB,
+	  cr_native_types::GZIP:  _error_ = (max_len == 
+					     cr_native_types::LEN_LZ77_WIN);
+	  default :   _error_ = (max_len == cr_native_types::LEN_256B);
 	endcase 
       return _error_;
    endfunction 

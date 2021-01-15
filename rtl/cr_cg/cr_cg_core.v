@@ -27,7 +27,8 @@ module cr_cg_core #
   cg_tlv_parse_action_1, debug_ctl_config, cg_module_id, cceip_cfg
   );
   
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
   import cr_cgPKG::*;

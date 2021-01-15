@@ -64,7 +64,8 @@ module cr_isf_tlv_mods
   xp9_disable, isf_module_id, cceip_cfg
   );
   
-//`include "cr_structs.sv"
+  // import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
   import cr_isfPKG::*;
   import cr_isf_regsPKG::*;
@@ -259,8 +260,8 @@ module cr_isf_tlv_mods
   fmd_int_lip_word6_t                      frmd_int_tdata_w6_lip; 
   fmd_int_app_word6_t                      frmd_int_tdata_w6_app; 
   fmd_int_vm_word12_t                      frmd_int_tdata_w12; 
-  frmd_mac_size_e                          footer_enc_mac_size;
-  frmd_mac_size_e                          footer_raw_mac_size;
+  frmd_mac_size_e                         footer_enc_mac_size;
+  frmd_mac_size_e                          footer_raw_mac_size; // grh fix
   frmd_coding_e                            footer_coding;
   frmd_coding_e                            user_footer_coding;
   isf_fgen_st_e                            fgen_st;

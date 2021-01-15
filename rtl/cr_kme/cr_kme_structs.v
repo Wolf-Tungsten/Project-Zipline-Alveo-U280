@@ -8,7 +8,8 @@
 
 `ifndef CR_KME_STRUCTS_V
 `define CR_KME_STRUCTS_V
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
 package cr_kme_structs // grh fix: wrap in package
 
 import cr_structs::*; 

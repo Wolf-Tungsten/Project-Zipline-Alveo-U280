@@ -43,7 +43,8 @@ module cr_huf_comp_st
    st_ism_rdy, bimc_idat, bimc_isync, lvm, mlvm, mrdten
    );
    	    
-//`include "cr_structs.sv"
+// import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;

@@ -37,7 +37,8 @@ module cr_huf_comp_ph
    short_hw1_ph_intf, short_hw2_ph_intf
    );
    
-//`include "cr_structs.sv"
+import cr_native_types::*;
+import cr_error_codes::*;
   import cr_structs::*; // grh fix
    
    import cr_huf_compPKG::*;

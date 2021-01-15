@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -191,11 +191,11 @@ module cr_xp10_decomp_lz77 (
                                    .lz_mtf_dp_ready     (lz_mtf_dp_ready),
                                    .if_ep_sym           (if_ep_sym),
                                    .if_ep_sym_valid     (if_ep_sym_valid),
-                                   .lane_lit_stb        (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_LANE_1_LITERALS_TOTAL +: 4]), 
-                                   .ptr_stb             (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTRS_TOTAL]), 
-                                   .frm_in_stb          (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_FRM_IN_TOTAL]), 
-                                   .frm_out_stb         (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_FRM_OUT_TOTAL]), 
-                                   .lz77_stall_stb      (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_STALL_TOTAL]), 
+                                   .lane_lit_stb        (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_LANE_1_LITERALS_TOTAL +: 4]), 
+                                   .ptr_stb             (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTRS_TOTAL]), 
+                                   .frm_in_stb          (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_FRM_IN_TOTAL]), 
+                                   .frm_out_stb         (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_FRM_OUT_TOTAL]), 
+                                   .lz77_stall_stb      (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_STALL_TOTAL]), 
                                    
                                    .clk                 (clk),
                                    .rst_n               (rst_n),
@@ -231,19 +231,19 @@ module cr_xp10_decomp_lz77 (
                                    .ep_ag_eof           (ep_ag_eof),
                                    .ep_if_load_trace_bit(ep_if_load_trace_bit),
                                    .ep_if_trace_bit     (ep_if_trace_bit),
-                                   .ptr_256_stb         (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_256_TOTAL]), 
-                                   .ptr_128_stb         (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_128_TOTAL]), 
-                                   .ptr_64_stb          (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_64_TOTAL]), 
-                                   .ptr_32_stb          (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_32_TOTAL]), 
-                                   .ptr_11_stb          (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_11_TOTAL]), 
-                                   .ptr_10_stb          (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_10_TOTAL]), 
-                                   .ptr_9_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_9_TOTAL]), 
-                                   .ptr_8_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_8_TOTAL]), 
-                                   .ptr_7_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_7_TOTAL]), 
-                                   .ptr_6_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_6_TOTAL]), 
-                                   .ptr_5_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_5_TOTAL]), 
-                                   .ptr_4_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_4_TOTAL]), 
-                                   .ptr_3_stb           (xp10_decomp_lz77d_stat_events[crPKG::LZ77D_PTR_LEN_3_TOTAL]), 
+                                   .ptr_256_stb         (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_256_TOTAL]), 
+                                   .ptr_128_stb         (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_128_TOTAL]), 
+                                   .ptr_64_stb          (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_64_TOTAL]), 
+                                   .ptr_32_stb          (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_32_TOTAL]), 
+                                   .ptr_11_stb          (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_11_TOTAL]), 
+                                   .ptr_10_stb          (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_10_TOTAL]), 
+                                   .ptr_9_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_9_TOTAL]), 
+                                   .ptr_8_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_8_TOTAL]), 
+                                   .ptr_7_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_7_TOTAL]), 
+                                   .ptr_6_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_6_TOTAL]), 
+                                   .ptr_5_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_5_TOTAL]), 
+                                   .ptr_4_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_4_TOTAL]), 
+                                   .ptr_3_stb           (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTR_LEN_3_TOTAL]), 
                                    .lz_bytes_decomp     (lz_bytes_decomp[16:0]),
                                    .lz_local_bytes      (lz_local_bytes[16:0]),
                                    .lz_hb_bytes         (lz_hb_bytes[16:0]),
