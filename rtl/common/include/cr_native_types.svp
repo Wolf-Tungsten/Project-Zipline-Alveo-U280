@@ -8,10 +8,10 @@
 
 // grh fix : wrap native types in package
 
-`ifndef CR_NATIVE_TYPES_SVH
-`define CR_NATIVE_TYPES_SVH
+`ifndef CR_NATIVE_TYPES_SVP
+`define CR_NATIVE_TYPES_SVP
 
-package cr_native_types
+package cr_native_types;
 
 typedef enum logic [1:0] {
 	ENET=0,
