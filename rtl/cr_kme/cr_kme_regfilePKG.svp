@@ -13,40 +13,22 @@ package cr_kme_regfilePKG;
 
 
 
-typedef enum logic [1:0]
-       {ENET  = 2'h0, 
-	IPV4  = 2'h1, 
-	IPV6  = 2'h2, 
-	MPLS  = 2'h3} pkt_hdr_e;
 
 
 
-typedef enum logic [3:0]
-       {CMD_SIMPLE  = 4'h0, 
-	COMPND_4K   = 4'h5, 
-	COMPND_8K   = 4'h6, 
-	COMPND_RSV  = 4'hf} cmd_compound_cmd_frm_size_e;
 
 
 
-typedef enum logic 
-       {GUID_NOT_PRESENT  = 1'h0, 
-	GUID_PRESENT      = 1'h1} cmd_guid_present_e;
 
 
 
-typedef enum logic 
-       {CRC_NOT_PRESENT  = 1'h0, 
-	CRC_PRESENT      = 1'h1} cmd_frmd_crc_in_e;
 
 
 
-typedef enum logic [6:0]
-       {CCEIP_FRMD_USER_NULL  = 7'hb, 
-	CCEIP_FRMD_USER_PI16  = 7'hc, 
-	CCEIP_FRMD_USER_PI64  = 7'hd, 
-	CCEIP_FRMD_USER_VM    = 7'he, 
-	CCEIP_TYPE_IN_RSV     = 7'h7f} cceip_cmd_frmd_in_type_e;
+
+
+
+
 
 
 
@@ -93,19 +75,11 @@ typedef enum logic [1:0]
 
 
 
-typedef enum logic [1:0]
-       {NO_CRC         = 2'h0, 
-	CRC_8B_CRC64   = 2'h1, 
-	CRC_8B_CRC64E  = 2'h2, 
-	MD_TYPE_RSV    = 2'h3} cmd_md_type_e;
 
 
 
-typedef enum logic [1:0]
-       {CRC_GEN_VERIFY  = 2'h0, 
-	CRC_RSV1        = 2'h1, 
-	CRC_RSV2        = 2'h2, 
-	CRC_RSV3        = 2'h3} cmd_md_op_e;
+
+
 
 
 
@@ -121,26 +95,11 @@ typedef enum logic
 
 
 
-typedef enum logic [3:0]
-       {NONE      = 4'h0, 
-	ZLIB      = 4'h1, 
-	GZIP      = 4'h2, 
-	XP9       = 4'h3, 
-	XP10      = 4'h4, 
-	CHU4K     = 4'h5, 
-	CHU8K     = 4'h6, 
-	RSV_MODE  = 4'hf} cmd_comp_mode_e;
 
 
 
-typedef enum logic [3:0]
-       {WIN_32B  = 4'h0, 
-	WIN_4K   = 4'h1, 
-	WIN_8K   = 4'h2, 
-	WIN_16K  = 4'h3, 
-	WIN_32K  = 4'h4, 
-	WIN_64K  = 4'h5, 
-	RSV_WIN  = 4'hf} cmd_lz77_win_size_e;
+
+
 
 
 
@@ -152,9 +111,6 @@ typedef enum logic [1:0]
 
 
 
-typedef enum logic 
-       {CHAR_3  = 1'h0, 
-	CHAR_4  = 1'h1} cmd_lz77_min_match_len_e;
 
 
 
@@ -166,96 +122,6 @@ typedef enum logic [1:0]
 
 
 
-typedef enum logic [1:0]
-       {NO_PREFIX      = 2'h0, 
-	USER_PREFIX    = 2'h1, 
-	PREDEF_PREFIX  = 2'h2, 
-	PREDET_HUFF    = 2'h3} cmd_xp10_prefix_mode_e;
-
-
-
-typedef enum logic 
-       {CRC32  = 1'h0, 
-	CRC64  = 1'h1} cmd_xp10_crc_mode_e;
-
-
-
-typedef enum logic [1:0]
-       {FRM          = 2'h0, 
-	FRM_LESS_16  = 2'h1, 
-	INF          = 2'h2, 
-	RSV_THRSH    = 2'h3} cmd_chu_comp_thrsh_e;
-
-
-
-typedef enum logic 
-       {NO_CIPHER  = 1'h0, 
-	CIPHER     = 1'h1} cmd_cipher_mode_e;
-
-
-
-typedef enum logic [3:0]
-       {AUTH_NULL  = 4'h0, 
-	SHA2       = 4'h1, 
-	HMAC_SHA2  = 4'h2, 
-	AUTH_RSVD  = 4'hf} cmd_auth_op_e;
-
-
-
-typedef enum logic [3:0]
-       {CPH_NULL     = 4'h0, 
-	AES_GCM      = 4'h1, 
-	AES_XTS_XEX  = 4'h2, 
-	AES_GMAC     = 4'h3, 
-	CPH_RSVD     = 4'hf} cmd_cipher_op_e;
-
-
-
-typedef enum logic [1:0]
-       {IV_NONE      = 2'h0, 
-	IV_AUX_CMD   = 2'h1, 
-	IV_KEYS      = 2'h2, 
-	IV_AUX_FRMD  = 2'h3} cmd_iv_src_e;
-
-
-
-typedef enum logic [1:0]
-       {IV_SRC  = 2'h0, 
-	IV_RND  = 2'h1, 
-	IV_INC  = 2'h2, 
-	IV_RSV  = 2'h3} cmd_iv_op_e;
-
-
-
-typedef enum logic 
-       {NO_PAD   = 1'h0, 
-	PAD_16B  = 1'h1} cmd_cipher_pad_e;
-
-
-
-typedef enum logic 
-       {DGST_256  = 1'h0, 
-	DGST_64   = 1'h1} cmd_digest_size_e;
-
-
-
-typedef enum logic 
-       {SIMPLE    = 1'h0, 
-	COMPOUND  = 1'h1} rqe_frame_type_e;
-
-
-
-typedef enum logic 
-       {TRACE_OFF  = 1'h0, 
-	TRACE_ON   = 1'h1} rqe_trace_e;
-
-
-
-typedef enum logic [3:0]
-       {RQE_SIMPLE          = 4'h0, 
-	RQE_COMPOUND_4K     = 4'h5, 
-	RQE_COMPOUND_8K     = 4'h6, 
-	RQE_RSV_FRAME_SIZE  = 4'hf} rqe_frame_size_e;
 
 
 
@@ -267,31 +133,28 @@ typedef enum logic [3:0]
 
 
 
-typedef enum logic [1:0]
-       {REP     = 2'h0, 
-	PASS    = 2'h1, 
-	MODIFY  = 2'h2, 
-	DELETE  = 2'h3} tlv_parse_action_e;
 
 
 
-typedef enum logic 
-       {USER  = 1'h0, 
-	TLVP  = 1'h1} tlvp_corrupt_e;
 
 
 
-typedef enum logic 
-       {DATAPATH_CORRUPT  = 1'h0, 
-	FUNCTIONAL_ERROR  = 1'h1} cmd_type_e;
 
 
 
-typedef enum logic [1:0]
-       {SINGLE_ERR        = 2'h0, 
-	CONTINUOUS_ERROR  = 2'h1, 
-	STOP              = 2'h2, 
-	EOT               = 2'h3} cmd_mode_e;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -314,17 +177,9 @@ typedef enum logic [5:0]
 
 
 
-typedef enum logic 
-       {NOOP  = 1'h0, 
-	KDF   = 1'h1} aux_key_op_e;
 
 
 
-typedef enum logic [1:0]
-       {KDF_MODE_GUID        = 2'h0, 
-	KDF_MODE_RGUID       = 2'h1, 
-	KDF_MODE_COMB_GUID   = 2'h2, 
-	KDF_MODE_COMB_RGUID  = 2'h3} aux_kdf_mode_e;
 
 
 

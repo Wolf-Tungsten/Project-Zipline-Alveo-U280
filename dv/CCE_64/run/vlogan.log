@@ -2,7 +2,7 @@ Command: vlogan -work LIB_TOP +vcs+lic+wait -timescale=1ns/1ps -full64 -xlrm uni
 +lint=TFIPC-L +v2k -sverilog -assert svaext -Xrawtokens -f zipline.vlist -l vlogan.log \
 
                          Chronologic VCS (TM)
-         Version L-2016.06_Full64 -- Fri Jan 15 21:29:03 2021
+         Version L-2016.06_Full64 -- Fri Jan 15 21:49:47 2021
                Copyright (c) 1991-2016 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -1417,4 +1417,4 @@ Back to file '/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../.
 Parsing library directory file '/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_lz77_comp/cr_lz77_comp_lpt_xN.v'
 Parsing included file '/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_lz77_comp/cr_lz77_comp.vh'.
 Back to file '/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/dv/CCE_64/run/../../../rtl/cr_lz77_comp/cr_lz77_comp_lpt_xN.v'.
-CPU time: 1.509 seconds to compile
+CPU time: 1.742 seconds to compile

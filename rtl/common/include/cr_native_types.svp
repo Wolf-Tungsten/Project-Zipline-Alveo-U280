@@ -279,6 +279,7 @@ typedef enum logic [1:0] {
 	DELETE=3
 } tlv_parse_action_e;
 
+
 typedef enum logic [0:0] {
 	USER=0,
 	TLVP=1
