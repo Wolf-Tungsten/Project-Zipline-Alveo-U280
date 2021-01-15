@@ -1,10 +1,17 @@
 // *************************************************************************
 //
-// Copyright © Microsoft Corporation. All rights reserved.
-// Copyright © Broadcom Inc. All rights reserved.
+// Copyright ï¿½ Microsoft Corporation. All rights reserved.
+// Copyright ï¿½ Broadcom Inc. All rights reserved.
 // Licensed under the MIT License.
 //
 // *************************************************************************
+
+// grh fix : wrap native types in package
+
+`ifndef CR_NATIVE_TYPES_SVH
+`define CR_NATIVE_TYPES_SVH
+
+package cr_native_types
 
 typedef enum logic [1:0] {
 	ENET=0,
@@ -658,4 +665,8 @@ typedef enum logic [9:0] {
 	HUF_COMP_LZ77D_STALL_STB_TOTAL=980,
 	CCEIP_STATS_RESERVED=1023
 } cceip_stats_e;
+
+endpackage
+
+`endif
 

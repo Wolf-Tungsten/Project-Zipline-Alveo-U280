@@ -1,7 +1,7 @@
 // *************************************************************************
 //
-// Copyright © Microsoft Corporation. All rights reserved.
-// Copyright © Broadcom Inc. All rights reserved.
+// Copyright ï¿½ Microsoft Corporation. All rights reserved.
+// Copyright ï¿½ Broadcom Inc. All rights reserved.
 // Licensed under the MIT License.
 //
 // *************************************************************************
@@ -12,7 +12,11 @@
 
 `include "cr_error_codes.svh"
 
+// grh fix cr_structs
 
+`ifndef CR_STRUCTS_SV
+`define CR_STRUCTS_SV
+package cr_structs
 //Structs for AXI4S Data Path Interfaces
 typedef struct packed {
   logic                          tvalid;
@@ -1079,3 +1083,7 @@ typedef struct packed {
    logic [10:0]     errored_frame_number;
 } ftr_error_t;
 
+endpackage
+`endif
+
+// import cr_structs::*; // grh fix

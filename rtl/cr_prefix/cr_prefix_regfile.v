@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -30,7 +30,8 @@ module cr_prefix_regfile
   rec_ct_addr, rec_ct_cs, rec_psr, tlvp_bimc_odat, tlvp_bimc_osync
   );
 
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
 `include "bimc_master.vh"   
    import cr_prefixPKG::*;
    import cr_prefix_regfilePKG::*;

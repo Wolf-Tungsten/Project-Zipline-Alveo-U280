@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -35,7 +35,8 @@ module cr_axi4s_slv2
   clk, rst_n, axi4s_ib_in, axi4s_slv_rd
   );
 
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
   
   
   

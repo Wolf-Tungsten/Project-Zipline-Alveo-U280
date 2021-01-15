@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -41,7 +41,8 @@ module cr_huf_comp_htw_type_st
    hdr_hw_type, sw_ism_on, st_ism_rdy
    );
    	    
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;
   import cr_huf_comp_regsPKG::*;

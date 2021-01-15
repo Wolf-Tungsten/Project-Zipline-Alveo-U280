@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -27,7 +27,8 @@ module cr_sa_counter
   clk, rst_n, sa_event_sel, sa_events, sa_clear, sa_snap
   );
 
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
 
   
   

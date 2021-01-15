@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -32,7 +32,8 @@ module cr_prefix_fe_cmp
   clk, rst_n, prior_in, prior_in_no_delay, char_in, char_valid,
   use_prior, no_delay, match_val, cmp_type
   );
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;
   import cr_prefix_regsPKG::*;

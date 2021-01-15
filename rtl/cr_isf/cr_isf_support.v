@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -54,7 +54,8 @@ module cr_isf_support
   aux_cmd_match3_ev, ib_frame_cnt_stb, ib_cmd_cnt_stb
   );
   
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
   
   import cr_isfPKG::*;
   import cr_isf_regsPKG::*;

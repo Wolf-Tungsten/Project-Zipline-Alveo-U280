@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -29,7 +29,8 @@ module cr_cddip_support_core
   isf_sup_rqe_rx, pre_cddip_int
   );
    	    
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
       
   import cr_cddip_supportPKG::*;
   import cr_cddip_support_regsPKG::*;

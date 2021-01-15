@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -40,7 +40,8 @@ module cr_prefix_attach_pac
   pmc_phd_crc, pmc_pfd_crc, usr_ob_full, usr_ob_afull
   );
             
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
       
   import cr_prefix_attachPKG::*;
   import cr_prefix_attach_regsPKG::*;

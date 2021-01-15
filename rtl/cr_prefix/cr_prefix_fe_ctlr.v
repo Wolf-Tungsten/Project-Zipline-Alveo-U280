@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -36,7 +36,8 @@ module cr_prefix_fe_ctlr
   clk, rst_n, usr_ib_empty, usr_ib_aempty, usr_ib_tlv
   );
             
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
       
   import cr_prefixPKG::*;
   import cr_prefix_regsPKG::*;

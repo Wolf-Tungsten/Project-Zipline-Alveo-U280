@@ -1,22 +1,17 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
 
+`ifndef CR_KME_STRUCTS_V
+`define CR_KME_STRUCTS_V
+//`include "cr_structs.sv"
+package cr_kme_structs // grh fix: wrap in package
 
-
-
-
-
-
-
-
-
-`include "cr_structs.sv"
-
+import cr_structs::*; 
 
 typedef struct packed {
     logic  [0:0] valid;
@@ -174,4 +169,6 @@ typedef struct packed {
     logic   [1:0] num_iter;
 } kdfstream_cmd_t;
 
+endpackage
 
+`endif

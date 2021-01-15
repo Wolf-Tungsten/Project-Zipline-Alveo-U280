@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -58,7 +58,8 @@ module cr_cg_tlv_mods #
   debug_ctl_config, cg_ib_in, cg_ob_in, cg_module_id, cceip_cfg
   );
   
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
   
   import cr_cgPKG::*;
   import cr_cg_regsPKG::*;

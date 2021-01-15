@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -33,7 +33,7 @@ module cr_cddip_sa_core
   regs_sa_clear_live, regs_sa_ctrl
   );
 
-`include "cr_structs.sv"
+// `include "cr_structs.sv"
 
   import crPKG::*;   
   import cr_cddip_saPKG::*;

@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -30,7 +30,8 @@ module cr_huf_comp_sq
    sq_bimc_rst_n, sa_sq_intf, sm_sq_intf
    );
    
-`include "cr_structs.sv"
+//`include "cr_structs.sv"
+  import cr_structs::*; // grh fix
    
    import cr_huf_compPKG::*;
    import cr_huf_comp_regsPKG::*;
