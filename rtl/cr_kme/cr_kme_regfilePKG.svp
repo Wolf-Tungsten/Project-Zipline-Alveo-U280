@@ -2518,89 +2518,90 @@ localparam bimc_dbgcmd0_t bimc_dbgcmd0_t_reset
 
 
 
-typedef union packed {
-  struct packed {
-    logic [15:0]                     part0;                    
-  } r;
-  struct packed {
-    logic                          cddip3_bank_hi;           
-    logic                          cddip3_bank_lo;           
-    logic                          cddip2_bank_hi;           
-    logic                          cddip2_bank_lo;           
-    logic                          cddip1_bank_hi;           
-    logic                          cddip1_bank_lo;           
-    logic                          cddip0_bank_hi;           
-    logic                          cddip0_bank_lo;           
-    logic                          cceip3_bank_hi;           
-    logic                          cceip3_bank_lo;           
-    logic                          cceip2_bank_hi;           
-    logic                          cceip2_bank_lo;           
-    logic                          cceip1_bank_hi;           
-    logic                          cceip1_bank_lo;           
-    logic                          cceip0_bank_hi;           
-    logic                          cceip0_bank_lo;           
-  } f;
-} im_available_t;
-localparam im_available_t im_available_t_reset 
-     = {1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0};
+// typedef union packed {
+//   struct packed {
+//     logic [15:0]                     part0;                    
+//   } r;
+//   struct packed {
+//     logic                          cddip3_bank_hi;           
+//     logic                          cddip3_bank_lo;           
+//     logic                          cddip2_bank_hi;           
+//     logic                          cddip2_bank_lo;           
+//     logic                          cddip1_bank_hi;           
+//     logic                          cddip1_bank_lo;           
+//     logic                          cddip0_bank_hi;           
+//     logic                          cddip0_bank_lo;           
+//     logic                          cceip3_bank_hi;           
+//     logic                          cceip3_bank_lo;           
+//     logic                          cceip2_bank_hi;           
+//     logic                          cceip2_bank_lo;           
+//     logic                          cceip1_bank_hi;           
+//     logic                          cceip1_bank_lo;           
+//     logic                          cceip0_bank_hi;           
+//     logic                          cceip0_bank_lo;           
+//   } f;
+// } im_available_t;
+
+// localparam im_available_t im_available_t_reset 
+//      = {1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0};
 
 
 
-typedef union packed {
-  struct packed {
-    logic [15:0]                     part0;                    
-  } r;
-  struct packed {
-    logic                          cddip3_bank_hi;           
-    logic                          cddip3_bank_lo;           
-    logic                          cddip2_bank_hi;           
-    logic                          cddip2_bank_lo;           
-    logic                          cddip1_bank_hi;           
-    logic                          cddip1_bank_lo;           
-    logic                          cddip0_bank_hi;           
-    logic                          cddip0_bank_lo;           
-    logic                          cceip3_bank_hi;           
-    logic                          cceip3_bank_lo;           
-    logic                          cceip2_bank_hi;           
-    logic                          cceip2_bank_lo;           
-    logic                          cceip1_bank_hi;           
-    logic                          cceip1_bank_lo;           
-    logic                          cceip0_bank_hi;           
-    logic                          cceip0_bank_lo;           
-  } f;
-} im_consumed_t;
-localparam im_consumed_t im_consumed_t_reset 
-     = {1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0};
+// typedef union packed {
+//   struct packed {
+//     logic [15:0]                     part0;                    
+//   } r;
+//   struct packed {
+//     logic                          cddip3_bank_hi;           
+//     logic                          cddip3_bank_lo;           
+//     logic                          cddip2_bank_hi;           
+//     logic                          cddip2_bank_lo;           
+//     logic                          cddip1_bank_hi;           
+//     logic                          cddip1_bank_lo;           
+//     logic                          cddip0_bank_hi;           
+//     logic                          cddip0_bank_lo;           
+//     logic                          cceip3_bank_hi;           
+//     logic                          cceip3_bank_lo;           
+//     logic                          cceip2_bank_hi;           
+//     logic                          cceip2_bank_lo;           
+//     logic                          cceip1_bank_hi;           
+//     logic                          cceip1_bank_lo;           
+//     logic                          cceip0_bank_hi;           
+//     logic                          cceip0_bank_lo;           
+//   } f;
+// } im_consumed_t;
+// localparam im_consumed_t im_consumed_t_reset 
+//      = {1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0};
 
 
 

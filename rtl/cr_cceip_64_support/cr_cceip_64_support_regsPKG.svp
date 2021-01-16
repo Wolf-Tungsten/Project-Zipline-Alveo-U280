@@ -189,87 +189,87 @@ localparam spare_t spare_t_reset
 
 
 
-typedef struct packed {
-    logic                          he_sh_bl_bank_hi;         
-    logic                          he_sh_bl_bank_lo;         
-    logic                          he_lng_bl_bank_hi;        
-    logic                          he_lng_bl_bank_lo;        
-    logic                          he_st_sh_bl_bank_hi;      
-    logic                          he_st_sh_bl_bank_lo;      
-    logic                          he_st_lng_bl_bank_hi;     
-    logic                          he_st_lng_bl_bank_lo;     
-    logic                          htf_bl_bank_hi;           
-    logic                          htf_bl_bank_lo;           
-    logic                          lz77_comp_bank_hi;        
-    logic                          lz77_comp_bank_lo;        
-    logic                          xp10_comp_bank_hi;        
-    logic                          xp10_comp_bank_lo;        
-    logic                          lz77_decomp_bank_hi;      
-    logic                          lz77_decomp_bank_lo;      
-    logic                          xp10_decomp_bank_hi;      
-    logic                          xp10_decomp_bank_lo;      
-} im_available_t;
-localparam im_available_t im_available_t_reset 
-     = {1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0};
+// typedef struct packed {
+//     logic                          he_sh_bl_bank_hi;         
+//     logic                          he_sh_bl_bank_lo;         
+//     logic                          he_lng_bl_bank_hi;        
+//     logic                          he_lng_bl_bank_lo;        
+//     logic                          he_st_sh_bl_bank_hi;      
+//     logic                          he_st_sh_bl_bank_lo;      
+//     logic                          he_st_lng_bl_bank_hi;     
+//     logic                          he_st_lng_bl_bank_lo;     
+//     logic                          htf_bl_bank_hi;           
+//     logic                          htf_bl_bank_lo;           
+//     logic                          lz77_comp_bank_hi;        
+//     logic                          lz77_comp_bank_lo;        
+//     logic                          xp10_comp_bank_hi;        
+//     logic                          xp10_comp_bank_lo;        
+//     logic                          lz77_decomp_bank_hi;      
+//     logic                          lz77_decomp_bank_lo;      
+//     logic                          xp10_decomp_bank_hi;      
+//     logic                          xp10_decomp_bank_lo;      
+// } im_available_t;
+// localparam im_available_t im_available_t_reset 
+//      = {1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0};
 
 
 
-typedef struct packed {
-    logic                          he_sh_bl_bank_hi;         
-    logic                          he_sh_bl_bank_lo;         
-    logic                          he_lng_bl_bank_hi;        
-    logic                          he_lng_bl_bank_lo;        
-    logic                          he_st_sh_bl_bank_hi;      
-    logic                          he_st_sh_bl_bank_lo;      
-    logic                          he_st_lng_bl_bank_hi;     
-    logic                          he_st_lng_bl_bank_lo;     
-    logic                          htf_bl_bank_hi;           
-    logic                          htf_bl_bank_lo;           
-    logic                          lz77_comp_bank_hi;        
-    logic                          lz77_comp_bank_lo;        
-    logic                          xp10_comp_bank_hi;        
-    logic                          xp10_comp_bank_lo;        
-    logic                          lz77_decomp_bank_hi;      
-    logic                          lz77_decomp_bank_lo;      
-    logic                          xp10_decomp_bank_hi;      
-    logic                          xp10_decomp_bank_lo;      
-} im_consumed_t;
-localparam im_consumed_t im_consumed_t_reset 
-     = {1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0, 
-	1'h0};
+// typedef struct packed {
+//     logic                          he_sh_bl_bank_hi;         
+//     logic                          he_sh_bl_bank_lo;         
+//     logic                          he_lng_bl_bank_hi;        
+//     logic                          he_lng_bl_bank_lo;        
+//     logic                          he_st_sh_bl_bank_hi;      
+//     logic                          he_st_sh_bl_bank_lo;      
+//     logic                          he_st_lng_bl_bank_hi;     
+//     logic                          he_st_lng_bl_bank_lo;     
+//     logic                          htf_bl_bank_hi;           
+//     logic                          htf_bl_bank_lo;           
+//     logic                          lz77_comp_bank_hi;        
+//     logic                          lz77_comp_bank_lo;        
+//     logic                          xp10_comp_bank_hi;        
+//     logic                          xp10_comp_bank_lo;        
+//     logic                          lz77_decomp_bank_hi;      
+//     logic                          lz77_decomp_bank_lo;      
+//     logic                          xp10_decomp_bank_hi;      
+//     logic                          xp10_decomp_bank_lo;      
+// } im_consumed_t;
+// localparam im_consumed_t im_consumed_t_reset 
+//      = {1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0, 
+// 	1'h0};
 
 
 

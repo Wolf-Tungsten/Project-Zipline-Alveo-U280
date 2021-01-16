@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -46,4 +46,4 @@
 -y $RTL_ROOT/cr_su
 -y $RTL_ROOT/mem_wrappers/bimc_master/top
 
-$RTL_ROOT/cr_cddip/cr_cddip.v
+$RTL_ROOT/cr_cddip/cr_cddip.sv
