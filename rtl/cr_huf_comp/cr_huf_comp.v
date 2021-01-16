@@ -189,7 +189,6 @@ import cr_error_codes::*;
       .bypass_reset			(scan_mode),		 
       .test_rst_n			(scan_rst_n));		 
    
-  
 
   generate if (HUF_COMP_STUB == 1)
   begin: huf_comp_stub_start

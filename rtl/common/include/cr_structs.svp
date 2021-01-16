@@ -16,6 +16,9 @@
 `ifndef CR_STRUCTS_SVP
 `define CR_STRUCTS_SVP
 
+`include "cr_native_types.svp"
+`include "cr_error_codes.svp"
+
 package cr_structs;
 
 import cr_native_types::*;

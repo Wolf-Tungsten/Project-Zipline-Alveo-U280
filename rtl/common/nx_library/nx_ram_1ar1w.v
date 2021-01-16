@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -226,7 +226,7 @@ module nx_ram_1ar1w #(parameter
            if (OUT_FLOP) begin
               logic [WIDTH-1:0] dout_r;
               always_ff @(posedge clk) begin
-                 dout_r <= dout_i
+                 dout_r <= dout_i;
               end
               assign ldout = dout_r;
            end

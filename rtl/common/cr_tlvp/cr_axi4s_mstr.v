@@ -18,16 +18,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 `include "axi_reg_slice_defs.vh"
 module cr_axi4s_mstr
   

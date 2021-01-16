@@ -11,6 +11,7 @@
 `define CRPKG_SVP
 
 `include "cr_global_params.vh"
+`include "cr_structs.svp"
 
 package crPKG;
 
