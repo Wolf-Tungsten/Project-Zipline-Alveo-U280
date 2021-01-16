@@ -13,24 +13,6 @@ package cr_lz77_comp_regfilePKG;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 typedef enum logic [6:0]
        {CDDIP_FRMD_INT_APP       = 7'hf, 
 	CDDIP_FRMD_INT_SIP       = 7'h10, 

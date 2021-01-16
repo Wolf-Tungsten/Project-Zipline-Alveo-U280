@@ -6,27 +6,6 @@
 *
 *************************************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `include "crPKG.svp"
 `include "cr_prefix.vh"
 
@@ -43,7 +22,7 @@ module cr_prefix_ibc
   fe_ctr_4_ib_full, fe_ctr_4_ib_afull
   );
             
-  // import cr_native_types::*;
+  import cr_native_types::*;
   import cr_error_codes::*;
   import cr_structs::*; // grh fix
       

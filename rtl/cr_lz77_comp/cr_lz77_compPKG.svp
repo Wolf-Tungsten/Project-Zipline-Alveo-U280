@@ -10,7 +10,7 @@
 
 
 
-
+`include "cr_lz77_comp_pkg_include.vh"
 
 
 package cr_lz77_compPKG;

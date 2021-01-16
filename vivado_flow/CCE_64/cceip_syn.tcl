@@ -23,6 +23,7 @@ $RTL_ROOT/cr_cceip_64_sa
 $RTL_ROOT/cr_su
 $RTL_ROOT/mem_wrappers/bimc_master/top"
 
+read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/cr_cceip_64/*.sv* ]
 read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/common/*.sv* ]
 read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/common/include/*.sv* ]
 read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/common/nx_library/*.sv* ]

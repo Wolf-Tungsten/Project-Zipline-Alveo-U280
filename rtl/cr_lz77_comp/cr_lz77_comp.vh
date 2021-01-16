@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -9,14 +9,11 @@
 
 
 
-
-
-
 `ifndef CR_LZ77_COMP_VH
  `define CR_LZ77_COMP_VH
 
- `include "cr_lz77_comp_regs.vh"
-
+ `include "cr_lz77_comp_regs.vh" 
+ `include "cr_lz77_comp_pkg_include.vh"
  `define WIN_TILES           128
  `define OFFSETS_PER_TILE    512
  `define IN_BYTES            4

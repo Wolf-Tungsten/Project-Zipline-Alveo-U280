@@ -1,37 +1,10 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 `include "crPKG.svp"
 `include "cr_prefix.vh"
@@ -55,7 +28,8 @@ module cr_prefix_core
   tlvp_bimc_idat, tlvp_bimc_isync, bimc_rst_n
   );
             
-  import crPKG::*;    
+  import crPKG::*;   
+  import cr_structs::*; 
   import cr_prefixPKG::*;
   import cr_prefix_regsPKG::*;
   
