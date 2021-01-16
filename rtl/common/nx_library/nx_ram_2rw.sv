@@ -1,55 +1,10 @@
 /*************************************************************************
 *
-* Copyright � Microsoft Corporation. All rights reserved.
-* Copyright � Broadcom Inc. All rights reserved.
+* Copyright � Microsoft Corporation. All rights reserved.
+* Copyright � Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 `include "ccx_std.vh"
@@ -149,23 +104,12 @@ module nx_ram_2rw
      `INFO("%dx%db SPRAM", DEPTH, WIDTH);
 `endif
 
-
-
-   
-      
-
-   
    generate
 
       case ({SPECIALIZE, DEPTH, WIDTH, IN_FLOP, OUT_FLOP, RD_LATENCY})
 
-	
-        
         default : begin : g 
-           
-           
-           
-                
+              
 `ifndef SYNTHESIS
            initial begin
               
@@ -271,7 +215,13 @@ module nx_ram_2rw
            logic [WIDTH-1:0]       dina_i ;
            logic [WIDTH-1:0]       doutb_i;
            logic [WIDTH-1:0]       dinb_i ;
+
+
+
+           // grh: block ram concerned ?
            logic [WIDTH-1:0]       mem[DEPTH];
+
+
 
 
            logic                   writethrough;
@@ -329,11 +279,12 @@ module nx_ram_2rw
                          WIDTH +       
                          DEPTH*WIDTH); 
 `endif
-           
+           // grh fix: multiwrite to single write
            always @(posedge clk) begin
+              // grh 屏蔽 a 的写
               if (_csa && _wea) begin
-                 mem[_adda] <= dina_i;
-                 `DEBUG("Writing %x to %d", dina_i, _adda);
+                 //mem[_adda] <= dina_i;
+                 //`DEBUG("Writing %x to %d", dina_i, _adda);
               end
               if (_csb && _web) begin
                  mem[_addb] <= dinb_i;

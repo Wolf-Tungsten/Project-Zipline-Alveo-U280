@@ -427,6 +427,9 @@ set rt::rc [catch {
     rt::set_parameter synthDebugLog false
     rt::set_parameter printModuleName false
     rt::set_parameter enableSplitFlowPath "./.Xil/Vivado-10954-qqq/"
+    # start of synth.elaboration.rodinMoreOptions ...
+    rt::set_parameter dissolveMemorySizeLimit 1536000
+    # end of synth.elaboration.rodinMoreOptions ...
     set ok_to_delete_rt_tmp true 
     if { [rt::get_parameter parallelDebug] } { 
        set ok_to_delete_rt_tmp false 

@@ -176,7 +176,7 @@ module cr_xp10_decomp_fe_lfa_fifo(
       .addb				(waddr),		 
       .csb				(wr),
       .web				(wr));
-
+// grh fix：a 读 b 写
    assign lfa_ro_uncorrectable_ecc_error_a = 0;
    assign lfa_ro_uncorrectable_ecc_error_b = 0;
    

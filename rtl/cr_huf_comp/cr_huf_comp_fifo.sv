@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -131,7 +131,7 @@ module cr_huf_comp_fifo(
       .csb				(mem_wen),
       .web				(mem_wen));
 
-
+// grh fix: a è¯» b å†™
    
    
    

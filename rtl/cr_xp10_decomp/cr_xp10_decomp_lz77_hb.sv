@@ -336,7 +336,7 @@ module cr_xp10_decomp_lz77_hb (
       .addb				(hb_waddr),		 
       .csb				(hb_wr),
       .web				(hb_wr));
-
+// a 读 b 写
    nx_ram_1r1w #(.DEPTH (64), .WIDTH(128)) prefix0 
      (.rst_n (rst_n),
       .clk (clk),

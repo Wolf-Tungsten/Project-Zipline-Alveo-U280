@@ -566,6 +566,7 @@ else begin : pseudo_dual
       .csb				(csb),
       .web				(web));
 end
+// grh fix：a 读 b 写
 endgenerate   
        
    
