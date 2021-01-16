@@ -19,6 +19,7 @@
 
 
 `include "cr_cddip_support.vh"
+import cr_structs::*; // grh fix
 
 module cr_cddip_support
 

@@ -64,7 +64,7 @@ module cr_isf_tlv_mods
   xp9_disable, isf_module_id, cceip_cfg
   );
   
-  // import cr_native_types::*;
+  import cr_native_types::*;
   import cr_error_codes::*;
   import cr_structs::*; // grh fix
   import cr_isfPKG::*;

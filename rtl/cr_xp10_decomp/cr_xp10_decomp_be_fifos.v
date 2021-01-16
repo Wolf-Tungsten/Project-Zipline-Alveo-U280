@@ -33,6 +33,7 @@ module cr_xp10_decomp_be_fifos (
    sw_LZ_BYPASS_CONFIG, sw_IGNORE_CRC_CONFIG, sw_LZ_DECOMP_OLIMIT,
    cceip_cfg
    );
+   import cr_native_types::*;
    import crPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;

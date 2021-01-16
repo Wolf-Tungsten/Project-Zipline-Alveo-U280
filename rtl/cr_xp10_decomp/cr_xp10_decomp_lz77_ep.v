@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -41,9 +41,12 @@ module cr_xp10_decomp_lz77_ep (
    ag_ep_hb_wr, bm_ep_copy_done, pl_ep_prefix_load, pl_ep_prefix_cnt,
    pl_ep_trace_bit, bm_ep_pause
    );
+
    import crPKG::*;   
    import cr_xp10_decompPKG::*;
-   
+   import cr_native_types::*; // grh fix
+   import cr_error_codes::*;
+
    input                  clk;
    input                  rst_n;
    

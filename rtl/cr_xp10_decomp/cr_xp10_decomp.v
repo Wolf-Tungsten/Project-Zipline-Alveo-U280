@@ -39,6 +39,7 @@ module cr_xp10_decomp
    im_consumed_htf_bl, xp10_decomp_module_id, cceip_cfg
    );
 
+   import cr_native_types::*;
    import crPKG::*;
    import cr_xp10_decompPKG::*;
    import cr_xp10_decomp_regsPKG::*;

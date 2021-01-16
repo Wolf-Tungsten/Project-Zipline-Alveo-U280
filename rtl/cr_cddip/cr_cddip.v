@@ -10,7 +10,9 @@
 
 
 
-
+`include "cr_native_types.svp"
+`include "cr_error_codes.svp"
+`include "cr_structs.svp"
 
 
 

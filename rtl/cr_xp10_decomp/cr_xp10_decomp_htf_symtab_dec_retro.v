@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -20,10 +20,12 @@ module cr_xp10_decomp_htf_symtab_dec_retro (
    i_repeat_count, i_sub_state, i_bl_count, i_bl_index, i_prev_bl,
    i_prev_non_zero_bl, i_state, hdr_bits_data
    );
+
    import crPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
-
+   import cr_error_codes::*;
+   
    parameter BL_PER_CYCLE = 2;
 
    localparam NUM_SPEC_HUFFMAN = (BL_PER_CYCLE-1)*`N_MAX_SMALL_HUFF_BITS+1;

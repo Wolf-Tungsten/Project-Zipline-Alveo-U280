@@ -40,7 +40,7 @@ module cr_prefix_attach_ibp
   usr_ob_afull
   );
             
-  // import cr_native_types::*;
+  import cr_native_types::*;
   import cr_error_codes::*;
   import cr_structs::*; // grh fix
       

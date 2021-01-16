@@ -28,6 +28,7 @@ module cr_xp10_decomp_fe_fhp(
    import cr_xp10_decompPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_error_codes::*;
+   import cr_native_types::*;
    
    input                           clk;
    input                           rst_n;

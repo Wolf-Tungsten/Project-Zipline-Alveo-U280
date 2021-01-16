@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -23,7 +23,7 @@ module cr_xp10_decomp_sdd_ss (
    
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
-   
+   import cr_error_codes::*;
    
    
    

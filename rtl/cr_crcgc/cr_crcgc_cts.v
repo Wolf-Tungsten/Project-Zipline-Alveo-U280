@@ -43,7 +43,7 @@ module cr_crcgc_cts #
   crc64e, gzipcrc32, crc16t, adler32
   );
             
-  // import cr_native_types::*;
+  import cr_native_types::*;
   import cr_error_codes::*;
   import cr_structs::*; // grh fix
       

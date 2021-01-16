@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -45,10 +45,12 @@ module cr_xp10_decomp_htf_symtab_dec (
 
    localparam XP_BL_WIDTH = $clog2(`N_MAX_XP_HUFF_BITS);
    localparam MAX_BL_PER_CYCLE = `MAX(BL_PER_CYCLE, SMALL_BL_PER_CYCLE);
-
+   
+   import cr_native_types::*; // grh fix
    import crPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
+   import cr_error_codes::*;
 
 `ifndef SYNTHESIS
    initial begin

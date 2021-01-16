@@ -42,7 +42,7 @@ build_simv: zipline.vlist
 
 run_simv:
 ifeq ($(shell test -e simv && echo -n yes),yes)
-	simv -assert nopostproc $(ENV_PLUSARGS) +TESTNAME=${TESTNAME} +SEED=${SEED} | tee $(SEED).${TESTNAME}_sv.log 
+	./simv -assert nopostproc $(ENV_PLUSARGS) +TESTNAME=${TESTNAME} +SEED=${SEED} | tee $(SEED).${TESTNAME}_sv.log 
 else
 	echo !!!WARNING!!!  Must build simv first
 endif

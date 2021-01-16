@@ -54,7 +54,7 @@ module cr_isf_support
   aux_cmd_match3_ev, ib_frame_cnt_stb, ib_cmd_cnt_stb
   );
   
-  //import cr_native_types::*;
+  import cr_native_types::*;
   import cr_error_codes::*;
   import cr_structs::*; // grh fix
   
