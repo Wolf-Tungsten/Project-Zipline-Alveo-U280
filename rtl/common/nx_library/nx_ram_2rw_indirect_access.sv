@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -59,7 +59,8 @@ module nx_ram_2rw_indirect_access
     OUT_FLOP=0,
     RD_LATENCY=1,
     SW_RD_PORT=0,
-    SW_WR_PORT=0
+    SW_WR_PORT=0, // grh fix
+    LATCH=0,
     parameter [`BIT_VEC(N_DATA_BITS)] RESET_DATA=0)
    (input logic                             clk,
     input logic 			    rst_n,

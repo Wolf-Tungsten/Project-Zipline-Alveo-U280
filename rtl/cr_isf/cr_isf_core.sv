@@ -9,15 +9,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+`include "cr_isf.vh" // grh fix
 
 
 module cr_isf_core 

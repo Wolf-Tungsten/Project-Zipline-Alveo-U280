@@ -1,0 +1,6 @@
+*/.Xil/
+dv/CCE_64/run/csrc/
+dv/CCE_64/run/LIB_TOP/
+dv/CCE_64/run/simv.daidir/
+*.vdb
+*.log

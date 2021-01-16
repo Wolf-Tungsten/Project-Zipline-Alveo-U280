@@ -8,23 +8,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`include "cr_osf.vh"
 
 
 module cr_osf_dbg2fifo_ctl

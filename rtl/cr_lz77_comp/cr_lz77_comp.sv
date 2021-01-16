@@ -1,18 +1,10 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
-
-
-
-
-  
-
-
-
 
 `include "ccx_std.vh"
 `include "cr_lz77_comp_pkg_include.vh"
