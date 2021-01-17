@@ -10,3 +10,6 @@
 # Journal file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/vivado.jou
 #-----------------------------------------------------------
 source cceip_syn.tcl
+source ./cceip_syn.tcl 
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl

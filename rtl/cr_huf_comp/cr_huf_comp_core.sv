@@ -769,7 +769,7 @@ module cr_huf_comp_core
       .fhp_lz_prefix_valid		(fhp_lz_prefix_valid),
       .fhp_lz_prefix_dp_bus		(fhp_lz_prefix_dp_bus),
       .fhp_lz_dbg_data_valid		(1'd0),			 
-      .fhp_lz_dbg_data_bus		(64'd0),		 
+      .fhp_lz_dbg_data_bus		(64'b0),	// grh fixed: 未宽不对	 
       .mtf_lz_dp_valid			(mtf_lz_dp_valid),
       .mtf_lz_dp_bus			(mtf_lz_dp_bus),
       .be_lz_dp_ready			(be_lz_dp_ready),
