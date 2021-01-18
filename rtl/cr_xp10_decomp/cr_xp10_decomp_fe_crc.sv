@@ -13,6 +13,7 @@ module cr_xp10_decomp_fe_crc (
    );
 
    import crPKG::*;
+   import cr_structs::*;
    import cr_xp10_decompPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_error_codes::*;

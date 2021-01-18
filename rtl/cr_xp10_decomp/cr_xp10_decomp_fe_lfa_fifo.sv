@@ -16,6 +16,7 @@ module cr_xp10_decomp_fe_lfa_fifo(
    );
    
    import crPKG::*;
+   import cr_structs::*;
    import cr_xp10_decompPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_error_codes::*;

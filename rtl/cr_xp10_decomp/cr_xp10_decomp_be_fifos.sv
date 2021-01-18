@@ -35,6 +35,7 @@ module cr_xp10_decomp_be_fifos (
    );
    import cr_native_types::*;
    import crPKG::*;
+   import cr_structs::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    import cr_error_codes::*;
