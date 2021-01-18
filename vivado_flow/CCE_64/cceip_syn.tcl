@@ -48,5 +48,5 @@ read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/cr_su/*.sv* ]
 read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/mem_wrappers/bimc_master/top/*.sv* ]
 read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/cr_lz77_comp/*.sv* ]
 
-synth_design -top cr_lz77_comp -part xcu280-fsvh2892-2L-e -include $INCLUDE_PATH \
+synth_design -top cr_cceip_64 -part xcu280-fsvh2892-2L-e -include $INCLUDE_PATH \
 -verilog_define ENA_BIMC -verilog_define SYNTHESIS

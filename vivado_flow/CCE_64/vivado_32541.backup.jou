@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan 18 09:12:04 2021
+# Process ID: 32541
+# Current directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64
+# Command line: vivado -mode tcl -source ./cceip_syn.tcl
+# Log file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/vivado.log
+# Journal file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/vivado.jou
+#-----------------------------------------------------------
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl 
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
+source ./cceip_syn.tcl
