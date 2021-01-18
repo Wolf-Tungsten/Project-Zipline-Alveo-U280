@@ -28,6 +28,7 @@ module cr_xp10_decomp_lz77 (
    be_lz_dp_ready, sw_LZ_BYPASS_CONFIG
    );
 
+   import cr_structs::*;
    import crPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;

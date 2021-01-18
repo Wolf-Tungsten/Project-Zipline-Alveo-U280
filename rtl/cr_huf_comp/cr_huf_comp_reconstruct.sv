@@ -27,7 +27,7 @@ module cr_huf_comp_reconstruct (
    be_lz_dp_ready, sw_LZ_BYPASS_CONFIG
    );
 
-   import cr_structs::lz_symbol_bus_t;
+   import cr_structs::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    
@@ -147,7 +147,7 @@ module cr_huf_comp_reconstruct (
       .fhp_lz_prefix_valid		(fhp_lz_prefix_valid),
       .fhp_lz_prefix_dp_bus		(fhp_lz_prefix_dp_bus),
       .fhp_lz_dbg_data_valid		(fhp_lz_dbg_data_valid),
-      .fhp_lz_dbg_data_bus		(fhp_lz_dbg_data_bus),
+      .fhp_lz_dbg_data_bus		(fhp_lz_dbg_data_bus), 
       .mtf_lz_dp_valid			(mtf_lz_dp_valid),
       .mtf_lz_dp_bus			(mtf_lz_dp_bus),
       .be_lz_dp_ready			(be_lz_dp_ready),
