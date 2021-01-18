@@ -276,9 +276,79 @@ module cr_xp10_decomp_sdd_ld (
          
          v_s1_buf_idx = r_s1_buf_idx[`LOG_VEC(N_SDD_BIT_BUF_WORDS)];
          v_bit_buf = {2{r_bit_buf}};
-         v_bit_buf[v_s1_buf_idx +: 4] = pipe_src_data[N].meta.data; 
-         v_bit_buf[v_s1_buf_idx+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+
+         // v_bit_buf[v_s1_buf_idx +: 4] = pipe_src_data[N].meta.data; 
+         case (v_s1_buf_idx)
+            0: v_bit_buf[0 +: 4] = pipe_src_data[N].meta.data; 
+            1: v_bit_buf[1 +: 4] = pipe_src_data[N].meta.data; 
+            2: v_bit_buf[2 +: 4] = pipe_src_data[N].meta.data; 
+            3: v_bit_buf[3 +: 4] = pipe_src_data[N].meta.data; 
+            4: v_bit_buf[4 +: 4] = pipe_src_data[N].meta.data; 
+            5: v_bit_buf[5 +: 4] = pipe_src_data[N].meta.data; 
+            6: v_bit_buf[6 +: 4] = pipe_src_data[N].meta.data; 
+            7: v_bit_buf[7 +: 4] = pipe_src_data[N].meta.data; 
+            8: v_bit_buf[8 +: 4] = pipe_src_data[N].meta.data; 
+            9: v_bit_buf[9 +: 4] = pipe_src_data[N].meta.data; 
+            10: v_bit_buf[10 +: 4] = pipe_src_data[N].meta.data; 
+            11: v_bit_buf[11 +: 4] = pipe_src_data[N].meta.data; 
+            12: v_bit_buf[12 +: 4] = pipe_src_data[N].meta.data; 
+            13: v_bit_buf[13 +: 4] = pipe_src_data[N].meta.data; 
+            14: v_bit_buf[14 +: 4] = pipe_src_data[N].meta.data; 
+            15: v_bit_buf[15 +: 4] = pipe_src_data[N].meta.data; 
+            16: v_bit_buf[16 +: 4] = pipe_src_data[N].meta.data; 
+            17: v_bit_buf[17 +: 4] = pipe_src_data[N].meta.data; 
+            18: v_bit_buf[18 +: 4] = pipe_src_data[N].meta.data; 
+            19: v_bit_buf[19 +: 4] = pipe_src_data[N].meta.data;
+            20: v_bit_buf[20 +: 4] = pipe_src_data[N].meta.data; 
+            21: v_bit_buf[21 +: 4] = pipe_src_data[N].meta.data; 
+            22: v_bit_buf[22 +: 4] = pipe_src_data[N].meta.data; 
+            23: v_bit_buf[23 +: 4] = pipe_src_data[N].meta.data; 
+            24: v_bit_buf[24 +: 4] = pipe_src_data[N].meta.data; 
+            25: v_bit_buf[25 +: 4] = pipe_src_data[N].meta.data; 
+            26: v_bit_buf[26 +: 4] = pipe_src_data[N].meta.data; 
+            27: v_bit_buf[27 +: 4] = pipe_src_data[N].meta.data; 
+            28: v_bit_buf[28 +: 4] = pipe_src_data[N].meta.data; 
+            29: v_bit_buf[29 +: 4] = pipe_src_data[N].meta.data;
+            default: v_bit_buf[30 +: 4] = pipe_src_data[N].meta.data;
+         endcase
+
+         // v_bit_buf[v_s1_buf_idx+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+         case (v_s1_buf_idx)
+            0: v_bit_buf[0+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            1: v_bit_buf[1+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            2: v_bit_buf[2+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            3: v_bit_buf[3+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            4: v_bit_buf[4+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            5: v_bit_buf[5+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            6: v_bit_buf[6+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            7: v_bit_buf[7+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            8: v_bit_buf[8+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            9: v_bit_buf[9+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            10: v_bit_buf[10+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            11: v_bit_buf[11+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            12: v_bit_buf[12+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            13: v_bit_buf[13+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            14: v_bit_buf[14+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            15: v_bit_buf[15+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            16: v_bit_buf[16+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            17: v_bit_buf[17+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            18: v_bit_buf[18+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            19: v_bit_buf[19+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            20: v_bit_buf[20+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            21: v_bit_buf[21+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            22: v_bit_buf[22+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            23: v_bit_buf[23+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            24: v_bit_buf[24+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            25: v_bit_buf[25+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            26: v_bit_buf[26+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            27: v_bit_buf[27+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            28: v_bit_buf[28+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data; 
+            29: v_bit_buf[29+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data;
+            default: v_bit_buf[30+N_SDD_BIT_BUF_WORDS +: 4] = pipe_src_data[N].meta.data;
+         endcase
+
          c_bit_buf = v_bit_buf[N_SDD_BIT_BUF_WORDS +: N_SDD_BIT_BUF_WORDS];
+
          if (v_s1_buf_idx == (N_SDD_BIT_BUF_WORDS-1)) begin
             c_s1_buf_idx = 0;
             c_s1_buf_idx[$bits(c_s1_buf_idx)-1] = ~r_s1_buf_idx[$bits(c_s1_buf_idx)-1];

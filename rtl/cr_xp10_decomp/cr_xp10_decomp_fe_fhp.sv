@@ -24,6 +24,7 @@ module cr_xp10_decomp_fe_fhp(
    lz_fhp_dbg_data_ready, lfa_fhp_sof_ready, lfa_fhp_dp_ready
    );
    
+   import cr_structs::*;
    import crPKG::*;
    import cr_xp10_decompPKG::*;
    import cr_xp10_decomp_regsPKG::*;

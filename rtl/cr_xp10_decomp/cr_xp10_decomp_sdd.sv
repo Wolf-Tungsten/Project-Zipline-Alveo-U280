@@ -28,6 +28,7 @@ module cr_xp10_decomp_sdd (
    parameter FPGA_MOD=0;
 
    import cr_native_types::*;
+   import cr_structs::*;
    import crPKG::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;

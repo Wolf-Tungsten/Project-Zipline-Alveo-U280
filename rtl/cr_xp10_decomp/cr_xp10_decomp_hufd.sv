@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -41,6 +41,7 @@ module cr_xp10_decomp_hufd
    );
    
    import crPKG::*;
+   import cr_structs::*;
    import cr_xp10_decomp_regsPKG::*;
    import cr_xp10_decompPKG::*;
    

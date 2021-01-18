@@ -14,6 +14,7 @@ module cr_xp10_decomp_fe_tlvp (
    sw_TLVP_ACTION_CFG0, sw_TLVP_ACTION_CFG1, xp10_decomp_module_id
    );
 
+   import cr_structs::*;
    import crPKG::*;
    import cr_xp10_decompPKG::*;
    import cr_xp10_decomp_regsPKG::*;
