@@ -51,8 +51,8 @@ read_verilog -library CCEIP_LIB -sv -verbose [ glob $RTL_ROOT/cr_lz77_comp/*.sv*
 synth_design -top cr_cceip_64 -part xcu280-fsvh2892-2L-e -include $INCLUDE_PATH \
 -verilog_define ENA_BIMC -verilog_define SYNTHESIS
 
-write_checkpoint -force $OUTPUT_DIR/post_synth.dcp
+write_checkpoint -force $OUTPUT_DIR/slim_post_synth.dcp
 
-report_timing_summary -file $OUTPUT_DIR/post_synth_timing_summary.rpt
+report_timing_summary -file $OUTPUT_DIR/slim_post_synth_timing_summary.rpt
 
-report_utilization -file $OUTPUT_DIR/post_synth_util.rpt
+report_utilization -file $OUTPUT_DIR/slim_post_synth_util.rpt

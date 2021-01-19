@@ -7,3 +7,4 @@ vivado.jou
 .Xil/
 simv
 vivado_flow/CCE_64/out/
+*.jou

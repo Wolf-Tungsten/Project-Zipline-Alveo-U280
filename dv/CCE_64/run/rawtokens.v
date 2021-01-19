@@ -3156,13 +3156,13 @@ endpackage:cr_structs
 
 module cr_cceip_64
 #(parameter 
-  PREFIX_STUB = 0,
-  PREFIX_ATTACH_STUB = 0,
+  PREFIX_STUB = 1,
+  PREFIX_ATTACH_STUB = 1,
   CR_LZ77_COMPRESSOR_STUB = 0,
   LZ77_COMP_SHORT_WINDOW = 0,
   HUF_COMP_STUB = 0,
-  XP10_DECOMP_STUB = 0,
-  SINGLE_PIPE = 0,
+  XP10_DECOMP_STUB = 1,
+  SINGLE_PIPE = 1,
   FPGA_MOD   = 0
   ) 
 (
@@ -4048,7 +4048,7 @@ module cr_cceip_64
   
 
    
-
+ 
   cr_cg #
   (
    .STUB_MODE(STUB_MODE)

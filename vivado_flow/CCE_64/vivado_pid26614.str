@@ -1,0 +1,572 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 26614
+License: Customer
+
+Current time: 	Tue Jan 19 18:53:33 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 3.10.0-1160.2.2.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: localhost:10.0
+Screen size: 1440x876
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gaoruihao
+User home directory: /home/gaoruihao
+User working directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /nvme0n1/Applications/Xilinx2020.1/Vivado
+HDI_APPROOT: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+RDI_DATADIR: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data
+RDI_BINDIR: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/gaoruihao/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/gaoruihao/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/gaoruihao/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/vivado.log
+Vivado journal file location: 	/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-26614-qqq
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_SDK: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_VITIS: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_VIVADO: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_VIVADO_HLS: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	228 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,660 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 5,660 MB. GUI used memory: 60 MB. Current time: 1/19/21, 6:53:34 PM CST
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_CHECKPOINT, "Open..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_CHECKPOINT
+setFileChooser("/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/out/slim_post_synth.dcp");
+// [GUI Memory]: 80 MB (+81591kb) [00:09:38]
+// [Engine Memory]: 5,662 MB (+5785512kb) [00:09:38]
+// bz (cs):  Open Checkpoint : addNotify
+// Tcl Message: open_checkpoint /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/out/slim_post_synth.dcp 
+// Tcl Message: Command: open_checkpoint /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/out/slim_post_synth.dcp 
+// Tcl Message:  Starting open_checkpoint Task  Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 7235.812 ; gain = 0.000 ; free physical = 26914 ; free virtual = 97429 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1194 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data/ip'. 
+// [GUI Memory]: 119 MB (+36953kb) [00:09:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,698 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:03:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,547 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:03:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,622 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:04:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,722 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:04:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,814 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:04:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,860 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:05:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,906 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:05:39 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,956 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:05:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,132 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:06:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,273 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:06:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,412 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:06:49 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,518 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:07:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,641 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:07:24 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,827 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:07:54 PM CST
+// [Engine Memory]: 7,881 MB (+2030365kb) [00:14:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 8,022 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:08:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 8,237 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:08:39 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 8,320 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:08:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 8,439 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:09:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 8,556 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:09:39 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 8,696 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:09:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 8,869 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:10:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 9,216 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:10:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 9,611 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:10:49 PM CST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 10,117 MB (+1931370kb) [00:17:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 10,117 MB. GUI used memory: 63 MB. Current time: 1/19/21, 7:11:13 PM CST
+// Xgd.load filename: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data/parts/xilinx/virtexuplusHBM/devint/virtexuplusHBM/xcu280/xcu280.xgd; ZipEntry: xcu280_floorplan.xgd elapsed time: 0.6s
+// [GUI Memory]: 140 MB (+14901kb) [00:17:55]
+// Xgd.load filename: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data/parts/xilinx/virtexuplusHBM/devint/virtexuplusHBM/xcu280/xcu280.xgd; ZipEntry: xcu280_detail.xgd elapsed time: 3.1s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 3.7s
+// [GUI Memory]: 230 MB (+87086kb) [00:17:58]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 250 MB (+8796kb) [00:18:03]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  5989 ms.
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 10191.707 ; gain = 45.594 ; free physical = 23493 ; free virtual = 94008 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 191786 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 26 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.28 . Memory (MB): peak = 11689.250 ; gain = 0.000 ; free physical = 22488 ; free virtual = 93003 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [Project 1-604] Checkpoint was created with Vivado v2020.1 (64-bit) build 2902540 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// Device view-level: 0.0
+// [GUI Memory]: 262 MB (+288kb) [00:18:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  1551 ms.
+// Tcl Message: open_checkpoint: Time (s): cpu = 00:04:55 ; elapsed = 00:08:27 . Memory (MB): peak = 11785.305 ; gain = 4551.492 ; free physical = 21872 ; free virtual = 92387 
+// OpenCheckpoint: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/out/slim_post_synth.dcp elapsed time: 508.6s
+// Project name: project_slim_post_synth; location: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vivado_flow/CCE_64/out; part: xcu280-fsvh2892-2L-e
+// 'd' command handler elapsed time: 518 seconds
+// Elapsed time: 509 seconds
+dismissDialog("Open Checkpoint"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 10,538 MB. GUI used memory: 189 MB. Current time: 1/19/21, 7:11:34 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 23.8s
+// Device view-level: 0.1
+// HMemoryUtils.trashcanNow. Engine heap size: 10,754 MB. GUI used memory: 189 MB. Current time: 1/19/21, 7:11:49 PM CST
+// [Engine Memory]: 10,754 MB (+136950kb) [00:19:16]
+// Elapsed time: 70 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION, "Report Utilization..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cs): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (cs)
+// bz (cs):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 10,838 MB. GUI used memory: 189 MB. Current time: 1/19/21, 7:12:49 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 10,902 MB. GUI used memory: 189 MB. Current time: 1/19/21, 7:13:04 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 11,435 MB. GUI used memory: 189 MB. Current time: 1/19/21, 7:13:24 PM CST
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [Engine Memory]: 11,487 MB (+204816kb) [00:20:04]
+// [GUI Memory]: 276 MB (+785kb) [00:20:06]
+// [GUI Memory]: 291 MB (+879kb) [00:20:08]
+// [GUI Memory]: 306 MB (+399kb) [00:20:09]
+// [GUI Memory]: 321 MB (+146kb) [00:20:10]
+// [GUI Memory]: 338 MB (+424kb) [00:20:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 11,856 MB. GUI used memory: 230 MB. Current time: 1/19/21, 7:13:40 PM CST
+// [Engine Memory]: 12,179 MB (+123248kb) [00:20:22]
+// [GUI Memory]: 358 MB (+3041kb) [00:20:35]
+// RouteApi::initDelayMediator elapsed time: 152.4s
+// HMemoryUtils.trashcanNow. Engine heap size: 12,323 MB. GUI used memory: 258 MB. Current time: 1/19/21, 7:14:00 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2194 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: report_utilization: Time (s): cpu = 00:02:46 ; elapsed = 00:01:17 . Memory (MB): peak = 13896.410 ; gain = 1465.477 ; free physical = 19839 ; free virtual = 90355 
+// Elapsed time: 78 seconds
+dismissDialog("Report Utilization"); // bz (cs)
+// Elapsed time: 43 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "cr_cceip_64 ; 1349768 ; 392417 ; 13977 ; 172939 ; 75709 ; 1889 ; 21 ; 278 ; 12", 0, "1349768", 1, true); // z (J, cs) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (J, cs)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic]", 2, true); // l (J, cs) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs]", 7, true); // l (J, cs) - Node
+// Device view-level: 0.0
+// PAPropertyPanels.initPanels (u_cr_huf_comp (cr_huf_comp)) elapsed time: 4.4s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  4433 ms.
+expandTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+expandTreeTable((HResource) null, "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2); // L (J, cs)
+collapseTreeTable((HResource) null, "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2); // L (J, cs)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l (J, cs)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (J, cs)
+// Elapsed time: 21 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers]", 12, true); // l (J, cs) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic]", 2, true); // l (J, cs) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs]", 7, true); // l (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3); // L (J, cs)
+collapseTreeTable((HResource) null, "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3); // L (J, cs)
+expandTreeTable((HResource) null, "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true, false, false, false, false, true); // L (J, cs) - Double Click - Node
+collapseTreeTable((HResource) null, "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3); // L (J, cs)
+// PAPropertyPanels.initPanels (u_cr_prefix (cr_prefix)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 4, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+// Elapsed time: 14 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix_attach (cr_prefix_attach) ; 16251", 5, "u_cr_prefix_attach (cr_prefix_attach)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_cceip_64_sa (cr_cceip_64_sa) ; 16067", 6, "u_cr_cceip_64_sa (cr_cceip_64_sa)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_crcc0 (cr_crcgc) ; 2245", 12, "u_cr_crcc0 (cr_crcgc)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "Leaf Cells (1726) ; 1726", 14, "Leaf Cells (1726)", 0, false); // L (J, cs)
+// Elapsed time: 20 seconds
+expandTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTableHeader("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "Used", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core) ; 569138", 2, "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core) ; 569138", 2); // L (J, cs)
+expandTreeTable((HResource) null, "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3); // L (J, cs)
+expandTreeTable((HResource) null, "all_enabled.is_short (cr_huf_comp_is_short) ; 131674", 4); // L (J, cs)
+// PAPropertyPanels.initPanels (insert_sort (cr_huf_comp_is__parameterized0)) elapsed time: 0.5s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5, "insert_sort (cr_huf_comp_is__parameterized0)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "all_enabled.tb_short (cr_huf_comp_htb_short) ; 100732", 6); // L (J, cs)
+expandTreeTable((HResource) null, "tree_builder_inst1 (cr_huf_comp_htb__parameterized0_5637) ; 100725", 7); // L (J, cs)
+collapseTreeTable((HResource) null, "tree_builder_inst1 (cr_huf_comp_htb__parameterized0_5637) ; 100725", 7); // L (J, cs)
+expandTreeTable((HResource) null, "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5); // L (J, cs)
+collapseTreeTable((HResource) null, "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5, "insert_sort (cr_huf_comp_is__parameterized0)", 0, true, false, false, false, false, true); // L (J, cs) - Double Click - Node
+// PAPropertyPanels.initPanels (all_enabled.is_short (cr_huf_comp_is_short)) elapsed time: 0.5s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "all_enabled.is_short (cr_huf_comp_is_short) ; 131674", 4, "all_enabled.is_short (cr_huf_comp_is_short)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "all_enabled.is_short (cr_huf_comp_is_short) ; 131674", 4, "all_enabled.is_short (cr_huf_comp_is_short)", 0, true); // L (J, cs) - Node
+// PAPropertyPanels.initPanels (u_encoder_engine (cr_huf_comp_encoder_engine)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "cr_xp10_decomp_mtf (cr_xp10_decomp_mtf) ; 414", 13, "cr_xp10_decomp_mtf (cr_xp10_decomp_mtf)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_huf_comp_regfile (cr_huf_comp_regfile) ; 6515", 15); // L (J, cs)
+collapseTreeTable((HResource) null, "u_cr_huf_comp_regfile (cr_huf_comp_regfile) ; 6515", 15); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 17, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 17); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 23, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp_core (cr_lz77_comp_core) ; 352631", 18, "u_cr_lz77_comp_core (cr_lz77_comp_core)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_lz77_comp_core (cr_lz77_comp_core) ; 352631", 18); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "lz77_core.prc (cr_lz77_comp_prc) ; 578", 22, "lz77_core.prc (cr_lz77_comp_prc)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "lz77_core.lec (cr_lz77_comp_lec_v3) ; 348492", 19, "lz77_core.lec (cr_lz77_comp_lec_v3)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "lz77_core.lec (cr_lz77_comp_lec_v3) ; 348492", 19); // L (J, cs)
+expandTreeTable((HResource) null, "lz77_engine (cr_lz77_engine_v3) ; 348492", 20); // L (J, cs)
+expandTreeTable((HResource) null, "clt_0 (cr_lz77_comp_clt_0) ; 249420", 21); // L (J, cs)
+collapseTreeTable((HResource) null, "clt_0 (cr_lz77_comp_clt_0) ; 249420", 21); // L (J, cs)
+expandTreeTable((HResource) null, "clt_x8 (cr_lz77_comp_clt_x8) ; 96796", 22); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "clt_x8 (cr_lz77_comp_clt_x8) ; 96796", 22, "clt_x8 (cr_lz77_comp_clt_x8)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "clt_x8 (cr_lz77_comp_clt_x8) ; 96796", 22); // L (J, cs)
+expandTreeTable((HResource) null, "clt_0 (cr_lz77_comp_clt_0) ; 249420", 21); // L (J, cs)
+collapseTreeTable((HResource) null, "clt_0 (cr_lz77_comp_clt_0) ; 249420", 21); // L (J, cs)
+expandTreeTable((HResource) null, "clt_x8 (cr_lz77_comp_clt_x8) ; 96796", 22); // L (J, cs)
+collapseTreeTable((HResource) null, "clt_x8 (cr_lz77_comp_clt_x8) ; 96796", 22); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "clt_x8 (cr_lz77_comp_clt_x8) ; 96796", 22, "clt_x8 (cr_lz77_comp_clt_x8)", 0, true, false, false, false, false, true); // L (J, cs) - Double Click - Node
+expandTreeTable((HResource) null, "match (cr_lz77_comp_match) ; 2652", 23); // L (J, cs)
+collapseTreeTable((HResource) null, "match (cr_lz77_comp_match) ; 2652", 23); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "match (cr_lz77_comp_match) ; 2652", 23, "match (cr_lz77_comp_match)", 0, true, false, false, false, false, true); // L (J, cs) - Double Click - Node
+expandTreeTable((HResource) null, "clt_0 (cr_lz77_comp_clt_0) ; 249420", 21); // L (J, cs)
+collapseTreeTable((HResource) null, "clt_0 (cr_lz77_comp_clt_0) ; 249420", 21); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 17, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 17); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core) ; 569138", 2, "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 4, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+// Elapsed time: 15 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_isf (cr_isf) ; 6945", 7, "u_cr_isf (cr_isf)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_cg (cr_cg) ; 1950", 13, "u_cr_cg (cr_cg)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_cg (cr_cg) ; 1950", 13, "u_cr_cg (cr_cg)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_cg (cr_cg) ; 1950", 13, "u_cr_cg (cr_cg)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_cceip_64_support (cr_cceip_64_support) ; 1043", 16, "u_cr_cceip_64_support (cr_cceip_64_support)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+expandTreeTable((HResource) null, "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3); // L (J, cs)
+// PAPropertyPanels.initPanels (all_enabled.is_short (cr_huf_comp_is_short)) elapsed time: 0.4s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "all_enabled.is_short (cr_huf_comp_is_short) ; 131674", 4, "all_enabled.is_short (cr_huf_comp_is_short)", 0, true); // L (J, cs) - Node
+// PAPropertyPanels.initPanels (all_enabled.tb_short (cr_huf_comp_htb_short)) elapsed time: 0.4s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "all_enabled.tb_short (cr_huf_comp_htb_short) ; 100732", 6, "all_enabled.tb_short (cr_huf_comp_htb_short)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "tree_builder_inst1 (cr_huf_comp_htb__parameterized0_5637) ; 100725", 7); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "tree_builder_inst1 (cr_huf_comp_htb__parameterized0_5637) ; 100725", 7, "tree_builder_inst1 (cr_huf_comp_htb__parameterized0_5637)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "Leaf Cells (98130) ; 98130", 8, "Leaf Cells (98130)", 0, false); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "all_enabled.tb_short (cr_huf_comp_htb_short) ; 100732", 6, "all_enabled.tb_short (cr_huf_comp_htb_short)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "all_enabled.tb_short (cr_huf_comp_htb_short) ; 100732", 6); // L (J, cs)
+// PAPropertyPanels.initPanels (insert_sort (cr_huf_comp_is__parameterized0)) elapsed time: 0.4s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5, "insert_sort (cr_huf_comp_is__parameterized0)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5, "insert_sort (cr_huf_comp_is__parameterized0)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5); // L (J, cs)
+collapseTreeTable((HResource) null, "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core) ; 569138", 2, "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+// Elapsed time: 10 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true, true, false, false, false, false); // L (J, cs) - Shift Key - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 4, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "cr_cceip_64 ; 1349768", 0, "1349768", 1, true); // L (J, cs) - Node
+// Elapsed time: 31 seconds
+expandTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+// PAPropertyPanels.initPanels (insert_sort (cr_huf_comp_is__parameterized0)) elapsed time: 0.4s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5, "insert_sort (cr_huf_comp_is__parameterized0)", 0, true); // L (J, cs) - Node
+// Elapsed time: 13 seconds
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+// [GUI Memory]: 379 MB (+3843kb) [00:26:56]
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+// Device view-level: 0.3
+// HMemoryUtils.trashcanNow. Engine heap size: 12,319 MB. GUI used memory: 264 MB. Current time: 1/19/21, 7:20:47 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1528 ms.
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 0.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1639504, 3318941); // E (F, cs)
+// Device view-level: 2.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.3
+// HMemoryUtils.trashcanNow. Engine heap size: 12,321 MB. GUI used memory: 275 MB. Current time: 1/19/21, 7:20:55 PM CST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.7
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.3
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), comp_rst (cr_rst_sync)]", 12, false); // bD (J, cs)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core)]", 13, true); // bD (J, cs) - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_short (cr_huf_comp_sc_short)]", 19, false); // bD (J, cs)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_long (cr_huf_comp_sc_long)]", 18); // bD (J, cs)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_long (cr_huf_comp_sc_long), sc_fifo_long (nx_fifo_ram_1r1w__parameterized1)]", 21, false); // bD (J, cs)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_long (cr_huf_comp_sc_long), sc_fifo_long (nx_fifo_ram_1r1w__parameterized1)]", 21, true, false, false, false, false, true); // bD (J, cs) - Double Click - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_long (cr_huf_comp_sc_long), sc_fifo_long (nx_fifo_ram_1r1w__parameterized1)]", 21, true); // bD (J, cs) - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_long (cr_huf_comp_sc_long), sc_fifo_long (nx_fifo_ram_1r1w__parameterized1)]", 21, true, false, false, false, true, false); // bD (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cs)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // af (ao, cs)
+selectMenuItem(PAResourceOtoP.PrimitivesMenu_COLOR, "Color 1"); // ai (cs, Popup.HeavyWeightWindow)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cr_cceip_64, u_cr_huf_comp (cr_huf_comp), huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core), cr_huf_comp_sc_long (cr_huf_comp_sc_long), sc_fifo_long (nx_fifo_ram_1r1w__parameterized1)]", 21, true, false, false, false, true, false); // bD (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 12,321 MB. GUI used memory: 263 MB. Current time: 1/19/21, 7:21:15 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1388 ms.
+// Device view-level: 0.0
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "cr_huf_comp_sc_short (cr_huf_comp_sc_short) ; 976", 20, "cr_huf_comp_sc_short (cr_huf_comp_sc_short)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "all_enabled.one_pipe.tw_long (cr_huf_comp_htw_long) ; 27781", 11, "all_enabled.one_pipe.tw_long (cr_huf_comp_htw_long)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true, false, false, false, true, false); // L (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight CLB LUTs"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight CLB LUTs"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight CLB LUTs"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight CLB LUTs"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceOtoP.PrimitivesMenu_COLOR, "Color 3"); // ai (cs, Popup.HeavyWeightWindow)
+// [GUI Memory]: 430 MB (+33117kb) [00:28:03]
+// WARNING: HEventQueue.dispatchEvent() is taking  1203 ms.
+// [GUI Memory]: 474 MB (+23890kb) [00:28:04]
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 0.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 1.1
+// HMemoryUtils.trashcanNow. Engine heap size: 12,321 MB. GUI used memory: 321 MB. Current time: 1/19/21, 7:21:36 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1311 ms.
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1018168, 3192647, false, false, false, true, false); // E (F, cs) - Popup Trigger
+// Device select: 'Site - RAMB36_X2Y74'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 199, 624, 981, 299); // U (m, cs)
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 199, 624, 981, 299, false, false, false, true, false); // U (m, cs) - Popup Trigger
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4942464, 3284743); // E (F, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4942464, 3284743, false, false, false, true, false); // E (F, cs) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 966, 642, 981, 299, false, false, false, true, false); // U (m, cs) - Popup Trigger
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4916882, 3146600); // E (F, cs)
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 1.7
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 2.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 2.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 3.5
+// HMemoryUtils.trashcanNow. Engine heap size: 12,323 MB. GUI used memory: 320 MB. Current time: 1/19/21, 7:21:57 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2165 ms.
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 4.1
+// HMemoryUtils.trashcanNow. Engine heap size: 12,323 MB. GUI used memory: 320 MB. Current time: 1/19/21, 7:22:04 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1298 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 12,323 MB. GUI used memory: 320 MB. Current time: 1/19/21, 7:22:07 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1326 ms.
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.7
+// HMemoryUtils.trashcanNow. Engine heap size: 12,323 MB. GUI used memory: 321 MB. Current time: 1/19/21, 7:22:13 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 1.1
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.2
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E (g, cs)
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 12,323 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:22:26 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2064 ms.
+// Elapsed time: 10 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "354548", 1, true); // L (J, cs) - Node
+// PAPropertyPanels.initPanels (u_cr_huf_comp (cr_huf_comp)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "575657", 1, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "354548", 1, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "575657", 1, true); // L (J, cs) - Node
+// Elapsed time: 164 seconds
+expandTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+// PAPropertyPanels.initPanels (insert_sort (cr_huf_comp_is__parameterized0)) elapsed time: 0.4s
+// Elapsed time: 24 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "insert_sort (cr_huf_comp_is__parameterized0) ; 131674", 5, "insert_sort (cr_huf_comp_is__parameterized0)", 0, true); // L (J, cs) - Node
+// Elapsed time: 74 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_encoder_engine (cr_huf_comp_encoder_engine) ; 449424", 3, "u_encoder_engine (cr_huf_comp_encoder_engine)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core) ; 569138", 2, "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "huf_comp_rtl_start.u_cr_huf_comp_core (cr_huf_comp_core) ; 569138", 2); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 7, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+expandTreeTable((HResource) null, "u_cr_prefix (cr_prefix) ; 121339", 7); // L (J, cs)
+// Elapsed time: 23 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix_attach (cr_prefix_attach) ; 16251", 10, "u_cr_prefix_attach (cr_prefix_attach)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 7, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 7, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 6, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true); // L (J, cs) - Node
+// Elapsed time: 12 seconds
+collapseTreeTable((HResource) null, "u_cr_prefix (cr_prefix) ; 121339", 7); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+collapseTreeTable((HResource) null, "u_cr_huf_comp (cr_huf_comp) ; 575657", 1); // L (J, cs)
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix (cr_prefix) ; 121339", 4, "u_cr_prefix (cr_prefix)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_prefix_attach (cr_prefix_attach) ; 16251", 5, "u_cr_prefix_attach (cr_prefix_attach)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_xp10_decomp (cr_xp10_decomp) ; 234310", 3, "u_cr_xp10_decomp (cr_xp10_decomp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_lz77_comp (cr_lz77_comp) ; 354548", 2, "u_cr_lz77_comp (cr_lz77_comp)", 0, true); // L (J, cs) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(CLB LUTs)", "u_cr_huf_comp (cr_huf_comp) ; 575657", 1, "u_cr_huf_comp (cr_huf_comp)", 0, true); // L (J, cs) - Node
+// Elapsed time: 32 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY, "Report Timing Summary..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (cs): Report Timing Summary: addNotify
+selectTab(PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_ADVANCED, "Advanced", 1); // i (E, aJ)
+selectTab(PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_OPTIONS, "Options", 0); // i (E, aJ)
+selectTab(PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceTtoZ.TimingDialogUtils_TIMER_SETTINGS, "Timer Settings", 2); // i (E, aJ)
+selectTab(PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_ADVANCED, "Advanced", 1); // i (E, aJ)
+selectTab(PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_OPTIONS, "Options", 0); // i (E, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 11 seconds
+dismissDialog("Report Timing Summary"); // aJ (cs)
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// bz (cs):  Report Timing Summary : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1188 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 12,836 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:29:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 13,715 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:29:25 PM CST
+// [Engine Memory]: 13,858 MB (+1121802kb) [00:36:04]
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 14,363 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:29:55 PM CST
+// TclEventType: TIMING_RESULTS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 15,054 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:31:20 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1090 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 15,396 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:31:40 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1024 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 15,778 MB. GUI used memory: 322 MB. Current time: 1/19/21, 7:32:00 PM CST
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 16,003 MB (+1522929kb) [00:39:25]
+// [GUI Memory]: 498 MB (+192kb) [00:39:27]
+// [GUI Memory]: 524 MB (+660kb) [00:39:27]
+// [GUI Memory]: 550 MB (+305kb) [00:39:27]
+// [GUI Memory]: 579 MB (+1017kb) [00:39:27]
+// [GUI Memory]: 608 MB (+43kb) [00:39:28]
+// [GUI Memory]: 638 MB (+100kb) [00:39:28]
+// [GUI Memory]: 676 MB (+6270kb) [00:39:28]
+// [GUI Memory]: 710 MB (+272kb) [00:39:28]
+// [GUI Memory]: 781 MB (+36669kb) [00:39:29]
+// [GUI Memory]: 820 MB (+802kb) [00:39:30]
+// [GUI Memory]: 863 MB (+1304kb) [00:39:30]
+// [GUI Memory]: 913 MB (+7062kb) [00:39:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  7385 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 16,006 MB. GUI used memory: 801 MB. Current time: 1/19/21, 7:32:59 PM CST
+// Tcl Message: report_timing_summary: Time (s): cpu = 00:14:37 ; elapsed = 00:03:54 . Memory (MB): peak = 17578.793 ; gain = 3682.254 ; free physical = 15480 ; free virtual = 85996 
+// Elapsed time: 237 seconds
+dismissDialog("Report Timing Summary"); // bz (cs)

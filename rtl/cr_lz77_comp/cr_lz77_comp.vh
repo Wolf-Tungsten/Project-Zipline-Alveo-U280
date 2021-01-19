@@ -21,8 +21,8 @@
  `define TRUNC_NUM_V3        4
  `define MTF_NUM             4
  `define TILE_MTF_NUM        20
- `define TILES_PER_CLUSTER   16
- `define CLUSTERS            8
+ `define TILES_PER_CLUSTER   4  // grh: origin 16 -> 4
+ `define CLUSTERS            2  // grh: origin 8 -> 2
 
  `define LONGL          `IN_BYTES + 4
  `define LONGL_V3       13
