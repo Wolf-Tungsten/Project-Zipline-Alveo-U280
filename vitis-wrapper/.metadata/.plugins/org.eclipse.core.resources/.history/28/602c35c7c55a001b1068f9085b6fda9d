@@ -1,0 +1,6 @@
+#ifndef COMMON_H
+#define COMMON_H
+
+#define MEM_ALIGN 4096
+
+#endif

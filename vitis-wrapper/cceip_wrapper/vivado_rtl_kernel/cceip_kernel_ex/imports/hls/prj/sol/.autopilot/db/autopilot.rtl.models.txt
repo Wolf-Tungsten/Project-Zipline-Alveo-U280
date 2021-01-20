@@ -1,0 +1,4 @@
+cceip_kernel_m00_axi_input_buffer
+cceip_kernel_control_s_axi
+cceip_kernel_m00_axi_m_axi
+cceip_kernel

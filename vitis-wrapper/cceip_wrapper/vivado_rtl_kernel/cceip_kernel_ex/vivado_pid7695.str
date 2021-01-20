@@ -1,0 +1,2479 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 7695
+License: Customer
+
+Current time: 	Wed Jan 20 15:43:47 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 3.10.0-1160.2.2.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: localhost:10.0
+Screen size: 1440x876
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gaoruihao
+User home directory: /home/gaoruihao
+User working directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /nvme0n1/Applications/Xilinx2020.1/Vivado
+HDI_APPROOT: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+RDI_DATADIR: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data
+RDI_BINDIR: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/gaoruihao/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/gaoruihao/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/gaoruihao/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.log
+Vivado journal file location: 	/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-7695-qqq
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_HLS: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_PLANAHEAD: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_SDK: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_VITIS: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_VIVADO: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_VIVADO_HLS: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,654 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bz (cs):  Sourcing Tcl script '/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel_ex.tcl' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: source /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel_ex.tcl -notrace 
+// Tcl Message: INFO: [open_example_project] Creating new example project... 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 109 MB (+111941kb) [00:00:12]
+// [Engine Memory]: 5,675 MB (+5799012kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  2528 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,694 MB. GUI used memory: 53 MB. Current time: 1/20/21, 3:43:51 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RUN_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  1978 ms.
+// TclEventType: RUN_MODIFY
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: create_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 7269.719 ; gain = 53.082 ; free physical = 16100 ; free virtual = 82139 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PART_MODIFIED
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: INFO: [open_example_project] Importing original IP ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Generating the example project IP ... INFO: [open_example_project] Adding example synthesis HDL files ... INFO: [open_example_project] Adding example synthesis miscellaneous files ... INFO: [open_example_project] Adding example XDC files ... INFO: [open_example_project] Adding simulation HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [open_example_project] Sourcing example extension scripts ... 
+// TclEventType: CREATE_IP_CORE
+// TclEventType: LOAD_FEATURE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,708 MB. GUI used memory: 53 MB. Current time: 1/20/21, 3:44:08 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: Setting xsim.simulate.xsim.more_options to -sv_seed 1 Setting modelsim.simulate.vsim.more_options to -sv_seed 1 Setting questa.simulate.vsim.more_options to -sv_seed 1 Setting ies.simulate.ncsim.more_options to -SVSEED 1 Setting xcelium.simulate.xmsim.more_options to -SVSEED 1 Setting vcs.simulate.vcs.more_options to +ntb_random_seed=1 Setting riviera.simulate.asim.more_options to -sv_seed 1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: INFO: [open_example_project] Rebuilding all the top level IPs ... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'slv_m00_axi_vip'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'slv_m00_axi_vip'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'slv_m00_axi_vip'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'slv_m00_axi_vip'... INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'control_cceip_kernel_vip'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'control_cceip_kernel_vip'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'control_cceip_kernel_vip'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'control_cceip_kernel_vip'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: STOP_PROGRESS_DIALOG
+// WARNING: HEventQueue.dispatchEvent() is taking  1089 ms.
+// Tcl Message: INFO: [open_example_project] Open Example Project completed 
+dismissDialog("Sourcing Tcl script '/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel_ex.tcl'"); // bz (cs)
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 119 MB (+4812kb) [00:01:13]
+// [GUI Memory]: 127 MB (+1727kb) [00:01:18]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 131, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 58, 165); // bP (w, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cs) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 37 seconds
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 83 seconds
+setFileChooser("/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/imports/cceip_kernel_core.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 130 seconds
+// [GUI Memory]: 138 MB (+4853kb) [00:04:42]
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: FILE_SET_CHANGE
+// bz (cs):  Add Sources  : addNotify
+// Tcl Message: add_files -norecurse -scan_for_includes /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/imports/cceip_kernel_core.sv 
+dismissDialog("Add Sources"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,746 MB. GUI used memory: 74 MB. Current time: 1/20/21, 3:48:23 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 214 seconds
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 61, 180); // bP (w, cs)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectCodeEditor("cceip_kernel.v", 612, 150); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 612, 150); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 612, 150); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 612, 150); // bP (w, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 592, 144); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 117, 501); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 213, 224); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 213, 224); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 213, 224); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 64, 503); // bP (w, cs)
+// Elapsed time: 164 seconds
+selectCodeEditor("cceip_kernel_core.sv", 956, 294); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 267, 329); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 154, 408, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectCodeEditor("cceip_kernel_core.sv", 143, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 147, 503); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 415, 443); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 390, 463); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 302, 488); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 316, 434); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 316, 434); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 316, 434); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 204, 511); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 161, 488); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("cceip_kernel_core.sv", 371, 405); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 394, 362); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 388, 365); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("cceip_kernel_core.sv", 64, 500); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 32, 487); // bP (w, cs)
+// Elapsed time: 142 seconds
+selectCodeEditor("cceip_kernel_core.sv", 58, 484); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 58, 484); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 58, 484); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 58, 484); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 57, 339); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 56, 351); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 55, 370); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 56, 380); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 58, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 58, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 60, 458); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 57, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 100, 338); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 68, 300); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 99, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 99, 371); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 98, 383); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 99, 410); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 95, 441); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 98, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 175, 457); // bP (w, cs)
+// Elapsed time: 99 seconds
+selectCodeEditor("cceip_kernel_core.sv", 177, 438); // bP (w, cs)
+// Elapsed time: 34 seconds
+selectCodeEditor("cceip_kernel_core.sv", 34, 461); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 34, 470); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 36, 461); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 33, 478); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 89, 493); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 178, 493); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("cceip_kernel_core.sv", 161, 474); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 50, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 50, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 51, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 65, 490); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 53, 496); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 48, 491); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 47, 520); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 88, 474); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 89, 428); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 61, 434); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 89, 428); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 50, 428); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 111, 465); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 161, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 178, 468); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 32, 466); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 1, 476); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 17, 473); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 56, 465); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 45, 456); // bP (w, cs)
+selectButton(PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES, (String) null); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES
+// a (cs): Language Templates: addNotify
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 626ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,804 MB. GUI used memory: 80 MB. Current time: 1/20/21, 4:03:53 PM CST
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog]", 2); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs]", 3); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs, Coding Examples]", 4); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs, Coding Examples, State-Machines]", 6); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs, Coding Examples, State-Machines, Moore]", 8); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs, Coding Examples, State-Machines, Moore, Binary (enum)]", 9); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs, Coding Examples, State-Machines, Moore, Binary (enum), Fast]", 10); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, SystemVerilog, Synthesis Constructs, Coding Examples, State-Machines, Moore, Binary (enum), Fast, 8 States]", 12, false); // a (J, a)
+// Elapsed time: 17 seconds
+selectMenuItem(PAResourceItoN.LanguageTemplatesDialog_COPY, "Copy"); // ai (ao)
+selectButton(RDIResource.BaseDialog_CLOSE, "Close"); // a (a)
+dismissDialog("Language Templates"); // a (cs)
+selectCodeEditor("cceip_kernel_core.sv", 132, 459, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("cceip_kernel_core.sv", 207, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 207, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 139, 324); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 206, 324); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 205, 338); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("cceip_kernel_core.sv", 187, 322); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 159, 339); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 204, 356); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 204, 370); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 204, 385); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 169, 427); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 203, 411); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 206, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 341, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 123, 333); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 94, 324); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 82, 367); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 77, 324); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 41, 389); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 123, 463); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 186, 413); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 438); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 77, 420); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 118, 427); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 416); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 416); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 416); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 416); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 162, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 126, 436); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 119, 428); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 104, 442); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 112, 442); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 184, 441); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 141, 458); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 284, 458); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 64, 462); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 126, 457); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 265, 459); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 208, 479); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 141, 384); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 173, 428); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 192, 399); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 208, 402); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 210, 399); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 193, 444); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 191, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 244, 478); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 256, 495); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 256, 491); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("cceip_kernel_core.sv", 225, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 358, 383); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 353, 415); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 125, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 190, 402); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 153, 413); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 125, 414); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("cceip_kernel_core.sv", 154, 322); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 421); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 166, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 166, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 166, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 165, 417); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("cceip_kernel_core.sv", 165, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 165, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 165, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 374); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("cceip_kernel_core.sv", 150, 374); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 150, 374); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 150, 374); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 150, 374); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 275, 452); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 275, 452); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 269, 426); // bP (w, cs)
+// Elapsed time: 78 seconds
+selectCodeEditor("cceip_kernel_core.sv", 268, 438); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_core.sv", 215, 461); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 215, 461); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 158, 55); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 294, 160); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 294, 160); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 229, 368); // bP (w, cs)
+// Elapsed time: 51 seconds
+selectCodeEditor("cceip_kernel_core.sv", 227, 367); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 367); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 123, 110); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 187, 213); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 187, 213); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 181, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 181, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 181, 293); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,838 MB. GUI used memory: 76 MB. Current time: 1/20/21, 4:12:28 PM CST
+selectCodeEditor("cceip_kernel_core.sv", 181, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 172, 332); // bP (w, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("cceip_kernel_core.sv", 206, 185); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 206, 185); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 206, 185); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 145, 424); // bP (w, cs)
+// Elapsed time: 31 seconds
+selectCodeEditor("cceip_kernel_core.sv", 97, 467); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 178, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 178, 417); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 195, 413); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 205, 413); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("cceip_kernel_core.sv", 140, 457); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,870 MB. GUI used memory: 76 MB. Current time: 1/20/21, 4:14:18 PM CST
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 198, 455); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 198, 455); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 198, 455); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 261, 383); // bP (w, cs)
+// Elapsed time: 191 seconds
+selectCodeEditor("cceip_kernel_core.sv", 197, 400); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 193, 420); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 202, 398); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_core.sv", 311, 382); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 269, 399); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("cceip_kernel_core.sv", 173, 370); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 235, 157); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("cceip_kernel_core.sv", 275, 177); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 273, 177); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 288, 158); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 159); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 275, 175); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 261, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 340, 172); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 266, 170); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 276, 170); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 248, 189); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 274, 174); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 277, 208); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 294, 205); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 190, 219); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 216, 233); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 223, 265); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 223, 210); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 216); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 216, 135); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 248, 180); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 280, 198); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 280, 212); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 281, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 201); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 293, 220); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 271, 281); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 296, 234); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 286, 278); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 286, 278); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 286, 278); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 176, 273); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 166, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 159, 322); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 157, 349); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 336, 313); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 139, 446); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_core.sv", 209, 467); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 209, 467); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 266, 505); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("cceip_kernel_core.sv", 132, 454); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 303, 330); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 297, 323); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("cceip_kernel_core.sv", 241, 359); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 207, 432); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 193, 376); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 167, 335); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 141, 372); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 188, 415); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 273, 474); // bP (w, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("cceip_kernel_core.sv", 105, 340); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 187, 399); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 292, 391); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 272, 406); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 243, 432); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 243, 432); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 171, 262); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 141, 291); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 249, 368); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 263, 396); // bP (w, cs)
+// Elapsed time: 147 seconds
+selectCodeEditor("cceip_kernel_core.sv", 101, 94); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 182, 149); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 247, 117); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 218, 101); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 330, 114); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 281, 125); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 314, 141); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 337, 160); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 288, 172); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 326, 186); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 321, 185); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 222, 203); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 223, 236); // bP (w, cs)
+// Elapsed time: 36 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 4); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 5); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv), inst_axi_write_master : cceip_kernel_example_axi_write_master (cceip_kernel_example_axi_write_master.sv)]", 8, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv), inst_axi_write_master : cceip_kernel_example_axi_write_master (cceip_kernel_example_axi_write_master.sv)]", 8, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 175, 267); // bP (w, cs)
+// Elapsed time: 222 seconds
+selectCodeEditor("cceip_kernel_example_axi_write_master.sv", 110, 413); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_core.sv", 1); // m (l, cs)
+selectCodeEditor("cceip_kernel_core.sv", 216, 301); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 219, 302); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,915 MB. GUI used memory: 77 MB. Current time: 1/20/21, 4:30:03 PM CST
+selectCodeEditor("cceip_kernel_core.sv", 202, 270); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 186, 260); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 206, 396); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 297, 416); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 202, 432); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 246, 432); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 244, 444); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 248, 459); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 319, 474); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 365, 467); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 236, 473); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 404, 460); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 409, 453); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 399, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 346, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 347, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 388, 504); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 254, 518); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 463); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 236, 475); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 280, 473); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 279, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 282, 504); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 256, 459); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 256, 459); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 212, 421); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 215, 448); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 259, 405); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 288, 449); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 273, 376); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 273, 376); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 273, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 347, 213, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectCodeEditor("cceip_kernel_core.sv", 424, 318); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 424, 318); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 101, 40); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 181, 153); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 181, 153); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 181, 153); // bP (w, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 15, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 15, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 153, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 190, 411); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_core.sv", 99, 203); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 136, 289); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 99, 204); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 202, 201); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 316, 219); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 265, 233); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 301, 249); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 359, 264); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 310, 280); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 344, 293); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 360, 305); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 309, 323); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 343, 338); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 210, 356); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 229, 392); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 197, 468); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 238, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 238, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 238, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 238, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 208, 349); // bP (w, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("cceip_kernel_core.sv", 208, 349); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 208, 349); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 208, 349); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 164, 328); // bP (w, cs)
+// Elapsed time: 38 seconds
+selectCodeEditor("cceip_kernel_core.sv", 221, 336); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 225, 231); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 243, 255); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 236); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 170, 349); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 225, 372); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("cceip_kernel_core.sv", 201, 245); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 235); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,939 MB. GUI used memory: 71 MB. Current time: 1/20/21, 4:35:18 PM CST
+// Elapsed time: 297 seconds
+selectCodeEditor("cceip_kernel_core.sv", 44, 386); // bP (w, cs)
+// Elapsed time: 25 seconds
+selectCodeEditor("cceip_kernel_core.sv", 229, 377); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectCodeEditor("cceip_kernel_core.sv", 236, 237); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("cceip_kernel_core.sv", 233, 275); // bP (w, cs)
+// [Engine Memory]: 5,971 MB (+12971kb) [00:57:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,971 MB. GUI used memory: 112 MB. Current time: 1/20/21, 4:41:18 PM CST
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 275); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 218, 110); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 115); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 166, 284); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 174, 260); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 148, 272); // bP (w, cs)
+// Elapsed time: 67 seconds
+selectCodeEditor("cceip_kernel_core.sv", 171, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 184, 401); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 184, 401); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 184, 401); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 184, 401); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 180, 445); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 218, 425); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 80, 445); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 444); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 266, 445); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 133, 420); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 109, 410); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 101, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 104, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 174, 413); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 170, 414); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 301, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 301, 431); // bP (w, cs)
+// Elapsed time: 27 seconds
+selectCodeEditor("cceip_kernel_core.sv", 301, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 223, 442); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 250, 55); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 228, 36); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 235, 51); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 190, 314); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 367); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("cceip_kernel_core.sv", 102, 386); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 391); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 265, 383); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 333, 383); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 384); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 417); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 178, 441); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 266, 432); // bP (w, cs)
+// Elapsed time: 38 seconds
+selectCodeEditor("cceip_kernel_core.sv", 278, 278); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 204); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 113, 367); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 231, 252); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 224, 303); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 204, 327); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 237, 150); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 237, 147); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,003 MB. GUI used memory: 69 MB. Current time: 1/20/21, 4:47:18 PM CST
+// Elapsed time: 24 seconds
+selectCodeEditor("cceip_kernel_core.sv", 190, 164); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 190, 164); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 190, 164); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 190, 164); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 151, 258); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 205, 250); // bP (w, cs)
+// Elapsed time: 28 seconds
+selectCodeEditor("cceip_kernel_core.sv", 294, 186); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 273, 228); // bP (w, cs)
+// Elapsed time: 59 seconds
+selectCodeEditor("cceip_kernel_core.sv", 200, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 167, 251); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 278); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 160, 323); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 229, 367); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("cceip_kernel_core.sv", 262, 380); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 105, 236); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 154, 297); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("cceip_kernel_core.sv", 138, 425); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 138, 425); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 138, 425); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 312); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 212, 310); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 231, 312); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 341); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,035 MB. GUI used memory: 69 MB. Current time: 1/20/21, 4:50:58 PM CST
+selectCodeEditor("cceip_kernel_core.sv", 127, 292); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 163, 364); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 364); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 364); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 364); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 364); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 364); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 193, 385); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 248, 420); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 318, 426); // bP (w, cs)
+// Elapsed time: 53 seconds
+selectCodeEditor("cceip_kernel_core.sv", 189, 466); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 175, 483); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 166, 372); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 138, 486); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 128, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 124, 322); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 137, 395); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 495); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 483); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 482); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 482); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 482); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 482); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 482); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 57, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 21, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 0, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 50, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 25, 201); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 22, 201); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 10, 214); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 24, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 18, 267); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 6, 233); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 200, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 76, 487); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 66, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 72, 481); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 106, 492); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 163, 489); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 440); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 104, 250); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 105, 204); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 166); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 160); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 162); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 162); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 67, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 60, 450); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 20, 459); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 52, 458); // bP (w, cs)
+// Elapsed time: 116 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 401, 307); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 6,061 MB. GUI used memory: 70 MB. Current time: 1/20/21, 4:56:28 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 244); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel.v", 77, 143); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 14, 215); // bP (w, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 148, 151); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example.sv", 157, 145); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 157, 145); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 157, 145); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 157, 145); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 157, 145); // bP (w, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3); // B (F, cs)
+selectCodeEditor("cceip_kernel_example.sv", 195, 227); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 195, 227); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 195, 227); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 327, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 33, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 60, 119, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 103, 249); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 31, 205); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 51, 461); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 51, 496); // bP (w, cs)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 48, 504); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 37, 87); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 61, 163); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 95, 217); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 268, 111); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 157); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 138, 82); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 145, 83, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_GOTO_DEFINITION, "Go to Definition"); // ai (ao, Popup.HeavyWeightWindow)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,081 MB. GUI used memory: 71 MB. Current time: 1/20/21, 4:58:33 PM CST
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel.v", 5); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_example.sv", 4); // m (l, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 125, 66); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 114, 61); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example.sv", 172, 247); // bP (w, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv)]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example_vadd.sv", 55, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 55, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 55, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 55, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 55, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 55, 197); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 57, 200); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 57, 200); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 57, 200); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 57, 200); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 57, 200); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 57, 200); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 225, 155); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 132, 161); // bP (w, cs)
+// Elapsed time: 270 seconds
+selectCodeEditor("cceip_kernel_example_vadd.sv", 178, 214); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 152); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_example_vadd.sv", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_example_vadd.sv", 1); // m (l, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv), inst_axi_write_master : cceip_kernel_example_axi_write_master (cceip_kernel_example_axi_write_master.sv), inst_burst_cntr : cceip_kernel_example_counter (cceip_kernel_example_counter.sv)]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel_core (cceip_kernel_core.sv)]", 14, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 239, 325); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 353, 145); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 229, 181); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 214, 143); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 240, 207); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,118 MB. GUI used memory: 71 MB. Current time: 1/20/21, 5:05:08 PM CST
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 301, 283); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 273, 368); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 272, 449); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 272, 449); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 283, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 295, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 233, 443); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 294, 444); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 220, 158); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 308, 363); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 289, 401); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 293, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 294, 415); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 415); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 275, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 293, 414); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("cceip_kernel_core.sv", 276, 452); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 433); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 394, 409); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 313, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 294, 428); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 287, 444); // bP (w, cs)
+// Elapsed time: 25 seconds
+selectCodeEditor("cceip_kernel_core.sv", 285, 460); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("cceip_kernel_core.sv", 430, 444); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 377, 399); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 378, 414); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 399, 438); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 404, 426); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 408, 469); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 408, 461); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 386, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 386, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 386, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 386, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 386, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 385, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 385, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 237, 305); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("cceip_kernel_core.sv", 230, 389); // bP (w, cs)
+// Elapsed time: 24 seconds
+selectCodeEditor("cceip_kernel_core.sv", 212, 387); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 224, 396); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 27, 410); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,150 MB. GUI used memory: 71 MB. Current time: 1/20/21, 5:08:13 PM CST
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_core.sv", 219, 337); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("cceip_kernel_core.sv", 227, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 398); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 295, 194); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 277, 211); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 232, 218); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 254, 179); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 262, 193); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 275, 208); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 288, 203); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 397, 196); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 356, 218); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 372, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 343, 235); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 361, 233); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 384, 224); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 388, 235); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 445, 201); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 347, 232); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 348, 288); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 392, 251); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 322, 234); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 378, 243); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 393, 248); // bP (w, cs)
+// Elapsed time: 375 seconds
+selectCodeEditor("cceip_kernel_core.sv", 346, 238); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 327, 268); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 320, 290); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 312, 337); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 308, 358); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 306, 386); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 309, 401); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 338, 416); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 336, 434); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 336, 454); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("cceip_kernel_core.sv", 334, 458); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 458); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 117, 345); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("cceip_kernel_core.sv", 132, 386); // bP (w, cs)
+// Elapsed time: 40 seconds
+selectCodeEditor("cceip_kernel_core.sv", 63, 53); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_example_axi_write_master.sv", 1); // m (l, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_example : cceip_kernel_example (cceip_kernel_example.sv), inst_example_vadd_m00_axi : cceip_kernel_example_vadd (cceip_kernel_example_vadd.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 101, 256); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 20, 463); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 1, 278, true, false, false, false, false); // bP (w, cs) - Shift Key
+selectCodeEditor("cceip_kernel_example_vadd.sv", 2, 262, true, false, false, false, false); // bP (w, cs) - Shift Key
+typeControlKey((HResource) null, "cceip_kernel_example_vadd.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_core.sv", 2); // m (l, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 142, 168); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 203, 397); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 88, 483); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 83, 468); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 67, 467); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 3, 199, true, false, false, false, false); // bP (w, cs) - Shift Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("cceip_kernel_core.sv", 5, 217); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 25, 475); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 3, 21, true, false, false, false, false); // bP (w, cs) - Shift Key
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectCodeEditor("cceip_kernel_example_vadd.sv", 41, 61); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cceip_kernel_core.sv", 2); // m (l, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 168); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 109, 183); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 260); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,182 MB. GUI used memory: 71 MB. Current time: 1/20/21, 5:17:59 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 255, 314); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 255, 314); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 258, 309); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 301, 321); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 390, 326); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 359, 342); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 338, 342); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 342, 342); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("cceip_kernel_core.sv", 390, 353); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 354); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 331, 202); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 379, 204); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 388, 203); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 397, 216); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 391, 219); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 391, 219); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 234, 221); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 279, 252); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 279, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 271, 382); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 274, 412); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 277, 438); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 300, 459); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 316, 427); // bP (w, cs)
+// Elapsed time: 21 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cceip_kernel_core.sv", 314, 429); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 391, 435); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 388, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 336, 442); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_core.sv", 336, 457); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 237, 470); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 237, 470); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 237, 470); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 237, 470); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 300, 454); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 334, 400); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,214 MB. GUI used memory: 71 MB. Current time: 1/20/21, 5:20:43 PM CST
+selectCodeEditor("cceip_kernel_core.sv", 416, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 168, 477); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 76, 472); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 117, 473); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 160, 478); // bP (w, cs)
+// Elapsed time: 49 seconds
+selectCodeEditor("cceip_kernel_core.sv", 154, 423); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 154, 423); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 131, 465); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 114, 452); // bP (w, cs)
+// Elapsed time: 35 seconds
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 149, 360); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 67, 278); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 45, 279); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 44, 290); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 47, 276); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 45, 291); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 42, 306); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 43, 323); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 44, 337); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 45, 348); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 42, 367); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 43, 383); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 43, 399); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 42, 409); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cceip_kernel_core.sv", 12, 409); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 103, 471); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 97, 424); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 96, 455); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 96, 455); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 96, 455); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 96, 455); // bP (w, cs)
+// Elapsed time: 66 seconds
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 355, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 143, 317); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 110, 445); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 195, 414); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 158, 465); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 152, 460); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 292, 442); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("cceip_kernel_core.sv", 101, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 101, 456); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 84, 483); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 224, 458); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 221, 442); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 130, 440); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 328, 241); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 161, 448); // bP (w, cs)
+// Elapsed time: 54 seconds
+selectCodeEditor("cceip_kernel_core.sv", 81, 414); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 108, 428); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 63, 367); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'c'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 124, 430); // bP (w, cs)
+typeControlKey((HResource) null, "cceip_kernel_core.sv", 'v'); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 331, 433); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 375, 430); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 349, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 337, 429); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 313, 387); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 316, 444); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 252, 445); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 252, 451); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,246 MB. GUI used memory: 71 MB. Current time: 1/20/21, 5:29:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,246 MB. GUI used memory: 71 MB. Current time: 1/20/21, 5:59:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,246 MB. GUI used memory: 70 MB. Current time: 1/20/21, 6:29:13 PM CST
+// Elapsed time: 3728 seconds
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 71, 230); // bP (w, cs)
+// Elapsed time: 46 seconds
+selectCodeEditor("cceip_kernel_core.sv", 139, 450); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 135, 440); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 149, 472); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("cceip_kernel_core.sv", 146, 374); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("cceip_kernel_core.sv", 146, 374); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 146, 374); // bP (w, cs)
+// Elapsed time: 33 seconds
+selectCodeEditor("cceip_kernel_core.sv", 119, 303); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 119, 303); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 332, 175); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 332, 175); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 332, 175); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 333, 142); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 345, 222); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 291, 254); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 238, 322); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 230, 356); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 226, 379); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 223, 396); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 223, 409); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 227, 426); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 261, 466); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 184, 347); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 170, 341); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 165, 329); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 146, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 145, 352); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 185, 324); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 186, 336); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 189, 375); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 160, 369); // bP (w, cs)
+// Elapsed time: 58 seconds
+selectCodeEditor("cceip_kernel_core.sv", 254, 199); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 6,278 MB (+9004kb) [02:51:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,278 MB. GUI used memory: 70 MB. Current time: 1/20/21, 6:34:48 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,310 MB. GUI used memory: 71 MB. Current time: 1/20/21, 6:39:38 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 70 MB. Current time: 1/20/21, 6:42:53 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,374 MB. GUI used memory: 70 MB. Current time: 1/20/21, 6:46:58 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,406 MB. GUI used memory: 70 MB. Current time: 1/20/21, 6:52:23 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,438 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:01:28 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,470 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:13:53 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,502 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:16:23 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,534 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:18:24 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,566 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:19:43 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 6,598 MB (+6527kb) [03:38:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,598 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:22:18 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,632 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:22:39 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,664 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:23:19 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,696 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:24:24 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,728 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:24:59 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,760 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:27:44 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,808 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:28:54 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,840 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:29:29 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,872 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:32:34 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,904 MB. GUI used memory: 70 MB. Current time: 1/20/21, 7:33:34 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 6,936 MB (+8624kb) [03:50:05]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,968 MB. GUI used memory: 70 MB. Current time: 1/20/21, 8:03:34 PM CST
+// Elapsed time: 6749 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+// Elapsed time: 13 seconds
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectCodeEditor("cceip_kernel_core.sv", 154, 186); // bP (w, cs)
+selectCodeEditor("cceip_kernel_core.sv", 154, 186); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_control_s_axi : cceip_kernel_control_s_axi (cceip_kernel_control_s_axi.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_control_s_axi : cceip_kernel_control_s_axi (cceip_kernel_control_s_axi.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cceip_kernel (cceip_kernel.v), inst_control_s_axi : cceip_kernel_control_s_axi (cceip_kernel_control_s_axi.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("cceip_kernel_control_s_axi.v", 78, 179); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 78, 179); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 78, 179); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("cceip_kernel_control_s_axi.v", 86, 127); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 302, 131); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 276, 116); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 291, 171); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 269, 192); // bP (w, cs)
+selectCodeEditor("cceip_kernel_control_s_axi.v", 269, 192); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,981 MB. GUI used memory: 72 MB. Current time: 1/20/21, 8:29:24 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,997 MB. GUI used memory: 72 MB. Current time: 1/20/21, 8:32:29 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,021 MB. GUI used memory: 72 MB. Current time: 1/20/21, 8:39:09 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

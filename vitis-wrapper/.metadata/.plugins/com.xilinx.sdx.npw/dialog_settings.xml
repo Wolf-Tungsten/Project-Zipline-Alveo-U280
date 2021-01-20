@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm" key="sdx.platform"/>
+	<item value="x86_0" key="sdx.domain"/>
+	<item value="1" key="sdx.device.count"/>
+	<item value="false" key="sdx.is.shared.library"/>
+	<item value="false" key="sdx.is.system.root"/>
+	<item value="OpenCL" key="sdx.runtime"/>
+	<item value="cceip_wrapper" key="sdx.project.name"/>
+	<item value="linux" key="sdx.os"/>
+	<item value="config0_0" key="sdx.system.configuration"/>
+</section>

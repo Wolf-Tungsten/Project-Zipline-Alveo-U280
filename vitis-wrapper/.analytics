@@ -1,0 +1,28 @@
+timestamp=[2021-01-20 09:29:36], mode=WORKBENCH_START, duration=0:00:04.534, duration_ms=4534, data={}
+timestamp=[2021-01-20 09:29:38], mode=WORKBENCH_UI_INIT, duration=0:00:02.076, duration_ms=2076, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-01-20 09:29:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.248, duration_ms=3248, data={}
+timestamp=[2021-01-20 09:31:10], mode=APP_CREATION, duration=0:00:02.143, duration_ms=2143, data={name=cceip_wrapper, project_type=datacenter, os=NA, processor=null, runtime=OpenCL, platform=xilinx_u280_xdma_201920_3, application_type=application}
+timestamp=[2021-01-20 09:37:03], mode=BUILD, duration=0:00:00.021, duration_ms=21, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=true}
+timestamp=[2021-01-20 09:37:15], mode=BUILD, duration=0:00:11.288, duration_ms=11288, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 09:37:15], mode=BUILD, duration=0:00:00.092, duration_ms=92, data={name=cceip_wrapper_system, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:08:38], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:10:20], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:13:16], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:24:34], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:25:14], mode=BUILD, duration=0:00:00.673, duration_ms=673, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:27:46], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:29:33], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:29:48], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:30:17], mode=BUILD, duration=0:00:00.300, duration_ms=300, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:30:36], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:34:01], mode=BUILD, duration=0:00:00.325, duration_ms=325, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:51:15], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:51:30], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:51:49], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:51:59], mode=BUILD, duration=0:00:00.308, duration_ms=308, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:53:17], mode=BUILD, duration=0:00:00.307, duration_ms=307, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:54:12], mode=BUILD, duration=0:00:00.262, duration_ms=262, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:54:22], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 10:59:46], mode=BUILD, duration=0:00:00.666, duration_ms=666, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 11:13:35], mode=BUILD, duration=0:00:00.214, duration_ms=214, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-20 11:14:01], mode=BUILD, duration=0:00:00.712, duration_ms=712, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}

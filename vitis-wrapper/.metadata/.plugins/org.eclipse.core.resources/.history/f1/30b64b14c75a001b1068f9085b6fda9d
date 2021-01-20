@@ -1,0 +1,8 @@
+#include "stdio.h"
+#include "file_io.h"
+#include <CL/opencl.h>
+
+int main(int argc, char * argv[]){
+	char* file_content;
+	cl_uint file_size = load_file_to_memory(argv[1], &file_content, 1);
+}

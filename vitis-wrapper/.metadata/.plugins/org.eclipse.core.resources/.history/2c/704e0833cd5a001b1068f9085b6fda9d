@@ -1,0 +1,6 @@
+#ifndef FILE_IO_H
+#define FILE_IO_H
+#include <CL/opencl.h>
+
+cl_uint load_file_to_memory(const char *filename, char **result, uint aligned);
+#endif
