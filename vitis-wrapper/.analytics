@@ -26,3 +26,9 @@ timestamp=[2021-01-20 10:54:22], mode=BUILD, duration=0:00:00.323, duration_ms=3
 timestamp=[2021-01-20 10:59:46], mode=BUILD, duration=0:00:00.666, duration_ms=666, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
 timestamp=[2021-01-20 11:13:35], mode=BUILD, duration=0:00:00.214, duration_ms=214, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
 timestamp=[2021-01-20 11:14:01], mode=BUILD, duration=0:00:00.712, duration_ms=712, data={name=cceip_wrapper, configuration=Emulation-SW, clean_build=false}
+timestamp=[2021-01-21 09:02:25], mode=WORKBENCH_START, duration=0:00:10.667, duration_ms=10667, data={}
+timestamp=[2021-01-21 09:02:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.025, duration_ms=25, data={}
+timestamp=[2021-01-21 09:02:26], mode=WORKBENCH_UI_INIT, duration=0:00:01.202, duration_ms=1202, data={editors_count=6, platform_editors_count=0, projects_count=3, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,cceip_wrapper,cceip_wrapper_system}
+timestamp=[2021-01-21 09:21:03], mode=WORKBENCH_START, duration=0:00:10.834, duration_ms=10834, data={}
+timestamp=[2021-01-21 09:21:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.010, duration_ms=10, data={}
+timestamp=[2021-01-21 09:21:05], mode=WORKBENCH_UI_INIT, duration=0:00:01.355, duration_ms=1355, data={editors_count=6, platform_editors_count=0, projects_count=3, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,cceip_wrapper,cceip_wrapper_system}

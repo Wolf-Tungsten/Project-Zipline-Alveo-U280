@@ -1,0 +1,123 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 23350
+License: Customer
+
+Current time: 	Thu Jan 21 09:03:02 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 3.10.0-1160.2.2.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :12.0
+Screen size: 1256x837
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gaoruihao
+User home directory: /home/gaoruihao
+User working directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /nvme0n1/Applications/Xilinx2020.1/Vivado
+HDI_APPROOT: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+RDI_DATADIR: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data
+RDI_BINDIR: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/gaoruihao/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/gaoruihao/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/gaoruihao/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.log
+Vivado journal file location: 	/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-23350-qqq
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_HLS: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_PLANAHEAD: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_SDK: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_VITIS: /nvme0n1/Applications/Xilinx2020.1/Vitis/2020.1
+XILINX_VIVADO: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_VIVADO_HLS: /nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,650 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bz (cs):  Sourcing Tcl script '/tmp/vivado.1624038608520989595.tmp' : addNotify
+// Tcl Message: source /tmp/vivado.1624038608520989595.tmp 
+// Tcl Message: # open_project /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,660 MB. GUI used memory: 46 MB. Current time: 1/21/21, 9:03:03 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 91 MB (+92980kb) [00:00:19]
+// [Engine Memory]: 5,666 MB (+5789608kb) [00:00:19]
+// [GUI Memory]: 106 MB (+10403kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  2538 ms.
+// Tcl Message: source /tmp/vivado.1624038608520989595.tmp 
+// Tcl Message: # open_project /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nvme0n1/Applications/Xilinx2020.1/Vivado/2020.1/data/ip'. 
+// TclEventType: RUN_MODIFY
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 7252.262 ; gain = 41.074 ; free physical = 17224 ; free virtual = 83225 
+// Tcl Message: # set_property part xcu280-fsvh2892-2L-e [current_project] 
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog("Sourcing Tcl script '/tmp/vivado.1624038608520989595.tmp'"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 53 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// [GUI Memory]: 115 MB (+4080kb) [00:04:16]
+// Elapsed time: 529 seconds
+closeMainWindow("cceip_kernel_ex - [/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.xpr] - Vivado 2020.1"); // cs
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// A (cs): Exit Vivado: addNotify
+// [GUI Memory]: 128 MB (+7474kb) [00:14:29]

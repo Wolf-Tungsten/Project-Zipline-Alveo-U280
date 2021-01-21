@@ -176,7 +176,7 @@ module cceip_kernel_core
         
         
         
-          
+           
    // AXI4 Read Master, output format is an AXI4-Stream master, one stream per thread.
     cceip_kernel_example_axi_read_master #(
       .C_M_AXI_ADDR_WIDTH  ( C_M00_AXI_ADDR_WIDTH    ) ,
@@ -192,20 +192,20 @@ module cceip_kernel_core
       .ctrl_done               ( m00_read_done           ) ,
       .ctrl_addr_offset        ( m00_read_addr_r         ) ,
       .ctrl_xfer_size_in_bytes ( m00_read_size_r         ) ,
-      .m00_axi_arvalid           ( m00_axi_arvalid           ) ,
-      .m00_axi_arready           ( m00_axi_arready           ) ,
-      .m00_axi_araddr            ( m00_axi_araddr            ) ,
-      .m00_axi_arlen             ( m00_axi_arlen             ) ,
-      .m00_axi_rvalid            ( m00_axi_rvalid            ) ,
-      .m00_axi_rready            ( m00_axi_rready            ) ,
-      .m00_axi_rdata             ( m00_axi_rdata             ) ,
-      .m00_axi_rlast             ( m00_axi_rlast             ) ,
-      .m00_axis_aclk             ( ap_clk              ) ,
-      .m00_axis_areset           ( !areset              ) ,
-      .m00_axis_tvalid           ( m00_read_valid          ) ,
-      .m00_axis_tready           ( m00_read_ready          ) ,
-      .m00_axis_tlast            ( m00_read_last           ) ,
-      .m00_axis_tdata            ( m00_read_data           )
+      .m_axi_arvalid           ( m00_axi_arvalid           ) ,
+      .m_axi_arready           ( m00_axi_arready           ) ,
+      .m_axi_araddr            ( m00_axi_araddr            ) ,
+      .m_axi_arlen             ( m00_axi_arlen             ) ,
+      .m_axi_rvalid            ( m00_axi_rvalid            ) ,
+      .m_axi_rready            ( m00_axi_rready            ) ,
+      .m_axi_rdata             ( m00_axi_rdata             ) ,
+      .m_axi_rlast             ( m00_axi_rlast             ) ,
+      .m_axis_aclk             ( ap_clk              ) ,
+      .m_axis_areset           ( !areset              ) ,
+      .m_axis_tvalid           ( m00_read_valid          ) ,
+      .m_axis_tready           ( m00_read_ready          ) ,
+      .m_axis_tlast            ( m00_read_last           ) ,
+      .m_axis_tdata            ( m00_read_data           )
     );
     
     // AXI4 Write Master
@@ -223,17 +223,17 @@ module cceip_kernel_core
       .ctrl_done               ( m00_write_done          ) ,
       .ctrl_addr_offset        ( m00_write_addr_r        ) ,
       .ctrl_xfer_size_in_bytes ( m00_write_size_r        ) ,
-      .m00_axi_awvalid           ( m00_axi_awvalid           ) ,
-      .m00_axi_awready           ( m00_axi_awready           ) ,
-      .m00_axi_awaddr            ( m00_axi_awaddr            ) ,
-      .m00_axi_awlen             ( m00_axi_awlen             ) ,
-      .m00_axi_wvalid            ( m00_axi_wvalid            ) ,
-      .m00_axi_wready            ( m00_axi_wready            ) ,
-      .m00_axi_wdata             ( m00_axi_wdata             ) ,
-      .m00_axi_wstrb             ( m00_axi_wstrb             ) ,
-      .m00_axi_wlast             ( m00_axi_wlast             ) ,
-      .m00_axi_bvalid            ( m00_axi_bvalid            ) ,
-      .m00_axi_bready            ( m00_axi_bready            ) ,
+      .m_axi_awvalid           ( m00_axi_awvalid           ) ,
+      .m_axi_awready           ( m00_axi_awready           ) ,
+      .m_axi_awaddr            ( m00_axi_awaddr            ) ,
+      .m_axi_awlen             ( m00_axi_awlen             ) ,
+      .m_axi_wvalid            ( m00_axi_wvalid            ) ,
+      .m_axi_wready            ( m00_axi_wready            ) ,
+      .m_axi_wdata             ( m00_axi_wdata             ) ,
+      .m_axi_wstrb             ( m00_axi_wstrb             ) ,
+      .m_axi_wlast             ( m00_axi_wlast             ) ,
+      .m_axi_bvalid            ( m00_axi_bvalid            ) ,
+      .m_axi_bready            ( m00_axi_bready            ) ,
       .s_axis_aclk             ( ap_clk              ) ,
       .s_axis_areset           ( !areset              ) ,
       .s_axis_tvalid           ( m00_write_valid         ) ,

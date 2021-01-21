@@ -232,7 +232,7 @@ function void m00_axi_fill_memory(
   input integer    length
 );
   for (longint unsigned slot = 0; slot < length; slot++) begin
-    m00_axi.mem_model.backdoor_memory_write_4byte(ptr + (slot * 4), slot);
+    m00_axi.mem_model.backdoor_memory_write_4byte(ptr + (slot * 4), get_random_4bytes());
   end
 endfunction
 
@@ -479,7 +479,7 @@ endtask
 
 task automatic set_scalar_registers();
   $display("%t : Setting Scalar Registers registers", $time);
-  input_size_scalar = 1024
+  input_size_scalar = 1024;
   //Set input_size = 1024(bytes)
   ///////////////////////////////////////////////////////////////////////////
   //Write ID 0: input_size (0x010) -> 32'hffffffff (scalar)
@@ -571,26 +571,20 @@ endtask
 
 function automatic bit check_kernel_result();
   bit [31:0]        ret_rd_value = 32'h0;
+  bit [31:0]        input_value = 32'h0;
   bit error_found = 0;
   integer error_counter;
   error_counter = 0;
 
   /////////////////////////////////////////////////////////////////////////////////////////////////
   // Checking memory connected to m00_axi
-  for (longint unsigned slot = 0; slot < LP_MAX_LENGTH; slot++) begin
-    ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(input_addr_ptr + (slot * 4));
-    if (slot < LP_MAX_TRANSFER_LENGTH) begin
-      if (ret_rd_value != (slot + 1)) begin
-        $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", input_addr_ptr + (slot * 4), slot + 1, ret_rd_value);
-        error_found |= 1;
-        error_counter++;
-      end
-    end else begin
-      if (ret_rd_value != slot) begin
-        $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", input_addr_ptr + (slot * 4), slot, ret_rd_value);
-        error_found |= 1;
-        error_counter++;
-      end
+  for (longint unsigned slot = 0; slot < input_size_scalar; slot++) begin
+    ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(output_addr_ptr + (slot * 4));
+    input_value = m00_axi.mem_model.backdoor_memory_read_4byte(input_addr_ptr + (slot * 4));
+    if(ret_rd_value != input_value) begin
+      $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", output_addr_ptr + (slot * 4), input_value, ret_rd_value);
+      error_found |= 1;
+      error_counter++;
     end
     if (error_counter > 5) begin
       $display("Too many errors found. Exiting check of m00_axi.");
