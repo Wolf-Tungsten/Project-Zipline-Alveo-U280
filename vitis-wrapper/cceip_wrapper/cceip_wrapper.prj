@@ -19,12 +19,16 @@
   <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.1519083196">
     <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
       <binaryContainers name="binary_container_1">
-        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo"/>
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr=""/>
+        </precompiledKernels>
       </binaryContainers>
     </configBuildOptions>
     <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
       <binaryContainers name="binary_container_1">
-        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo"/>
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr=""/>
+        </precompiledKernels>
       </binaryContainers>
     </lastBuildOptions>
   </configuration>
