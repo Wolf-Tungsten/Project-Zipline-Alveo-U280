@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.xilinx.opencl.launch.openCLLaunch">
+    <stringAttribute key="HW_EM_LAUNCH_WAVEFORM" value=""/>
     <stringAttribute key="SDACCEL_DATA_TRANSFER_TRACE" value="coarse"/>
     <booleanAttribute key="SDACCEL_ENABLE_LOP_TRACE" value="false"/>
     <booleanAttribute key="SDACCEL_ENABLE_PROFILE" value="true"/>
@@ -30,12 +31,12 @@
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
     <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/Project_Zipline_Overview.pptx"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Emulation-SW/cceip_wrapper"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="../binary_container_1.xclbin /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/Project_Zipline_Overview.pptx"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Emulation-HW/cceip_wrapper"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="cceip_wrapper"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
-    <stringAttribute key="org.eclipse.cdt.launch.WORKING_DIRECTORY" value="${workspace_loc:cceip_wrapper}/Emulation-SW/cceip_wrapper-read-write-file"/>
+    <stringAttribute key="org.eclipse.cdt.launch.WORKING_DIRECTORY" value="${workspace_loc:cceip_wrapper}/Emulation-HW/cceip_wrapper-read-write-file"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/cceip_wrapper"/>
     </listAttribute>
@@ -46,6 +47,6 @@
         <mapEntry key="XILINX_OPENCL" value="${env_var:XILINX_VITIS}/"/>
         <mapEntry key="XILINX_VITIS" value="${env_var:XILINX_VITIS}/"/>
     </mapAttribute>
-    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${workspace_loc:/cceip_wrapper/Emulation-SW/cceip_wrapper-read-write-file.launch.log}"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${workspace_loc:/cceip_wrapper/Emulation-HW/cceip_wrapper-read-write-file.launch.log}"/>
     <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>

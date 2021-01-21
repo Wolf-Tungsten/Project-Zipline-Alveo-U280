@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:systemproject="http://www.xilinx.com/systemproject" name="cceip_wrapper_system" platform="/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm" platformUID="xilinx:u280:xdma:201920.3" sysConfig="config0_0" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Emulation-SW">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="cceip_wrapper" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-SW"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="cceip_wrapper" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-SW"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW">
+    <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">
+      <applications name="cceip_wrapper" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-HW"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware">
+    <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw">
+      <applications name="cceip_wrapper" domainName="x86" domainPrettyName="x86" appBuildConfig="Hardware"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

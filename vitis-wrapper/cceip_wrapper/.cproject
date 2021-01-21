@@ -125,7 +125,7 @@
                             							
                             <targetPlatform id="com.xilinx.accelerated.config.hw_emu.1519083196..244770686" name=""/>
                             							
-                            <builder buildPath="${workspace_loc:/cceip_wrapper}/Emulation-HW" enableAutoBuild="true" id="com.xilinx.accelerated.make_builder.1010482668" managedBuildOn="true" name="Xilinx V++ Builder.Emulation-HW" superClass="com.xilinx.accelerated.make_builder"/>
+                            <builder buildPath="${workspace_loc:/cceip_wrapper}/Emulation-HW" enableAutoBuild="true" id="com.xilinx.accelerated.make_builder.1010482668" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Xilinx V++ Builder" superClass="com.xilinx.accelerated.make_builder"/>
                             							
                             <tool id="com.xilinx.accelerated.toolchain.hw_compiler.2040063142" name="V++ Kernel Compiler" superClass="com.xilinx.accelerated.toolchain.hw_compiler">
                                 								
@@ -135,7 +135,7 @@
                             							
                             <tool id="com.xilinx.accelerated.toolchain.hw_linker.967678477" name="V++ Kernel Linker" superClass="com.xilinx.accelerated.toolchain.hw_linker">
                                 								
-                                <option id="com.xilinx.accelerated.toolchain.hw_linker.ip_cache.467943923" superClass="com.xilinx.accelerated.toolchain.hw_linker.ip_cache" value="/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/ip_cache" valueType="string"/>
+                                <option id="com.xilinx.accelerated.toolchain.hw_linker.ip_cache.467943923" name="IP Cache" superClass="com.xilinx.accelerated.toolchain.hw_linker.ip_cache" value="/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/ip_cache" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -167,7 +167,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="src/vitis_rtl_kernel/cceip_kernel/host_example.cpp|_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -281,6 +281,26 @@
         	
     </storageModule>
     	
-    <storageModule moduleId="refreshScope"/>
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="Emulation-HW">
+            			
+            <resource resourceType="PROJECT" workspacePath="/cceip_wrapper"/>
+            		
+        </configuration>
+        		
+        <configuration configurationName="Emulation-SW">
+            			
+            <resource resourceType="PROJECT" workspacePath="/cceip_wrapper"/>
+            		
+        </configuration>
+        		
+        <configuration configurationName="Hardware">
+            			
+            <resource resourceType="PROJECT" workspacePath="/cceip_wrapper"/>
+            		
+        </configuration>
+        	
+    </storageModule>
     
 </cproject>
