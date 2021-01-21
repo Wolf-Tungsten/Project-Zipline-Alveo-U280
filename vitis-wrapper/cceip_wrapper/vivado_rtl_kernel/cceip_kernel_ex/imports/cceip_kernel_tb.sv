@@ -565,20 +565,31 @@ task automatic backdoor_fill_memories();
 
   /////////////////////////////////////////////////////////////////////////////////////////////////
   // Backdoor fill the memory with the content.
-  m00_axi_fill_memory(input_addr_ptr, input_size_scalar);
+  m00_axi_fill_memory(input_addr_ptr, (input_size_scalar >> 2));
 
 endtask
 
 function automatic bit check_kernel_result();
+  bit [63:0]        ret_size_value = 64'h0;
   bit [31:0]        ret_rd_value = 32'h0;
   bit [31:0]        input_value = 32'h0;
   bit error_found = 0;
   integer error_counter;
   error_counter = 0;
-
+  /////////////////////////////////////////////////////////////////////////////////////////////////
+  ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(output_size_addr_ptr+4);
+  ret_size_value = ret_rd_value;
+  ret_size_value = ret_size_value << 32;
+  ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(output_size_addr_ptr);
+  ret_size_value = ret_size_value | ret_rd_value;
+  if(ret_size_value != input_size_scalar) begin
+    $error("Output size Mismatch");
+    error_found = 1;
+    return(error_found);
+  end
   /////////////////////////////////////////////////////////////////////////////////////////////////
   // Checking memory connected to m00_axi
-  for (longint unsigned slot = 0; slot < input_size_scalar; slot++) begin
+  for (longint unsigned slot = 0; slot < (input_size_scalar >> 2); slot++) begin
     ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(output_addr_ptr + (slot * 4));
     input_value = m00_axi.mem_model.backdoor_memory_read_4byte(input_addr_ptr + (slot * 4));
     if(ret_rd_value != input_value) begin
@@ -588,7 +599,7 @@ function automatic bit check_kernel_result();
     end
     if (error_counter > 5) begin
       $display("Too many errors found. Exiting check of m00_axi.");
-      slot = LP_MAX_LENGTH;
+      slot = input_size_scalar >> 2;
     end
   end
   error_counter = 0;
