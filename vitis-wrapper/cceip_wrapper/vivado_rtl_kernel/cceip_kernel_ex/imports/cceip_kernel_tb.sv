@@ -681,7 +681,7 @@ initial begin : STIMULUS
   end else begin
     $display( "Test completed successfully");
   end
-  $finish;
+  $finish();
 end
 
 endmodule
