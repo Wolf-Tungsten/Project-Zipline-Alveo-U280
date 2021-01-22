@@ -118,8 +118,9 @@ module cceip_inbound (
                     cceip_m_axis_tlast_r <= 0;
                     cceip_m_axis_tstrb_r <= 8'hff;
                     if(cceip_m_axis_tready) begin
-                        if(suffix_pc_r == 3'h7) begin
+                        if(prefix_pc_r == 3'h7) begin
                             cceip_m_axis_tvalid_r <= 0;
+                            cceip_m_axis_tuser_r <= 0;
                             state <= s_data;
                         end else begin
                             prefix_pc_r += 1;
@@ -127,6 +128,7 @@ module cceip_inbound (
                     end
                 end
                 s_data : begin
+                    cceip_m_axis_tdata_r <= 0;
                     cceip_m_axis_tuser_r <= 8'h0;
                     cceip_m_axis_tlast_r <= 0;
                     cceip_m_axis_tstrb_r <= 8'hff;
@@ -134,9 +136,9 @@ module cceip_inbound (
                     if(mm_s_axis_tvalid == 1 && cceip_m_axis_tready == 1) begin
                         input_data_counter_r += 8;
                     end
-                    if(input_data_counter_r >= input_data_size_r) begin
+                    if(input_data_counter_r + 8 >= input_data_size_r) begin
                         cceip_m_axis_tuser_r <= 8'h2; // 最后8个字节要给出EoT
-                        case (input_data_counter_r - input_data_size_r)
+                        case (input_data_counter_r + 8 - input_data_size_r)
                             1 : begin
                                 cceip_m_axis_tstrb_r <= 8'b0000_0001;
                             end
@@ -162,6 +164,8 @@ module cceip_inbound (
                                 cceip_m_axis_tstrb_r <= 8'b1111_1111;
                             end
                         endcase
+                    end 
+                    if (input_data_counter_r >= input_data_size_r) begin
                         state <= s_suffix;
                     end
                 end
@@ -177,12 +181,12 @@ module cceip_inbound (
                         end else if(suffix_pc_r == 3'h2) begin
                             cceip_m_axis_tvalid_r <= 0;
                             state <= s_done;
-                        end else begin
-                            suffix_pc_r += 1;
-                        end
+                        end 
+                        suffix_pc_r += 1;
                     end
                 end
                 s_done : begin
+                    cceip_m_axis_tdata_r <= 0;
                     state <= s_idle;
                 end
             endcase
@@ -192,7 +196,7 @@ module cceip_inbound (
     assign inbound_done = (state == s_done);
 
     // 处于s_data状态时，由 cceip 驱动 ready 进行流控
-    assign mm_s_axis_tready = (state == s_data) && cceip_m_axis_tready;
+    assign mm_s_axis_tready = (state == s_data) ? cceip_m_axis_tready : 0;
     
     // cceip tvalid 逻辑
     always_comb begin : cceip_m_axis_tvalid_logic

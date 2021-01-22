@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jan 22 14:18:00 2021
+# Process ID: 13039
+# Current directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex
+# Command line: vivado -source /tmp/vivado.16594021271849171975.tmp
+# Log file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.log
+# Journal file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /tmp/vivado.16594021271849171975.tmp
+update_compile_order -fileset sources_1
+launch_simulation
+source cceip_rbus_driver_tb.tcl
+restart
+run 1 us
+close_sim
