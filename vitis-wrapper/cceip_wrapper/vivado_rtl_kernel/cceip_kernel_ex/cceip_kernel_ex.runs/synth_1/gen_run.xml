@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1611205466">
-  <File Type="VDS-TIMING-PB" Name="cceip_kernel_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="cceip_kernel_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="cceip_kernel.dcp"/>
-  <File Type="PA-TCL" Name="cceip_kernel.tcl"/>
   <File Type="REPORTS-TCL" Name="cceip_kernel_reports.tcl"/>
+  <File Type="PA-TCL" Name="cceip_kernel.tcl"/>
+  <File Type="RDS-DCP" Name="cceip_kernel.dcp"/>
   <File Type="RDS-RDS" Name="cceip_kernel.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="cceip_kernel_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="cceip_kernel_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cceip_kernel_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">

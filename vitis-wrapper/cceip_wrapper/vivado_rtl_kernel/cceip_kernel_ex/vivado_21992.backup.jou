@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jan 22 09:47:23 2021
+# Process ID: 21992
+# Current directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex
+# Command line: vivado -source /tmp/vivado.8146462794264108378.tmp
+# Log file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.log
+# Journal file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /tmp/vivado.8146462794264108378.tmp
+update_compile_order -fileset sources_1
+create_ip -name axi_apb_bridge -vendor xilinx.com -library ip -version 3.0 -module_name axi_apb_bridge_0
+set_property -dict [list CONFIG.C_M_APB_PROTOCOL {apb3} CONFIG.C_APB_NUM_SLAVES {1} CONFIG.C_ADDR_WIDTH {20}] [get_ips axi_apb_bridge_0]
+generate_target {instantiation_template} [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.srcs/sources_1/ip/axi_apb_bridge_0/axi_apb_bridge_0.xci]
+generate_target all [get_files  /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.srcs/sources_1/ip/axi_apb_bridge_0/axi_apb_bridge_0.xci]
+catch { config_ip_cache -export [get_ips -all axi_apb_bridge_0] }
+export_ip_user_files -of_objects [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.srcs/sources_1/ip/axi_apb_bridge_0/axi_apb_bridge_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.srcs/sources_1/ip/axi_apb_bridge_0/axi_apb_bridge_0.xci]
+launch_runs axi_apb_bridge_0_synth_1 -jobs 8
+wait_on_run axi_apb_bridge_0_synth_1
+export_simulation -of_objects [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.srcs/sources_1/ip/axi_apb_bridge_0/axi_apb_bridge_0.xci] -directory /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.ip_user_files/sim_scripts -ip_user_files_dir /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.ip_user_files -ipstatic_source_dir /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.cache/compile_simlib/modelsim} {questa=/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.cache/compile_simlib/questa} {ies=/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.cache/compile_simlib/ies} {xcelium=/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.cache/compile_simlib/xcelium} {vcs=/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.cache/compile_simlib/vcs} {riviera=/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse -scan_for_includes /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/imports/cceip_rbus_driver.sv
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/imports/cceip_rbus_driver_tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cceip_rbus_driver_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source cceip_rbus_driver_tb.tcl
+run all
+run 10 us
+restart
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/cceip_rbus_driver_tb/dut/rbus_start}} {{/cceip_rbus_driver_tb/dut/s_axi_awaddr_r}} {{/cceip_rbus_driver_tb/dut/s_axi_awvalid_r}} {{/cceip_rbus_driver_tb/dut/s_axi_awready}} {{/cceip_rbus_driver_tb/dut/s_axi_wdata_r}} {{/cceip_rbus_driver_tb/dut/s_axi_wvalid_r}} {{/cceip_rbus_driver_tb/dut/s_axi_wready}} {{/cceip_rbus_driver_tb/dut/s_axi_bresp}} {{/cceip_rbus_driver_tb/dut/s_axi_bvalid}} {{/cceip_rbus_driver_tb/dut/s_axi_bready_r}} {{/cceip_rbus_driver_tb/dut/state}} 
+restart
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+restart
+run 10 us
+relaunch_sim
+relaunch_sim

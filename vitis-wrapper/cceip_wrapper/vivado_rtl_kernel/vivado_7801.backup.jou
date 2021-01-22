@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 20 11:27:26 2021
+# Process ID: 7801
+# Current directory: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel
+# Command line: vivado -mode batch -source /tmp/vivado.13383606228259465578.tmp -notrace
+# Log file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado.log
+# Journal file: /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado.jou
+#-----------------------------------------------------------
+source /tmp/vivado.13383606228259465578.tmp -notrace
+create_ip -name rtl_kernel_wizard -vendor xilinx.com -library ip -version 1.0 -module_name cceip_kernel
+set_property -dict [list CONFIG.Component_Name {cceip_kernel} CONFIG.KERNEL_NAME {cceip_kernel} CONFIG.KERNEL_VENDOR {gaoruihao.ncic.ict.cas} CONFIG.KERNEL_CTRL {ap_ctrl_hs} CONFIG.NUM_CLOCKS {1} CONFIG.NUM_INPUT_ARGS {1} CONFIG.ARG00_NAME {input_size} CONFIG.ARG00_TYPE {long} CONFIG.NUM_M_AXI {1} CONFIG.M00_AXI_DATA_NUM_BYTES {8} CONFIG.M00_AXI_NUM_ARGS {3} CONFIG.M00_AXI_ARG00_NAME {input_addr} CONFIG.M00_AXI_ARG01_NAME {output_size} CONFIG.M00_AXI_ARG02_NAME {output_addr} CONFIG.NUM_AXIS {0}] [get_ips cceip_kernel]
+generate_target {instantiation_template} [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel.xci]
+set_property generate_synth_checkpoint false [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel.xci]
+generate_target all [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel.xci]
+export_ip_user_files -of_objects [get_files /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/cceip_kernel/cceip_kernel.xci] -no_script -sync -force -quiet
+start_gui
+open_example_project -force -dir /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel [get_ips cceip_kernel]

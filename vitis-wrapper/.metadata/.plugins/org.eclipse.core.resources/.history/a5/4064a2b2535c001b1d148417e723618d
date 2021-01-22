@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="cceip_wrapper" location="/nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper" platform="/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm" platformUID="xilinx:u280:xdma:201920.3" systemProject="cceip_wrapper_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.1512967507" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr="">
+            <args name="input_size" memory=""/>
+            <args name="input_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_size_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_addr" master="true" memory="HBM[0]" profileAll="true"/>
+          </computeUnits>
+          <args name="input_size" portName="s_axi_control"/>
+          <args name="input_addr" portName="m00_axi" master="true"/>
+          <args name="output_size_addr" portName="m00_axi" master="true"/>
+          <args name="output_addr" portName="m00_axi" master="true"/>
+        </precompiledKernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr=""/>
+        </precompiledKernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.1519083196" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr="">
+            <args name="input_size" memory=""/>
+            <args name="input_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_size_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_addr" master="true" memory="HBM[0]" profileAll="true"/>
+          </computeUnits>
+          <args name="input_size" portName="s_axi_control"/>
+          <args name="input_addr" portName="m00_axi" master="true"/>
+          <args name="output_size_addr" portName="m00_axi" master="true"/>
+          <args name="output_addr" portName="m00_axi" master="true"/>
+        </precompiledKernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr=""/>
+        </precompiledKernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.832535322">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr="">
+            <args name="input_size" memory=""/>
+            <args name="input_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_size_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_addr" master="true" memory="HBM[0]" profileAll="true"/>
+          </computeUnits>
+          <args name="input_size" portName="s_axi_control"/>
+          <args name="input_addr" portName="m00_axi" master="true"/>
+          <args name="output_size_addr" portName="m00_axi" master="true"/>
+          <args name="output_addr" portName="m00_axi" master="true"/>
+        </precompiledKernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <precompiledKernels name="cceip_kernel" sourceFile="src/vitis_rtl_kernel/cceip_kernel/cceip_kernel.xo">
+          <computeUnits name="cceip_kernel_1" slr="">
+            <args name="input_size" memory=""/>
+            <args name="input_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_size_addr" master="true" memory="HBM[0]" profileAll="true"/>
+            <args name="output_addr" master="true" memory="HBM[0]" profileAll="true"/>
+          </computeUnits>
+          <args name="input_size" portName="s_axi_control"/>
+          <args name="input_addr" portName="m00_axi" master="true"/>
+          <args name="output_size_addr" portName="m00_axi" master="true"/>
+          <args name="output_addr" portName="m00_axi" master="true"/>
+        </precompiledKernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
