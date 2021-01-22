@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Jan 22 20:37:47 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Jan 22 22:04:34 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2902540" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "cc974921-adaf-476d-b915-959bb09edd4c" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "1222baf57c4a44ecab2a4c4b620792b5" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "22" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "30" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "CentOS" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "CentOS Linux release 7.9.2009 (Core)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "1200.091 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "1400.042 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "2" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "134.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -37,7 +37,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "59" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "5" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "2.50_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Time -value "2.47_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Compiler_Memory -value "361488_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2531602684 -regid "" -xml /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 2667234621 -regid "" -xml /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /nvme0n1/gaoruihao/zipline/Project-Zipline-FPGA/vitis-wrapper/cceip_wrapper/vivado_rtl_kernel/cceip_kernel_ex/cceip_kernel_ex.sim/sim_1/behav/xsim/xsim.dir/cceip_inbound_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

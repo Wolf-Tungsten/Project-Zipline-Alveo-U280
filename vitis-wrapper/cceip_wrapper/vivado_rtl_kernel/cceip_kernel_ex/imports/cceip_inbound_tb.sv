@@ -16,7 +16,7 @@ initial begin: AP_CLK
 end
 
 logic inbound_start = 0;
-logic [63:0] input_data_size = 6;
+logic [63:0] input_data_size = 114514;
 logic [63:0] input_count = 0;
 logic [63:0] input_data = 0;
 logic input_ready;
@@ -39,6 +39,7 @@ initial begin
         end
     end
     input_valid = 0;
+    $finish();
 end
 
 
