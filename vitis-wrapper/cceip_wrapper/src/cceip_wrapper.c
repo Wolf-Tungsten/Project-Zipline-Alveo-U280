@@ -153,7 +153,7 @@ int main(int argc, char * argv[]){
 		&program,                 // compute programs
 		&kernel);
 
-	//
+	printf("INFO: done\n");
 }
 
 // char* file_content;
