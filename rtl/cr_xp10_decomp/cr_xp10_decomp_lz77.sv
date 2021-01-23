@@ -192,7 +192,7 @@ module cr_xp10_decomp_lz77 (
                                    .lz_mtf_dp_ready     (lz_mtf_dp_ready),
                                    .if_ep_sym           (if_ep_sym),
                                    .if_ep_sym_valid     (if_ep_sym_valid),
-                                   .lane_lit_stb        (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_LANE_1_LITERALS_TOTAL +: 4]), 
+                                   .lane_lit_stb        (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_LANE_1_LITERALS_TOTAL + 3 : cr_native_types::LZ77D_LANE_1_LITERALS_TOTAL]), 
                                    .ptr_stb             (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_PTRS_TOTAL]), 
                                    .frm_in_stb          (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_FRM_IN_TOTAL]), 
                                    .frm_out_stb         (xp10_decomp_lz77d_stat_events[cr_native_types::LZ77D_FRM_OUT_TOTAL]), 

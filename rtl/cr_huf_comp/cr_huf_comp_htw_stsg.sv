@@ -7,16 +7,6 @@
 *************************************************************************/
 
 
-
-
-
-
-
-
-
-
-
-
 `include "cr_huf_comp.vh"
 
 module cr_huf_comp_htw_stsg
@@ -38,8 +28,8 @@ module cr_huf_comp_htw_stsg
    hw_stsg_sym_hi_b, hw_stsg_deflate_mode, hw_stsg_max_sym_table
    );
    	    
-// import cr_native_types::*;
-import cr_error_codes::*;
+  // import cr_native_types::*;
+  import cr_error_codes::*;
   import cr_structs::*; // grh fix
       
   import cr_huf_compPKG::*;
@@ -160,19 +150,19 @@ import cr_error_codes::*;
 
    
 typedef struct packed    {
-             logic [7:0]                    value;
-             logic [3:0]                    bits; 
+             logic [7:0]     value;
+             logic [3:0]     bits; 
                          } 
                         s_xtra_encode_lut;
 
 e_stsg_state                                  stsg_curr_st,stsg_nxt_st;
 
-parameter s_xtra_encode_lut [10:0] extra_encode_table = '{'{value:8'b00011111,bits:4'd8}, 
+wire s_xtra_encode_lut [10:0] extra_encode_table = '{'{value:8'b00011111,bits:4'd8}, 
                                                           '{value:8'b11011,bits:4'd5},
                                                           '{value:8'b10111,bits:4'd5},
                                                           '{value:8'b10011,bits:4'd5},
                                                           '{value:8'b01111,bits:4'd5},
-							  '{value:8'b01011,bits:4'd5},
+							                                            '{value:8'b01011,bits:4'd5},
                                                           '{value:8'b00111,bits:4'd5},
                                                           '{value:8'b00011,bits:4'd5},
                                                           '{value:8'b10,bits:4'd2},
