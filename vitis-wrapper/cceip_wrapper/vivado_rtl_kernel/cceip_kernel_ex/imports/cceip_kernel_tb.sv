@@ -573,6 +573,9 @@ function automatic bit check_kernel_result();
   bit [63:0]        ret_size_value = 64'h0;
   bit [31:0]        ret_rd_value = 32'h0;
   bit [31:0]        input_value = 32'h0;
+  bit [31:0]        data_lo = 32'h0;
+  bit [31:0]        data_hi = 32'h0;
+  bit [63:0]        data = 64'h0;
   bit error_found = 0;
   integer error_counter;
   error_counter = 0;
@@ -582,25 +585,14 @@ function automatic bit check_kernel_result();
   ret_size_value = ret_size_value << 32;
   ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(output_size_addr_ptr);
   ret_size_value = ret_size_value | ret_rd_value;
-  if(ret_size_value != input_size_scalar) begin
-    $error("Output size Mismatch");
-    error_found = 1;
-    return(error_found);
-  end
+  $display("Output Size : %d ", ret_size_value );
   /////////////////////////////////////////////////////////////////////////////////////////////////
   // Checking memory connected to m00_axi
-  for (longint unsigned slot = 0; slot < (input_size_scalar >> 2); slot++) begin
-    ret_rd_value = m00_axi.mem_model.backdoor_memory_read_4byte(output_addr_ptr + (slot * 4));
-    input_value = m00_axi.mem_model.backdoor_memory_read_4byte(input_addr_ptr + (slot * 4));
-    if(ret_rd_value != input_value) begin
-      $error("Memory Mismatch: m00_axi : @0x%x : Expected 0x%x -> Got 0x%x ", output_addr_ptr + (slot * 4), input_value, ret_rd_value);
-      error_found |= 1;
-      error_counter++;
-    end
-    if (error_counter > 5) begin
-      $display("Too many errors found. Exiting check of m00_axi.");
-      slot = input_size_scalar >> 2;
-    end
+  for (longint unsigned slot = 0; slot < (ret_size_value >> 2); slot+=2) begin
+    data_lo = m00_axi.mem_model.backdoor_memory_read_4byte(output_addr_ptr + (slot * 4));
+    data_hi = m00_axi.mem_model.backdoor_memory_read_4byte(output_addr_ptr + (slot * 4) + 4);
+    data = (data_hi << 32) | data_lo;
+    $display("Memory : m00_axi : @0x%x : 0x%x ", output_addr_ptr + (slot * 4), data );
   end
   error_counter = 0;
 
