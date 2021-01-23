@@ -38,7 +38,7 @@ module cr_cceip_64_sa_core
 
 import cr_native_types::*;
 import cr_error_codes::*;
-  //import cr_structs::*; // grh fix：maybe dupilcate here？
+  import cr_structs::*; // grh fix：maybe dupilcate here？
         
   import crPKG::*;   
   import cr_cceip_64_saPKG::*;

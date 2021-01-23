@@ -252,50 +252,50 @@ module cr_xp10_decomp
       
    
 
-   cr_xp10_decomp_core 
-   #(.XP10_DECOMP_STUB (XP10_DECOMP_STUB), .FPGA_MOD(FPGA_MOD))
-   u_cr_xp10_decomp_core
-     (
+   // cr_xp10_decomp_core 
+   // #(.XP10_DECOMP_STUB (XP10_DECOMP_STUB), .FPGA_MOD(FPGA_MOD))
+   // u_cr_xp10_decomp_core
+   //   (
       
-      .xp10_decomp_ib_out               (xp10_decomp_ib_out),
-      .xp10_decomp_ob_out               (xp10_decomp_ob_out_pre), 
-      .xp10_decomp_sch_update           (xp10_decomp_sch_update),
-      .bimc_odat                        (bimc_core_odat),        
-      .bimc_osync                       (bimc_core_osync),       
-      .ro_uncorrectable_ecc_error       (ro_uncorrectable_ecc_error),
-      .fe_tlvp_error                    (fe_tlvp_error),
-      .lz_bytes_decomp                  (lz_bytes_decomp[16:0]),
-      .lz_hb_bytes                      (lz_hb_bytes[16:0]),
-      .lz_hb_head_ptr                   (lz_hb_head_ptr[11:0]),
-      .lz_hb_tail_ptr                   (lz_hb_tail_ptr[11:0]),
-      .lz_local_bytes                   (lz_local_bytes[16:0]),
-      .xp10_decomp_lz77d_stat_events    (_xp10_decomp_lz77d_stat_events[LZ77D_STAT_EVENTS_LIMIT:LZ77D_STAT_EVENTS_BASE]), 
-      .hufd_stat_events                 (_hufd_stat_events[HUFD_STAT_EVENTS_LIMIT:HUFD_STAT_EVENTS_BASE]), 
-      .xpd_im_valid                     (xpd_im_valid),
-      .xpd_im_data                      (xpd_im_data),
-      .htf_bl_im_valid                  (htf_bl_im_valid),
-      .htf_bl_im_data                   (htf_bl_im_data),
+   //    .xp10_decomp_ib_out               (xp10_decomp_ib_out),
+   //    .xp10_decomp_ob_out               (xp10_decomp_ob_out_pre), 
+   //    .xp10_decomp_sch_update           (xp10_decomp_sch_update),
+   //    .bimc_odat                        (bimc_core_odat),        
+   //    .bimc_osync                       (bimc_core_osync),       
+   //    .ro_uncorrectable_ecc_error       (ro_uncorrectable_ecc_error),
+   //    .fe_tlvp_error                    (fe_tlvp_error),
+   //    .lz_bytes_decomp                  (lz_bytes_decomp[16:0]),
+   //    .lz_hb_bytes                      (lz_hb_bytes[16:0]),
+   //    .lz_hb_head_ptr                   (lz_hb_head_ptr[11:0]),
+   //    .lz_hb_tail_ptr                   (lz_hb_tail_ptr[11:0]),
+   //    .lz_local_bytes                   (lz_local_bytes[16:0]),
+   //    .xp10_decomp_lz77d_stat_events    (_xp10_decomp_lz77d_stat_events[LZ77D_STAT_EVENTS_LIMIT:LZ77D_STAT_EVENTS_BASE]), 
+   //    .hufd_stat_events                 (_hufd_stat_events[HUFD_STAT_EVENTS_LIMIT:HUFD_STAT_EVENTS_BASE]), 
+   //    .xpd_im_valid                     (xpd_im_valid),
+   //    .xpd_im_data                      (xpd_im_data),
+   //    .htf_bl_im_valid                  (htf_bl_im_valid),
+   //    .htf_bl_im_data                   (htf_bl_im_data),
       
-      .clk                              (clk),
-      .rst_n                            (rst_sync_n),            
-      .lvm                              (lvm),
-      .mlvm                             (mlvm),
-      .ovstb                            (ovstb),
-      .xp10_decomp_ib_in                (xp10_decomp_ib_in),
-      .xp10_decomp_ob_in                (xp10_decomp_ob_in_mod), 
-      .sw_TLVP_ACTION_CFG0              (sw_TLVP_ACTION_CFG0[31:0]),
-      .sw_TLVP_ACTION_CFG1              (sw_TLVP_ACTION_CFG1[31:0]),
-      .su_afull_n                       (su_afull_n),
-      .bimc_idat                        (bimc_core_idat),        
-      .bimc_isync                       (bimc_core_isync),       
-      .bimc_rst_n                       (bimc_rst_n),
-      .sw_LZ_BYPASS_CONFIG              (sw_LZ_BYPASS_CONFIG),
-      .sw_IGNORE_CRC_CONFIG             (sw_IGNORE_CRC_CONFIG),
-      .xpd_im_ready                     (xpd_im_ready),
-      .htf_bl_im_ready                  (htf_bl_im_ready),
-      .xp10_decomp_module_id            (xp10_decomp_module_id[`MODULE_ID_WIDTH-1:0]),
-      .sw_LZ_DECOMP_OLIMIT              (sw_LZ_DECOMP_OLIMIT[23:0]),
-      .cceip_cfg                        (cceip_cfg));
+   //    .clk                              (clk),
+   //    .rst_n                            (rst_sync_n),            
+   //    .lvm                              (lvm),
+   //    .mlvm                             (mlvm),
+   //    .ovstb                            (ovstb),
+   //    .xp10_decomp_ib_in                (xp10_decomp_ib_in),
+   //    .xp10_decomp_ob_in                (xp10_decomp_ob_in_mod), 
+   //    .sw_TLVP_ACTION_CFG0              (sw_TLVP_ACTION_CFG0[31:0]),
+   //    .sw_TLVP_ACTION_CFG1              (sw_TLVP_ACTION_CFG1[31:0]),
+   //    .su_afull_n                       (su_afull_n),
+   //    .bimc_idat                        (bimc_core_idat),        
+   //    .bimc_isync                       (bimc_core_isync),       
+   //    .bimc_rst_n                       (bimc_rst_n),
+   //    .sw_LZ_BYPASS_CONFIG              (sw_LZ_BYPASS_CONFIG),
+   //    .sw_IGNORE_CRC_CONFIG             (sw_IGNORE_CRC_CONFIG),
+   //    .xpd_im_ready                     (xpd_im_ready),
+   //    .htf_bl_im_ready                  (htf_bl_im_ready),
+   //    .xp10_decomp_module_id            (xp10_decomp_module_id[`MODULE_ID_WIDTH-1:0]),
+   //    .sw_LZ_DECOMP_OLIMIT              (sw_LZ_DECOMP_OLIMIT[23:0]),
+   //    .cceip_cfg                        (cceip_cfg));
      end 
    endgenerate
    

@@ -1,1 +1,0 @@
--wto "1222baf57c4a44ecab2a4c4b620792b5" --incr --debug "typical" --relax --mt "8" -L "axi_infrastructure_v1_1_0" -L "xil_defaultlib" -L "axi_vip_v1_1_7" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "cceip_kernel_tb_behav" "xil_defaultlib.cceip_kernel_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
