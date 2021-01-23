@@ -64,12 +64,18 @@ module cceip_kernel_core
   input  wire [63:0]                            output_size_addr    ,
   input  wire [63:0]                            output_addr    
 );
-    
+
+  //////////////////////////////////////
+  // Input Argument Reg
+  //////////////////////////////////////    
   reg [63:0]  input_size_r;
   reg [63:0]  input_addr_r;
   reg [63:0]  output_size_addr_r;
   reg [63:0]  output_addr_r;
 
+  //////////////////////////////////////
+  // Memory Port Reg
+  //////////////////////////////////////
   reg          m00_read_start_r;
   reg          m00_read_ready_r;
   reg  [63:0]  m00_read_addr_r;
@@ -79,6 +85,9 @@ module cceip_kernel_core
   reg  [63:0]  m00_write_size_r;
   reg          m00_write_valid_r;
   
+  //////////////////////////////////////
+  // Memory Port Wire
+  //////////////////////////////////////
   logic            m00_read_valid;
   logic            m00_read_ready;
   logic [63:0]     m00_read_data;
@@ -89,20 +98,61 @@ module cceip_kernel_core
   logic [63:0]     m00_write_data;
   logic            m00_write_last;
   logic            m00_write_done;
+
+  //////////////////////////////////////
+  // rBUS driver to config cceip
+  //////////////////////////////////////
+  reg    rbus_start_r;
+  wire   rbus_done;
   
-// The following contains SystemVerilog constructs and should not be used if using a tool that does not support this standard
+  wire  [19:0]  rbus_driver_to_cceip_apb_paddr;
+  wire          rbus_driver_to_cceip_apb_psel;
+  wire          rbus_driver_to_cceip_apb_penable;
+  wire          rbus_driver_to_cceip_apb_pwrite;
+  wire  [31:0]  rbus_driver_to_cceip_apb_pwdata;  
+  wire  [31:0]  rbus_driver_to_cceip_apb_prdata;
+  wire          rbus_driver_to_cceip_apb_pready;                      
+  wire          rbus_driver_to_cceip_apb_pslverr;
+
+  cceip_rbus_driver inst_rbus_driver (
+      .ap_clk(ap_clk),  //  input     wire ap_clk,
+      .areset(areset),  //  input     wire areset,
+
+      .rbus_start(rbus_start_r), //  input     wire rbus_start,
+      .rbus_done(rbus_done),     //  output    wire rbus_done,
+
+      .m_apb_paddr(rbus_driver_to_cceip_apb_paddr),//  output  wire  [19:0]  m_apb_paddr,
+      .m_apb_psel(rbus_driver_to_cceip_apb_psel),//  output  wire  m_apb_psel,
+      .m_apb_penable(rbus_driver_to_cceip_apb_penable),//  output  wire  m_apb_penable,
+      .m_apb_pwrite(rbus_driver_to_cceip_apb_pwrite),//  output  wire  m_apb_pwrite,
+      .m_apb_pwdata(rbus_driver_to_cceip_apb_pwdata),//  output  wire [31:0]  m_apb_pwdata,  
+      .m_apb_prdata(rbus_driver_to_cceip_apb_prdata),//  input  wire  [31:0]  m_apb_prdata,
+      .m_apb_pready(rbus_driver_to_cceip_apb_pready),//  input  wire  m_apb_pready,                      
+      .m_apb_pslverr(rbus_driver_to_cceip_apb_pslverr)//  input  wire  m_apb_pslverr
+  );
+  
+
+  //////////////////////////////////////
+  // State Machine
+  //////////////////////////////////////
 
    enum reg [4:0] {s_idle,
+                     s_cceip_reset, // 对cceip进行reset
+                     s_cceip_rbus_config, // 对 cceip 进行 config
+                     s_wait_cceip_rbus_config, // 等待 cceip config 完成
                      s_launch_read_config,
                      s_launch_read,
-                     s_launch_read_done,
-                     s_launch_write_size_config,
+                     s_launch_read_done, // m00 发起读事务
+                     s_write_data_trans_config,
+                     s_write_data_trans,
+                     s_write_data, 
+                     s_write_data_snap,
+                     s_write_data_padd,
+                     s_wait_write_data_done, // 等待 cceip 输出全部写入mem
+                     s_launch_write_size_config, 
                      s_launch_write_size,
                      s_launch_write_size_done,
-                     s_waiting_write_size_done,
-                     s_launch_write_data_config,
-                     s_launch_write_data,
-                     s_launch_write_data_done,
+                     s_waiting_write_size_done, // m00 发起
                      s_done} state;
 
    assign ap_ready = state == s_idle;
@@ -123,9 +173,17 @@ module cceip_kernel_core
                   input_size_r <= input_size;
                   output_size_addr_r <= output_size_addr;
                   output_addr_r <= output_addr;
-                  state <= s_launch_read_config;
+                  state <= s_cceip_reset;
                end
             end
+            s_cceip_reset : begin
+               // 1. 对 cceip 进行 reset
+               state <= s_cceip_rbus_config;
+            end
+            s_cceip_rbus_config : begin
+               
+            end
+            
             s_launch_read_config : begin
                m00_read_addr_r <= input_addr_r;
                m00_read_size_r <= input_size_r;
@@ -156,24 +214,24 @@ module cceip_kernel_core
             end
             s_waiting_write_size_done: begin
                if(m00_write_done) begin
-                  state <= s_launch_write_data_config;
+                  //state <= s_launch_write_data_config;
                end
             end
-            s_launch_write_data_config : begin
-               m00_write_addr_r <= output_addr_r;
-               m00_write_size_r <= input_size_r;
-               state <= s_launch_write_data;
-            end
-            s_launch_write_data : begin
-               m00_write_start_r <= 1'b1;
-               state <= s_launch_write_data_done;
-            end
-            s_launch_write_data_done : begin
-               m00_write_start_r <= 1'b0;
-               if(m00_write_done) begin
-                  state <= s_done;
-               end
-            end
+            // s_launch_write_data_config : begin
+            //    m00_write_addr_r <= output_addr_r;
+            //    m00_write_size_r <= input_size_r;
+            //    state <= s_launch_write_data;
+            // end
+            // s_launch_write_data : begin
+            //    m00_write_start_r <= 1'b1;
+            //    state <= s_launch_write_data_done;
+            // end
+            // s_launch_write_data_done : begin
+            //    m00_write_start_r <= 1'b0;
+            //    if(m00_write_done) begin
+            //       state <= s_done;
+            //    end
+            // end
             s_done : begin
                // 产生一个周期有效的 s_done
                state <= s_idle;
@@ -247,20 +305,6 @@ module cceip_kernel_core
       .s_axis_tdata            ( m00_write_data          )
     );
     
-
-    always_comb begin : m00_router
-       m00_read_ready = 0;
-       m00_write_valid = 0;
-       m00_write_data = 0;
-       if(state == s_launch_write_size_done) begin
-          m00_write_data = input_size_r;
-          m00_write_valid = 1;
-       end else if (state == s_launch_write_data_done) begin
-          m00_write_data = m00_read_data;
-          m00_write_valid = m00_read_valid;
-          m00_read_ready = m00_write_ready;
-       end
-    end
     
     
 endmodule

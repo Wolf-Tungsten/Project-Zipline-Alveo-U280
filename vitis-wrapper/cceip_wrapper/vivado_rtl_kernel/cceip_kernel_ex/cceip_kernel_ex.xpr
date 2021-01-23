@@ -102,6 +102,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/imports/cceip_rbus_driver.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/imports/cceip_kernel.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -135,14 +142,6 @@
       </File>
       <File Path="$PPRDIR/cceip_kernel/component.xml">
         <FileInfo SFType="IPXACT"/>
-      </File>
-      <File Path="$PPRDIR/imports/cceip_rbus_driver.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
       </File>
       <File Path="$PPRDIR/imports/cceip_inbound.sv">
         <FileInfo>
@@ -255,7 +254,6 @@
     <FileSet Name="axi_apb_bridge_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_apb_bridge_0">
       <File Path="$PSRCDIR/sources_1/ip/axi_apb_bridge_0/axi_apb_bridge_0.xci">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
