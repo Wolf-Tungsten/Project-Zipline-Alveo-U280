@@ -305,6 +305,17 @@ module cceip_kernel_core
       .s_axis_tdata            ( m00_write_data          )
     );
     
-    
+   cr_cceip_64 inst_cceip
+   (
+      // ib_tready, ob_tvalid, ob_tlast, ob_tid, ob_tstrb, ob_tuser,
+      // ob_tdata, sch_update_tvalid, sch_update_tlast, sch_update_tuser,
+      // sch_update_tdata, apb_prdata, apb_pready, apb_pslverr, cceip_int,
+      // cceip_idle,
+      
+      // clk, rst_n, scan_en, scan_mode, scan_rst_n, ovstb, lvm, mlvm,
+      // ib_tvalid, ib_tlast, ib_tid, ib_tstrb, ib_tuser, ib_tdata,
+      // ob_tready, sch_update_tready, apb_paddr, apb_psel, apb_penable,
+      // apb_pwrite, apb_pwdata, key_mode, dbg_cmd_disable, xp9_disable
+  );
     
 endmodule
